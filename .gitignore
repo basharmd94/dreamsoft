@@ -32,8 +32,6 @@ build/
 
 # Logs and databases
 *.log
-*.sqlite3
-*.sqlite3-journal
 
 # Coverage reports
 htmlcov/
