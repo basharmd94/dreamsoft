@@ -5,8 +5,8 @@ RewriteRule ^static/(.*)$ /home/azmedian/dreamsoft.bd/staticfiles/$1 [L]
 PassengerAppRoot "/home/azmedian/dreamsoft.bd"
 PassengerBaseURI "/"
 PassengerPython "/home/azmedian/virtualenv/dreamsoft.bd/3.12/bin/python"
+PassengerAppLogFile "/home/azmedian/dreamsoft/logs/passenger.log"
 # DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
 # DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
 <IfModule Litespeed>
 </IfModule>
-# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
