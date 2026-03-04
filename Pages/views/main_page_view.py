@@ -7,3 +7,6 @@ def home(request):
 
 def fashion_shop_software(request):
     return render(request, 'Pages/fashion-shop-software.html')
+
+def erp_software(request):
+    return render(request, 'Pages/erp-software.html')
