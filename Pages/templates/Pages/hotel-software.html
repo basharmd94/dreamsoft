@@ -1,0 +1,500 @@
+{% extends 'Pages/base.html' %}
+{% load static %}
+
+{% block title %}Complete Hotel Management Software in Bangladesh — Booking, Billing & Operations | DreamSoft{% endblock %}
+{% block meta_description %}DreamSoft offers complete Hotel Management Software in Bangladesh. Manage reservations, front-desk billing, housekeeping, inventory, guest CRM, and multi-property operations for hotels, resorts, and guesthouses.{% endblock %}
+{% block meta_keywords %}hotel management software Bangladesh, hotel POS software Bangladesh, ERP integrated hotel software, hotel booking and billing system, guest management software Bangladesh, hotel reservation CRM system, multi-property hotel management, housekeeping inventory software{% endblock %}
+{% block og_title %}Complete Hotel Management Software in Bangladesh | DreamSoft{% endblock %}
+{% block og_description %}Streamline reservations, billing, and operations with DreamSoft's all-in-one hotel management system for hotels, resorts, and guesthouses in Bangladesh.{% endblock %}
+{% block twitter_title %}Complete Hotel Management Software in Bangladesh | DreamSoft{% endblock %}
+{% block twitter_description %}Streamline reservations, billing, and operations with DreamSoft's all-in-one hotel management system for Bangladesh.{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'Pages/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'Pages/css/hotel_software.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- SECTION 1 — HERO -->
+<section class="hero-section ht-hero" id="ht-hero">
+    <div class="container hero-container">
+        <div class="hero-content">
+            <span class="ht-kicker">Hotel Management System</span>
+            <h1 class="hero-title ht-hero-title">
+                Complete <span class="text-gradient">Hotel Management</span><br>
+                Software in Bangladesh
+            </h1>
+
+            <p class="hero-description ht-hero-description">
+                Streamline reservations, billing, and operations with DreamSoft's
+                all-in-one hotel management system. Designed for hotels, resorts, and
+                guesthouses across Bangladesh — from managing room bookings and guest
+                check-ins to billing, inventory, and staff management, our system ensures
+                smooth operations and improved customer experience.
+            </p>
+
+            <div class="hero-actions">
+                <a href="tel:+8801755648295" class="btn btn-gradient btn-gradient--sm">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="margin-right:6px"><path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 4.18 2 2 0 0 1 4 2h3.09a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.09a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Call Now
+                </a>
+                <a href="#ht-contact-cta" class="btn btn-gradient btn-gradient--sm btn-demo">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    Watch Demo
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+            <div class="hero-bg-shape shape-1"></div>
+            <div class="hero-bg-shape shape-2"></div>
+            <div class="hero-img-container floating-animation">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                     alt="Hotel reception desk with POS system, reservation dashboards showing room occupancy"
+                     class="hero-main-img ht-hero-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 2 — WHY HOTELS NEED MANAGEMENT SOFTWARE -->
+<section class="ht-why-section" id="ht-why-need">
+    <div class="ht-blob ht-blob--left" aria-hidden="true"></div>
+    <div class="ht-blob ht-blob--right" aria-hidden="true"></div>
+
+    <div class="container">
+        <h2 class="section-heading text-center">
+            Why Your Hotel Needs <span class="text-gradient">Management Software</span>
+        </h2>
+
+        <div class="ht-why-grid">
+            <div class="ht-why-content">
+                <p class="ht-why-intro">
+                    Managing a hotel involves multiple tasks: reservations, front-desk operations,
+                    housekeeping, billing, and guest services. DreamSoft Hotel Management Software
+                    integrates all these functions into one platform, helping hotels operate
+                    efficiently, minimize errors, and enhance guest satisfaction.
+                </p>
+
+                <ul class="ht-check-list">
+                    <li>
+                        <span class="ht-check-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <h3>Reservation & Front-Desk Management</h3>
+                            <p>Easily manage room bookings, check-ins, and check-outs from a single dashboard with real-time updates.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="ht-check-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <h3>Real-Time Room Availability</h3>
+                            <p>Keep track of room occupancy across all floors and categories, preventing overbooking and double allocation.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="ht-check-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <h3>Billing & Invoice Generation</h3>
+                            <p>Automated, VAT-compliant invoices for smooth financial operations with bKash, Nagad, and card support.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="ht-check-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <h3>Inventory & Housekeeping Management</h3>
+                            <p>Track consumables, room supplies, linen stock, and schedule maintenance tasks efficiently.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="ht-check-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <h3>Customer Relationship Management (CRM)</h3>
+                            <p>Store guest information, preferences, and feedback to enhance loyalty and personalize experiences.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="ht-check-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <h3>Multi-Branch & Multi-User Access</h3>
+                            <p>Manage multiple properties and assign role-based permissions from a single centralized dashboard.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="ht-cta-inline">
+                    <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--sm">Get Free Consultation</a>
+                </div>
+            </div>
+
+            <div class="ht-why-image">
+                <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                     alt="Hotel manager using software to check room occupancy and guest details"
+                     class="ht-why-img">
+                <div class="ht-float-badge ht-float-badge--top">
+                    <span class="ht-float-badge-icon">🏨</span>
+                    <div class="ht-float-badge-info">
+                        <span class="ht-float-badge-value">Rooms</span>
+                        <span class="ht-float-badge-label">Live Status</span>
+                    </div>
+                </div>
+                <div class="ht-float-badge ht-float-badge--bottom">
+                    <span class="ht-float-badge-icon">📋</span>
+                    <div class="ht-float-badge-info">
+                        <span class="ht-float-badge-value">Bookings</span>
+                        <span class="ht-float-badge-label">Managed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 3 — CORE FEATURES -->
+<section class="ht-features-section" id="ht-features">
+    <div class="ht-blob ht-blob--left" aria-hidden="true"></div>
+    <div class="ht-blob ht-blob--right" aria-hidden="true"></div>
+
+    <div class="container">
+        <div class="ht-features-header text-center">
+            <span class="ht-kicker">Core Features</span>
+            <h2 class="section-heading">
+                Top Features of DreamSoft <span class="text-gradient">Hotel Management</span> Software
+            </h2>
+        </div>
+
+        <div class="ht-features-grid">
+            <div class="ht-feature-card">
+                <div class="ht-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="9 22 9 12 15 12 15 22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3>Room & Reservation Management</h3>
+                <p>Handle online and offline bookings, room allocation, category management, and special guest requests.</p>
+            </div>
+            <div class="ht-feature-card">
+                <div class="ht-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 10h20" stroke="currentColor" stroke-width="2"/><path d="M7 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Front Desk & Billing Automation</h3>
+                <p>Quick check-in/out with multi-payment options including bKash, Nagad, cards, and cash with VAT invoicing.</p>
+            </div>
+            <div class="ht-feature-card">
+                <div class="ht-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="9" y="3" width="6" height="4" rx="2" stroke="currentColor" stroke-width="2"/><path d="M9 12h6M9 16h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Housekeeping & Maintenance</h3>
+                <p>Schedule cleaning staff, track room readiness, and monitor maintenance tasks across all floors and wings.</p>
+            </div>
+            <div class="ht-feature-card">
+                <div class="ht-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Inventory & Supply Management</h3>
+                <p>Track consumables, minibar items, linen stock, and toiletries in real-time with low-stock alerts.</p>
+            </div>
+            <div class="ht-feature-card">
+                <div class="ht-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3>Guest CRM & Loyalty Programs</h3>
+                <p>Store guest preferences, send personalized offers, and reward frequent visitors to build lasting loyalty.</p>
+            </div>
+            <div class="ht-feature-card">
+                <div class="ht-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M18 20V10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 20V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M6 20v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Reports & Analytics</h3>
+                <p>Generate sales, occupancy, and revenue reports with visual dashboards for informed decision-making.</p>
+            </div>
+            <div class="ht-feature-card">
+                <div class="ht-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><rect x="2" y="3" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 7h8M8 11h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Multi-Language Support</h3>
+                <p>Bangla and English interface for smooth staff adoption across all roles and departments.</p>
+            </div>
+            <div class="ht-feature-card">
+                <div class="ht-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3>ERP Integration</h3>
+                <p>Connect with accounting, payroll, and ERP systems for end-to-end hotel management and financial control.</p>
+            </div>
+        </div>
+
+        <div class="ht-cta-center">
+            <a href="tel:+8801755648295" class="btn btn-gradient btn-gradient--sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="margin-right:6px"><path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 4.18 2 2 0 0 1 4 2h3.09a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.09a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Call Now
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 4 — BUSINESS BENEFITS -->
+<section class="ht-benefits-section" id="ht-benefits">
+    <div class="container">
+        <div class="ht-benefits-header text-center">
+            <span class="ht-kicker">Business Benefits</span>
+            <h2 class="section-heading">
+                Benefits of Using <span class="text-gradient">Hotel Management</span> Software
+            </h2>
+            <p class="ht-benefits-intro">
+                DreamSoft Hotel Management Software helps hotels stay organized, improve
+                operational efficiency, and enhance guest experience. With automated booking,
+                real-time room availability, and detailed analytics, hotels can make smarter
+                decisions and grow revenue.
+            </p>
+        </div>
+
+        <div class="ht-benefits-grid">
+            <div class="ht-benefit-card">
+                <span class="ht-benefit-emoji">⚡</span>
+                <h3>Faster Booking & Check-in</h3>
+                <p>Speed up reservation and check-in/out processes so guests spend less time waiting.</p>
+            </div>
+            <div class="ht-benefit-card">
+                <span class="ht-benefit-emoji">✅</span>
+                <h3>Reduce Manual Errors</h3>
+                <p>Eliminate billing mistakes and double-bookings with automated, system-driven operations.</p>
+            </div>
+            <div class="ht-benefit-card">
+                <span class="ht-benefit-emoji">🏨</span>
+                <h3>Maximize Occupancy</h3>
+                <p>Real-time room availability tracking ensures maximum occupancy and prevents overbooking.</p>
+            </div>
+            <div class="ht-benefit-card">
+                <span class="ht-benefit-emoji">🧹</span>
+                <h3>Efficient Housekeeping</h3>
+                <p>Track inventory, schedule cleaning, and manage maintenance tasks across all rooms efficiently.</p>
+            </div>
+            <div class="ht-benefit-card">
+                <span class="ht-benefit-emoji">😊</span>
+                <h3>Personalized Guest Service</h3>
+                <p>Improve guest experience with preference tracking, loyalty rewards, and personalized offers.</p>
+            </div>
+            <div class="ht-benefit-card">
+                <span class="ht-benefit-emoji">📊</span>
+                <h3>Revenue & Profit Tracking</h3>
+                <p>Detailed reports for revenue, occupancy rates, and profit tracking with visual dashboards.</p>
+            </div>
+            <div class="ht-benefit-card">
+                <span class="ht-benefit-emoji">🏪</span>
+                <h3>Multi-Branch Management</h3>
+                <p>Manage hotel chains, resorts, or multiple properties from one centralized platform.</p>
+            </div>
+        </div>
+
+        <div class="ht-cta-center">
+            <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--sm">Get Free Demo</a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 5 — WHY CHOOSE DREAMSOFT -->
+<section class="ht-trust-section" id="ht-trust">
+    <div class="ht-blob ht-blob--center-left" aria-hidden="true"></div>
+    <div class="ht-blob ht-blob--center-right" aria-hidden="true"></div>
+
+    <div class="container">
+        <div class="ht-trust-header text-center">
+            <span class="ht-kicker">Why DreamSoft</span>
+            <h2 class="section-heading">
+                Why Hotels in Bangladesh Choose <span class="text-gradient">DreamSoft</span>
+            </h2>
+        </div>
+
+        <div class="ht-trust-grid">
+            <div class="ht-trust-block">
+                <div class="ht-trust-block-header">
+                    <span class="ht-trust-block-emoji">🎯</span>
+                    <h3>Pre-Sale Services</h3>
+                </div>
+                <ul class="ht-trust-list">
+                    <li>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Free demo and consultation tailored to your hotel
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Custom setup for your hotel size, type, and operations
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Guidance for hardware: POS terminals, tablets, and printers
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Transparent pricing with no hidden costs
+                    </li>
+                </ul>
+            </div>
+
+            <div class="ht-trust-block">
+                <div class="ht-trust-block-header">
+                    <span class="ht-trust-block-emoji">🛡️</span>
+                    <h3>Post-Sale Services</h3>
+                </div>
+                <ul class="ht-trust-list">
+                    <li>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Installation and software setup
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Staff training for efficient adoption
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Ongoing technical support via phone, chat, or remote access
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Regular updates and feature enhancements
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Secure cloud-based data backup
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Multi-user and multi-property management
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="ht-cta-center">
+            <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--lg">Buy Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 6 — HOTEL SOFTWARE FOR GROWTH -->
+<section class="ht-growth-section" id="ht-growth">
+    <div class="container">
+        <div class="ht-growth-grid">
+            <div class="ht-growth-content">
+                <span class="ht-kicker">Business Growth</span>
+                <h2 class="section-heading">
+                    Grow Your Hotel Business with <span class="text-gradient">DreamSoft</span>
+                </h2>
+
+                <ul class="ht-growth-list">
+                    <li>
+                        <span class="ht-growth-icon">📈</span>
+                        <p>Increase occupancy and revenue with smart booking management and real-time availability.</p>
+                    </li>
+                    <li>
+                        <span class="ht-growth-icon">😊</span>
+                        <p>Improve guest satisfaction through personalized services and loyalty programs.</p>
+                    </li>
+                    <li>
+                        <span class="ht-growth-icon">👥</span>
+                        <p>Optimize staff allocation and housekeeping efficiency across all departments.</p>
+                    </li>
+                    <li>
+                        <span class="ht-growth-icon">📊</span>
+                        <p>Generate actionable insights from revenue, occupancy, and guest feedback reports.</p>
+                    </li>
+                    <li>
+                        <span class="ht-growth-icon">🔗</span>
+                        <p>Seamless integration with ERP, accounting, and payroll systems for unified management.</p>
+                    </li>
+                    <li>
+                        <span class="ht-growth-icon">🏨</span>
+                        <p>Multi-branch support for hotel chains, resorts, or multiple properties across Bangladesh.</p>
+                    </li>
+                </ul>
+
+                <div class="ht-cta-inline">
+                    <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--sm">Contact Now</a>
+                </div>
+            </div>
+
+            <div class="ht-growth-image">
+                <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                     alt="Dashboard showing hotel occupancy rates, revenue analytics, and guest feedback trends"
+                     class="ht-growth-img">
+                <div class="ht-float-badge ht-float-badge--top">
+                    <span class="ht-float-badge-icon">📈</span>
+                    <div class="ht-float-badge-info">
+                        <span class="ht-float-badge-value">Revenue</span>
+                        <span class="ht-float-badge-label">Growing</span>
+                    </div>
+                </div>
+                <div class="ht-float-badge ht-float-badge--bottom">
+                    <span class="ht-float-badge-icon">⭐</span>
+                    <div class="ht-float-badge-info">
+                        <span class="ht-float-badge-value">Guest</span>
+                        <span class="ht-float-badge-label">Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 7 — FINAL THOUGHTS / CTA -->
+<section class="ht-cta-section" id="ht-contact-cta">
+    <div class="container">
+        <div class="ht-cta-wrapper">
+            <div class="ht-cta-content">
+                <span class="ht-kicker">Final Thoughts</span>
+                <h2 class="ht-cta-heading">
+                    Simplify Hotel Management<br>with DreamSoft
+                </h2>
+
+                <p class="ht-cta-text">
+                    DreamSoft Hotel Management Software provides hotels in Bangladesh with
+                    everything needed for smooth operations: reservations, billing, inventory,
+                    housekeeping, and guest services. Scalable, secure, and easy to use, it
+                    ensures higher efficiency, satisfied guests, and business growth.
+                </p>
+
+                <ul class="ht-cta-list">
+                    <li>✅ All-in-one reservation, billing & guest management</li>
+                    <li>✅ Real-time room availability and occupancy tracking</li>
+                    <li>✅ VAT-compliant invoicing with multi-payment support</li>
+                    <li>✅ Multi-property management for hotel chains</li>
+                    <li>✅ 24/7 local customer support across Bangladesh</li>
+                </ul>
+
+                <div class="ht-cta-actions">
+                    <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--lg">Book Free Demo</a>
+                    <a href="tel:+8801755648295" class="btn ht-btn-cta-outline">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" style="margin-right:8px"><path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 4.18 2 2 0 0 1 4 2h3.09a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.09a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="ht-cta-visual" aria-hidden="true">
+                <div class="ht-cta-ring ht-cta-ring--outer"></div>
+                <div class="ht-cta-ring ht-cta-ring--inner"></div>
+                <div class="ht-cta-ring-center">
+                    <span class="ht-cta-emoji">🏨</span>
+                </div>
+                <div class="ht-cta-float ht-cta-float--1">🛏️ Rooms</div>
+                <div class="ht-cta-float ht-cta-float--2">💳 Billing</div>
+                <div class="ht-cta-float ht-cta-float--3">📊 Reports</div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static 'Pages/js/hotel_software.js' %}"></script>
+{% endblock %}

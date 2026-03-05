@@ -27,7 +27,7 @@ def hardware_shop_pos_software(request):
 def hotel_management_software(request):
     return render(request, 'Pages/hotel-software.html')
 
-def tailor_software(request):
+def tailor_shop_software(request):
     return render(request, 'Pages/tailor-software.html')
 
 def accounting_software(request):

@@ -17,7 +17,7 @@ urlpatterns = [
     # hotel management post software
     path('hotel-management-software/', main_page_view.hotel_management_software, name='hotel_management_software'),
     # tailor post software
-    path('tailor-software/', main_page_view.tailor_software, name='tailor_software'),
+    path('tailor-shop-software/', main_page_view.tailor_software, name='tailor_shop_software'),
     # accounting post software
     path('accounting-software/', main_page_view.accounting_software, name='accounting_software'),
     # inventory post software
