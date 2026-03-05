@@ -1,0 +1,427 @@
+{% extends 'Pages/base.html' %}
+{% load static %}
+
+{% block title %}Wholesale POS & Billing Software in Bangladesh — Bulk Invoicing & Inventory | DreamSoft{% endblock %}
+{% block meta_description %}DreamSoft offers enterprise-grade Wholesale POS software in Bangladesh. Manage bulk invoicing, real-time inventory, VAT compliance, and multi-warehouse operations for distributors and stockists.{% endblock %}
+{% block meta_keywords %}wholesale POS software in Bangladesh, wholesale billing software, B2B POS system, bulk invoicing software, distributor management software Bangladesh, inventory tracking wholesale, VAT-compliant wholesale POS{% endblock %}
+{% block og_title %}Wholesale POS & Billing Software in Bangladesh | DreamSoft{% endblock %}
+{% block og_description %}Scale your wholesale operations with DreamSoft's high-performance POS — bulk invoicing, real-time inventory, VAT compliance, and multi-warehouse management for Bangladesh distributors.{% endblock %}
+{% block twitter_title %}Wholesale POS & Billing Software in Bangladesh | DreamSoft{% endblock %}
+{% block twitter_description %}Scale your wholesale operations with DreamSoft's enterprise-grade POS and billing system for Bangladesh.{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'Pages/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'Pages/css/wholesale-software.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- SECTION 1 — HERO -->
+<section class="hero-section wp-hero" id="wp-hero">
+    <div class="container hero-container">
+        <div class="hero-content">
+            <span class="wp-kicker">Wholesale POS System</span>
+            <h1 class="hero-title wp-hero-title">
+                Scale Your <span class="text-gradient">Wholesale Operations</span>
+              
+            </h1>
+
+            <p class="hero-description wp-hero-description">
+                Wholesale distribution requires speed, precision, and reliability. DreamSoft
+                provides an enterprise-grade POS and billing architecture designed to handle
+                bulk transactions, automate complex invoicing, and guarantee real-time
+                inventory accuracy. Eliminate manual bottlenecks, secure your financial
+                ledgers, and scale with confidence.
+            </p>
+
+            <div class="hero-actions">
+                <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--sm">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:6px"><path d="M8 5v14l11-7z"/></svg>
+                    Request a Demo
+                </a>
+                <a href="tel:+8801755648295" class="btn btn-gradient btn-gradient--sm btn-demo">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="margin-right:6px"><path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 4.18 2 2 0 0 1 4 2h3.09a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.09a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Start Free Trial
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+            <div class="hero-bg-shape shape-1"></div>
+            <div class="hero-bg-shape shape-2"></div>
+            <div class="hero-img-container floating-animation">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                     alt="Wholesale warehouse with POS terminals, bulk inventory, and distribution management dashboards"
+                     class="hero-main-img wp-hero-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 2 — ROBUST WHOLESALE POS INFRASTRUCTURE -->
+<section class="wp-infra-section" id="wp-infrastructure">
+    <div class="wp-blob wp-blob--left" aria-hidden="true"></div>
+    <div class="wp-blob wp-blob--right" aria-hidden="true"></div>
+
+    <div class="container">
+        <h2 class="section-heading text-center">
+            Robust Wholesale <span class="text-gradient">POS & Billing</span> Infrastructure
+        </h2>
+
+        <div class="wp-infra-grid">
+            <div class="wp-infra-content">
+                <p class="wp-infra-intro">
+                    Handling high-volume wholesale operations requires more than a basic retail
+                    cash register. You need a system built for high concurrency, complex pricing
+                    tiers, and strict financial compliance. Whether you are a regional distributor
+                    or a large-scale stockist, our architecture ensures your data remains consistent
+                    and your operations run without friction.
+                </p>
+
+                <ul class="wp-check-list">
+                    <li>
+                        <span class="wp-check-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <h3>High-Volume Invoicing</h3>
+                            <p>Generate bulk invoices in seconds. Our system is optimized for rapid data processing, ensuring no lag during peak operational hours.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="wp-check-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <h3>Automated VAT/Tax Compliance</h3>
+                            <p>Seamlessly calculate and apply Bangladesh-specific VAT/GST rules. Reduce human error and maintain strict audit-ready compliance.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="wp-check-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <h3>Dynamic Payment Reconciliation</h3>
+                            <p>Safely process and track split payments, credit allocations, and cash transactions with complete ledger accuracy.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="wp-check-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <h3>Unified Entity Management</h3>
+                            <p>Centralize supplier and customer master data. Access credit histories, transaction logs, and specialized pricing tiers in one secure database.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="wp-check-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <h3>Transactional Inventory Sync</h3>
+                            <p>Every purchase and sale updates your central inventory ledger instantly, preventing race conditions, over-selling, or stock-outs.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="wp-cta-inline">
+                    <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--sm">Get a Free System Consultation</a>
+                </div>
+            </div>
+
+            <div class="wp-infra-image">
+                <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                     alt="Wholesale distribution warehouse with inventory management system"
+                     class="wp-infra-img">
+                <div class="wp-float-badge wp-float-badge--top">
+                    <span class="wp-float-badge-icon">📦</span>
+                    <div class="wp-float-badge-info">
+                        <span class="wp-float-badge-value">Bulk</span>
+                        <span class="wp-float-badge-label">Invoicing</span>
+                    </div>
+                </div>
+                <div class="wp-float-badge wp-float-badge--bottom">
+                    <span class="wp-float-badge-icon">🔗</span>
+                    <div class="wp-float-badge-info">
+                        <span class="wp-float-badge-value">Sync</span>
+                        <span class="wp-float-badge-label">Real-Time</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 3 — WHY UPGRADE TO DEDICATED WHOLESALE ARCHITECTURE -->
+<section class="wp-advantages-section" id="wp-advantages">
+    <div class="container">
+        <div class="wp-advantages-header text-center">
+            <span class="wp-kicker">Why Upgrade</span>
+            <h2 class="section-heading">
+                Why Upgrade to a Dedicated <span class="text-gradient">Wholesale Architecture</span>?
+            </h2>
+            <p class="wp-advantages-intro">
+                Traditional spreadsheets and retail-focused POS systems cannot handle the database load,
+                complex Unit of Measure conversions, or credit workflows required in B2B distribution.
+                A dedicated Wholesale POS transforms operational bottlenecks into streamlined workflows.
+            </p>
+        </div>
+
+        <div class="wp-advantages-grid">
+            <div class="wp-advantage-card">
+                <span class="wp-advantage-emoji">⚡</span>
+                <h3>Accelerated Checkout</h3>
+                <p>Automate complex bulk pricing, discount logic, and tax calculations to ensure 100% billing accuracy under heavy load.</p>
+            </div>
+            <div class="wp-advantage-card">
+                <span class="wp-advantage-emoji">📊</span>
+                <h3>Intelligent Stock Valuation</h3>
+                <p>Track inventory aging, automate reorder points, and maintain accurate valuation metrics across multiple warehouses.</p>
+            </div>
+            <div class="wp-advantage-card">
+                <span class="wp-advantage-emoji">🧠</span>
+                <h3>Data-Driven CRM</h3>
+                <p>Build actionable profiles based on purchasing behavior and payment reliability for strategic credit limits and bulk discounts.</p>
+            </div>
+            <div class="wp-advantage-card">
+                <span class="wp-advantage-emoji">📈</span>
+                <h3>Financial & Margin Analytics</h3>
+                <p>Generate instant, accurate reports on gross margins, fast-moving items, and revenue streams for executive decision-making.</p>
+            </div>
+            <div class="wp-advantage-card">
+                <span class="wp-advantage-emoji">💰</span>
+                <h3>Strict Receivables Management</h3>
+                <p>Automatically track aging accounts, monitor outstanding balances, and enforce credit limits to protect your cash flow.</p>
+            </div>
+            <div class="wp-advantage-card">
+                <span class="wp-advantage-emoji">🔒</span>
+                <h3>Role-Based Access (RBAC)</h3>
+                <p>Deploy enterprise-grade security with granular permissions for sales, accounting, and warehouse staff with full audit trails.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 4 — HOW IT WORKS (B2B COMPLEXITY) -->
+<section class="wp-process-section" id="wp-process">
+    <div class="wp-blob wp-blob--center-left" aria-hidden="true"></div>
+    <div class="wp-blob wp-blob--center-right" aria-hidden="true"></div>
+
+    <div class="container">
+        <div class="wp-process-header text-center">
+            <span class="wp-kicker">How It Works</span>
+            <h2 class="section-heading">
+                Engineered for <span class="text-gradient">B2B Complexity</span>
+            </h2>
+            <p class="wp-process-intro">
+                Purpose-built to handle the specific supply chain mechanics of wholesale trade — from
+                receiving bulk purchase orders to executing multi-unit sales with flawless data integrity.
+            </p>
+        </div>
+
+        <div class="wp-process-steps">
+            <div class="wp-process-step">
+                <div class="wp-step-number">01</div>
+                <div class="wp-step-content">
+                    <h3>Master Data Configuration</h3>
+                    <p>Input products with complex hierarchies, dynamic pricing rules, VAT parameters, and multiple Units of Measure (UoM).</p>
+                </div>
+            </div>
+            <div class="wp-process-step">
+                <div class="wp-step-number">02</div>
+                <div class="wp-step-content">
+                    <h3>High-Speed Order Execution</h3>
+                    <p>Operators rapidly build massive orders via barcode or search, with the system instantly applying customer-specific logic and tax routing.</p>
+                </div>
+            </div>
+            <div class="wp-process-step">
+                <div class="wp-step-number">03</div>
+                <div class="wp-step-content">
+                    <h3>ACID-Compliant Inventory Deductions</h3>
+                    <p>The moment an invoice is committed, the inventory database updates with strict transactional safety, ensuring precise stock levels across the network.</p>
+                </div>
+            </div>
+            <div class="wp-process-step">
+                <div class="wp-step-number">04</div>
+                <div class="wp-step-content">
+                    <h3>Omnichannel Payment Processing</h3>
+                    <p>Securely log payments across cash, mobile financial services (bKash, Nagad), bank transfers, or structured credit lines.</p>
+                </div>
+            </div>
+            <div class="wp-process-step">
+                <div class="wp-step-number">05</div>
+                <div class="wp-step-content">
+                    <h3>Executive Dashboarding</h3>
+                    <p>Aggregate system-wide data into real-time visual reports for daily reconciliation, profit analysis, and inventory forecasting.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wp-cta-center">
+            <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:6px"><path d="M8 5v14l11-7z"/></svg>
+                View Software Demo
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 5 — CORE ARCHITECTURAL FEATURES -->
+<section class="wp-features-section" id="wp-features">
+    <div class="container">
+        <div class="wp-features-header text-center">
+            <span class="wp-kicker">Core Features</span>
+            <h2 class="section-heading">
+                Core Architectural Features for <span class="text-gradient">Wholesalers</span>
+            </h2>
+            <p class="wp-features-intro">
+                Packed with tools designed to protect your data, speed up your workflows,
+                and scale alongside your business.
+            </p>
+        </div>
+
+        <div class="wp-features-grid">
+            <div class="wp-feature-card">
+                <div class="wp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="9" y="3" width="6" height="4" rx="2" stroke="currentColor" stroke-width="2"/><path d="M9 12h6M9 16h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Bulk Order Processing</h3>
+                <p>Optimized database queries allow instant creation of massive B2B invoices.</p>
+            </div>
+            <div class="wp-feature-card">
+                <div class="wp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><rect x="3" y="4" width="18" height="4" rx="1" stroke="currentColor" stroke-width="2"/><rect x="3" y="10" width="18" height="4" rx="1" stroke="currentColor" stroke-width="2"/><rect x="3" y="16" width="18" height="4" rx="1" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3>Dynamic UoM</h3>
+                <p>Sell the same SKU by piece, box, or pallet with automatic inventory calculations.</p>
+            </div>
+            <div class="wp-feature-card">
+                <div class="wp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 10h20" stroke="currentColor" stroke-width="2"/><path d="M7 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>360° Ledger Management</h3>
+                <p>Granular, secure records of customer and supplier financials, including credit limits and history.</p>
+            </div>
+            <div class="wp-feature-card">
+                <div class="wp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M18 20V10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 20V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M6 20v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Real-Time Stock Safeguards</h3>
+                <p>Set low-stock thresholds and receive automated alerts to maintain optimal inventory liquidity.</p>
+            </div>
+            <div class="wp-feature-card">
+                <div class="wp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M6 8h4M6 11h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Rapid Scanning Integration</h3>
+                <p>Plug-and-play compatibility with industrial barcode and RFID scanners for max throughput.</p>
+            </div>
+            <div class="wp-feature-card">
+                <div class="wp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3>Granular Security & RBAC</h3>
+                <p>Control exactly what each employee can view, edit, or delete with comprehensive system logs.</p>
+            </div>
+            <div class="wp-feature-card">
+                <div class="wp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="14 2 14 8 20 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Tax-Ready Documentation</h3>
+                <p>Generate government-compliant, professional invoices tailored to regional tax laws.</p>
+            </div>
+            <div class="wp-feature-card">
+                <div class="wp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M15 2H9a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" stroke="currentColor" stroke-width="2"/><path d="M12 11v6M9 14h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Automated PO Workflows</h3>
+                <p>Generate purchase orders, track supplier shipments, and reconcile received goods automatically.</p>
+            </div>
+            <div class="wp-feature-card">
+                <div class="wp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3>Aging Due Management</h3>
+                <p>Proactively manage cash flow with automated payment tracking and due-date reminders.</p>
+            </div>
+            <div class="wp-feature-card">
+                <div class="wp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="7 10 12 15 17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Advanced Financial Reporting</h3>
+                <p>Exportable, drill-down analytics covering P&L, stock valuation, and tax liabilities.</p>
+            </div>
+            <div class="wp-feature-card">
+                <div class="wp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><rect x="2" y="3" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 7h8M8 11h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Ergonomic UI/UX</h3>
+                <p>Streamlined, low-latency interface designed to reduce operator fatigue and training time.</p>
+            </div>
+            <div class="wp-feature-card">
+                <div class="wp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7S2 12 2 12z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3>Fault-Tolerant Offline Mode</h3>
+                <p>Keep processing transactions during internet outages; data syncs automatically once restored.</p>
+            </div>
+        </div>
+
+        <div class="wp-cta-center">
+            <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--sm">Contact Our Engineers</a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 6 — BUILT FOR RELIABILITY / TRUST CTA -->
+<section class="wp-cta-section" id="wp-contact-cta">
+    <div class="container">
+        <div class="wp-cta-wrapper">
+            <div class="wp-cta-content">
+                <span class="wp-kicker">Built for Reliability</span>
+                <h2 class="wp-cta-heading">
+                    Why Industry Leaders<br>Trust DreamSoft
+                </h2>
+
+                <p class="wp-cta-text">
+                    A wholesale business cannot afford system downtime or corrupted ledgers.
+                    DreamSoft is built on a foundation of data security, operational speed,
+                    and localized business logic — making it the premier choice for
+                    Bangladesh's top distributors.
+                </p>
+
+                <ul class="wp-cta-list">
+                    <li>✅ Architected for scale — multi-location, high-volume B2B distribution</li>
+                    <li>✅ Flawless transaction safety — zero dropped data with secure cloud sync</li>
+                    <li>✅ Enterprise-grade encryption — cloud backups protect your business intelligence</li>
+                    <li>✅ Localized technical support — Bangladesh-based engineers with guaranteed SLAs</li>
+                </ul>
+
+                <div class="wp-cta-actions">
+                    <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--lg">Upgrade Your POS Today</a>
+                    <a href="tel:+8801755648295" class="btn wp-btn-cta-outline">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" style="margin-right:8px"><path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 4.18 2 2 0 0 1 4 2h3.09a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.09a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Contact Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="wp-cta-visual" aria-hidden="true">
+                <div class="wp-cta-ring wp-cta-ring--outer"></div>
+                <div class="wp-cta-ring wp-cta-ring--inner"></div>
+                <div class="wp-cta-ring-center">
+                    <span class="wp-cta-emoji">🏭</span>
+                </div>
+                <div class="wp-cta-float wp-cta-float--1">📦 Bulk</div>
+                <div class="wp-cta-float wp-cta-float--2">💳 B2B</div>
+                <div class="wp-cta-float wp-cta-float--3">📊 ERP</div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static 'Pages/js/wholesale_software.js' %}"></script>
+{% endblock %}
