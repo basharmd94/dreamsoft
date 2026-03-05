@@ -3,6 +3,9 @@ from .views import main_page_view
 
 urlpatterns = [
     path('', main_page_view.home, name='home'),
+    # isp billing software
+    path('isp-billing-software/', main_page_view.isp_billing_software, name='isp_billing_software'),
+    # fashion shop post software
     path('fashion-shop-software/', main_page_view.fashion_shop_software, name='fashion_shop_software'),
     # resturant post software
     path('resturant-pos-software/', main_page_view.resturant_pos_software, name='resturant_pos_software'),
