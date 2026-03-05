@@ -1,0 +1,466 @@
+{% extends 'Pages/base.html' %}
+{% load static %}
+
+{% block title %}Best Tailor Shop Management Software in Bangladesh — Orders, Inventory & Billing | DreamSoft{% endblock %}
+{% block meta_description %}DreamSoft offers the best Tailor Shop Management Software in Bangladesh. Manage orders, measurements, fabric inventory, billing, and customer data for tailoring and clothing businesses.{% endblock %}
+{% block meta_keywords %}tailor shop software Bangladesh, tailor POS software, ERP integrated tailor software, clothing shop POS system, order management software for tailors, inventory tracking for tailoring shops, customer database for tailors, measurement tracking software{% endblock %}
+{% block og_title %}Best Tailor Shop Management Software in Bangladesh | DreamSoft{% endblock %}
+{% block og_description %}Streamline orders, inventory, and billing with DreamSoft Tailor POS software for clothing and tailoring businesses in Bangladesh.{% endblock %}
+{% block twitter_title %}Best Tailor Shop Management Software in Bangladesh | DreamSoft{% endblock %}
+{% block twitter_description %}Streamline orders, inventory, and billing with DreamSoft Tailor POS software for Bangladesh.{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'Pages/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'Pages/css/tailor-software.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- SECTION 1 — HERO -->
+<section class="hero-section tp-hero" id="tp-hero">
+    <div class="container hero-container">
+        <div class="hero-content">
+            <span class="tp-kicker">Tailor Shop POS</span>
+            <h1 class="hero-title tp-hero-title">
+                Best <span class="text-gradient">Tailor Shop</span> Management<br>
+                Software in Bangladesh
+            </h1>
+
+            <p class="hero-description tp-hero-description">
+                DreamSoft Tailor Shop Software helps clothing and tailoring businesses
+                in Bangladesh manage orders, track materials, and handle billing
+                efficiently. Save time, reduce errors, and improve customer satisfaction
+                with our modern POS system designed specifically for tailor shops.
+            </p>
+
+            <div class="hero-actions">
+                <a href="tel:+8801755648295" class="btn btn-gradient btn-gradient--sm">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="margin-right:6px"><path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 4.18 2 2 0 0 1 4 2h3.09a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.09a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Call Now
+                </a>
+                <a href="#tp-contact-cta" class="btn btn-gradient btn-gradient--sm btn-demo">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    Watch Demo
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+            <div class="hero-bg-shape shape-1"></div>
+            <div class="hero-bg-shape shape-2"></div>
+            <div class="hero-img-container floating-animation">
+                <img src="https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                     alt="Tailor shop with staff taking orders, measuring fabric, and POS terminal in use"
+                     class="hero-main-img tp-hero-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 2 — WHAT IS TAILOR SHOP SOFTWARE -->
+<section class="tp-what-section" id="tp-what">
+    <div class="tp-blob tp-blob--left" aria-hidden="true"></div>
+    <div class="tp-blob tp-blob--right" aria-hidden="true"></div>
+
+    <div class="container">
+        <h2 class="section-heading text-center">
+            What Is <span class="text-gradient">Tailor Shop</span> Management Software?
+        </h2>
+
+        <div class="tp-what-grid">
+            <div class="tp-what-content">
+                <p class="tp-what-intro">
+                    Tailor Shop Software is a specialized tool for clothing and tailoring
+                    businesses, designed to automate order management, inventory tracking,
+                    and billing. DreamSoft POS helps you manage customer orders with detailed
+                    measurements, fabric types, and delivery dates — all in one platform.
+                </p>
+
+                <ul class="tp-check-list">
+                    <li>
+                        <span class="tp-check-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <h3>Order Management</h3>
+                            <p>Track each customer order from intake to delivery with status updates and deadline reminders.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="tp-check-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <h3>Inventory Control</h3>
+                            <p>Monitor fabrics, threads, buttons, and other materials in real-time with low-stock alerts.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="tp-check-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <h3>Billing & Invoicing</h3>
+                            <p>Auto-generate invoices and accept mobile payments like bKash, Nagad, cards, and cash.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="tp-check-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <h3>Customer Database</h3>
+                            <p>Store measurements and preferences to provide personalized services and encourage repeat orders.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="tp-check-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <h3>Staff & Workflow Management</h3>
+                            <p>Assign orders to staff members and track their progress for improved productivity.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="tp-cta-inline">
+                    <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--sm">Get Free Consultation</a>
+                </div>
+            </div>
+
+            <div class="tp-what-image">
+                <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                     alt="Staff using tablet POS to track fabric inventory and customer measurements"
+                     class="tp-what-img">
+                <div class="tp-float-badge tp-float-badge--top">
+                    <span class="tp-float-badge-icon">✂️</span>
+                    <div class="tp-float-badge-info">
+                        <span class="tp-float-badge-value">Orders</span>
+                        <span class="tp-float-badge-label">Tracked</span>
+                    </div>
+                </div>
+                <div class="tp-float-badge tp-float-badge--bottom">
+                    <span class="tp-float-badge-icon">🧵</span>
+                    <div class="tp-float-badge-info">
+                        <span class="tp-float-badge-value">Fabric</span>
+                        <span class="tp-float-badge-label">In Stock</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 3 — ADVANTAGES / KEY BENEFITS -->
+<section class="tp-advantages-section" id="tp-advantages">
+    <div class="container">
+        <div class="tp-advantages-header text-center">
+            <span class="tp-kicker">Key Benefits</span>
+            <h2 class="section-heading">
+                Key Benefits of <span class="text-gradient">Tailor Shop</span> Software
+            </h2>
+        </div>
+
+        <div class="tp-advantages-grid">
+            <div class="tp-advantage-card">
+                <span class="tp-advantage-emoji">⚡</span>
+                <h3>Save Time & Efficiency</h3>
+                <p>Automate daily tasks like order tracking, billing, and inventory updates to save hours.</p>
+            </div>
+            <div class="tp-advantage-card">
+                <span class="tp-advantage-emoji">📏</span>
+                <h3>Accurate Measurements</h3>
+                <p>Reduce errors and deliver perfect custom tailoring with saved measurement profiles.</p>
+            </div>
+            <div class="tp-advantage-card">
+                <span class="tp-advantage-emoji">🧵</span>
+                <h3>Inventory Management</h3>
+                <p>Track fabrics, materials, and tools to avoid shortages or overstock with smart alerts.</p>
+            </div>
+            <div class="tp-advantage-card">
+                <span class="tp-advantage-emoji">📋</span>
+                <h3>Order Tracking</h3>
+                <p>Monitor all orders and delivery schedules from one centralized dashboard view.</p>
+            </div>
+            <div class="tp-advantage-card">
+                <span class="tp-advantage-emoji">💡</span>
+                <h3>Customer CRM</h3>
+                <p>Store client details for repeat business, loyalty programs, and personalized service.</p>
+            </div>
+            <div class="tp-advantage-card">
+                <span class="tp-advantage-emoji">📊</span>
+                <h3>Advanced Analytics</h3>
+                <p>Get insights on sales, popular items, staff performance, and stock trends instantly.</p>
+            </div>
+            <div class="tp-advantage-card">
+                <span class="tp-advantage-emoji">💰</span>
+                <h3>Cost Efficiency</h3>
+                <p>Reduce waste and improve resource utilization with data-driven material management.</p>
+            </div>
+            <div class="tp-advantage-card">
+                <span class="tp-advantage-emoji">🏪</span>
+                <h3>Scalable Solution</h3>
+                <p>Perfect for small shops or multi-location tailor businesses with centralized control.</p>
+            </div>
+        </div>
+
+        <div class="tp-cta-center">
+            <a href="tel:+8801755648295" class="btn btn-gradient btn-gradient--sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="margin-right:6px"><path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 4.18 2 2 0 0 1 4 2h3.09a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.09a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Call Now
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 4 — FEATURES OF DREAMSOFT TAILOR POS -->
+<section class="tp-features-section" id="tp-features">
+    <div class="tp-blob tp-blob--left" aria-hidden="true"></div>
+    <div class="tp-blob tp-blob--right" aria-hidden="true"></div>
+
+    <div class="container">
+        <div class="tp-features-header text-center">
+            <span class="tp-kicker">Core Features</span>
+            <h2 class="section-heading">
+                Features of DreamSoft <span class="text-gradient">Tailor POS</span> Software
+            </h2>
+        </div>
+
+        <div class="tp-features-grid">
+            <div class="tp-feature-card">
+                <div class="tp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="9" y="3" width="6" height="4" rx="2" stroke="currentColor" stroke-width="2"/><path d="M9 12h6M9 16h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Order Management</h3>
+                <p>Track orders, delivery dates, and customer details efficiently with status updates.</p>
+            </div>
+            <div class="tp-feature-card">
+                <div class="tp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="14 2 14 8 20 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Measurement Storage</h3>
+                <p>Save and reuse customer measurements for repeat orders — never ask twice.</p>
+            </div>
+            <div class="tp-feature-card">
+                <div class="tp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Inventory Control</h3>
+                <p>Monitor fabric and material stock in real-time with automated low-stock alerts.</p>
+            </div>
+            <div class="tp-feature-card">
+                <div class="tp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3>Customer Database</h3>
+                <p>Manage client profiles, preferences, and full order history in one secure place.</p>
+            </div>
+            <div class="tp-feature-card">
+                <div class="tp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 10h20" stroke="currentColor" stroke-width="2"/><path d="M7 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Billing & Invoicing</h3>
+                <p>Generate fast, error-free invoices with bKash, Nagad, card, and cash payment support.</p>
+            </div>
+            <div class="tp-feature-card">
+                <div class="tp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3>Mobile & Cloud Access</h3>
+                <p>Manage your shop anytime, anywhere with cloud-based access on any device.</p>
+            </div>
+            <div class="tp-feature-card">
+                <div class="tp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M15 2H9a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" stroke="currentColor" stroke-width="2"/><path d="M12 11v6M9 14h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Staff Management</h3>
+                <p>Assign roles, track tasks, and optimize workflows to boost team productivity.</p>
+            </div>
+            <div class="tp-feature-card">
+                <div class="tp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M18 20V10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 20V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M6 20v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Reports & Insights</h3>
+                <p>Track sales, pending orders, profits, and growth trends with visual dashboards.</p>
+            </div>
+            <div class="tp-feature-card">
+                <div class="tp-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3>ERP Integration</h3>
+                <p>Connect with accounting and payroll systems for full end-to-end business management.</p>
+            </div>
+        </div>
+
+        <div class="tp-cta-center">
+            <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--sm">Get Free Demo</a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 5 — WHY CHOOSE DREAMSOFT -->
+<section class="tp-trust-section" id="tp-trust">
+    <div class="tp-blob tp-blob--center-left" aria-hidden="true"></div>
+    <div class="tp-blob tp-blob--center-right" aria-hidden="true"></div>
+
+    <div class="container">
+        <div class="tp-trust-header text-center">
+            <span class="tp-kicker">Why DreamSoft</span>
+            <h2 class="section-heading">
+                Why Tailor Shops in Bangladesh Choose <span class="text-gradient">DreamSoft</span>
+            </h2>
+        </div>
+
+        <div class="tp-trust-grid">
+            <div class="tp-trust-block">
+                <div class="tp-trust-block-header">
+                    <span class="tp-trust-block-emoji">🎯</span>
+                    <h3>Pre-Sale Services</h3>
+                </div>
+                <ul class="tp-trust-list">
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg> Free consultation and personalized demo for your shop</li>
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom POS setup for small shops or multi-location businesses</li>
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg> Hardware recommendations: barcode scanners, printers, tablets</li>
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg> Transparent pricing with no hidden fees</li>
+                </ul>
+            </div>
+
+            <div class="tp-trust-block">
+                <div class="tp-trust-block-header">
+                    <span class="tp-trust-block-emoji">🛡️</span>
+                    <h3>Post-Sale Services</h3>
+                </div>
+                <ul class="tp-trust-list">
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg> Full installation and POS configuration</li>
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg> Hands-on staff training for smooth adoption</li>
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg> 24/7 local support via phone, chat, or remote access</li>
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg> Regular software updates and new feature rollouts</li>
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg> Cloud-based secure backups and multi-user access</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tp-cta-center">
+            <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--lg">Buy Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 6 — BUSINESS GROWTH -->
+<section class="tp-growth-section" id="tp-growth">
+    <div class="container">
+        <div class="tp-growth-grid">
+            <div class="tp-growth-content">
+                <span class="tp-kicker">Business Growth</span>
+                <h2 class="section-heading">
+                    Grow Your Tailor Shop with <span class="text-gradient">DreamSoft</span>
+                </h2>
+
+                <ul class="tp-growth-list">
+                    <li>
+                        <span class="tp-growth-icon">📋</span>
+                        <p>Manage orders and deliveries more efficiently with automated status tracking.</p>
+                    </li>
+                    <li>
+                        <span class="tp-growth-icon">📏</span>
+                        <p>Improve customer satisfaction and loyalty with saved measurement profiles.</p>
+                    </li>
+                    <li>
+                        <span class="tp-growth-icon">👥</span>
+                        <p>Optimize staff workflow and reduce operational errors with task assignments.</p>
+                    </li>
+                    <li>
+                        <span class="tp-growth-icon">🧵</span>
+                        <p>Access real-time inventory updates and low-stock alerts for fabrics and materials.</p>
+                    </li>
+                    <li>
+                        <span class="tp-growth-icon">📊</span>
+                        <p>Make data-driven decisions with detailed sales and profit reports.</p>
+                    </li>
+                    <li>
+                        <span class="tp-growth-icon">🏪</span>
+                        <p>Scalable software that grows with your tailoring business across locations.</p>
+                    </li>
+                </ul>
+
+                <div class="tp-cta-inline">
+                    <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--sm">Contact Now</a>
+                </div>
+            </div>
+
+            <div class="tp-growth-image">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                     alt="Dashboard showing pending orders, fabric inventory, and revenue trends for tailor shop"
+                     class="tp-growth-img">
+                <div class="tp-float-badge tp-float-badge--top">
+                    <span class="tp-float-badge-icon">📈</span>
+                    <div class="tp-float-badge-info">
+                        <span class="tp-float-badge-value">Revenue</span>
+                        <span class="tp-float-badge-label">Growing</span>
+                    </div>
+                </div>
+                <div class="tp-float-badge tp-float-badge--bottom">
+                    <span class="tp-float-badge-icon">✂️</span>
+                    <div class="tp-float-badge-info">
+                        <span class="tp-float-badge-value">Orders</span>
+                        <span class="tp-float-badge-label">On Track</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 7 — FINAL THOUGHTS / CTA -->
+<section class="tp-cta-section" id="tp-contact-cta">
+    <div class="container">
+        <div class="tp-cta-wrapper">
+            <div class="tp-cta-content">
+                <span class="tp-kicker">Final Thoughts</span>
+                <h2 class="tp-cta-heading">
+                    Simplify Tailor Shop<br>Operations with DreamSoft
+                </h2>
+
+                <p class="tp-cta-text">
+                    DreamSoft Tailor Shop Software is a complete solution for clothing and
+                    tailoring businesses in Bangladesh. Automate orders, manage inventory,
+                    generate invoices, and track customers with an easy-to-use POS system.
+                    Scalable, secure, and cloud-enabled — save time, reduce errors, and
+                    provide exceptional customer service.
+                </p>
+
+                <ul class="tp-cta-list">
+                    <li>✅ Complete order & measurement management</li>
+                    <li>✅ Real-time fabric & material inventory tracking</li>
+                    <li>✅ Fast billing with bKash, Nagad & card support</li>
+                    <li>✅ Cloud-based with offline mode capability</li>
+                    <li>✅ 24/7 local support across Bangladesh</li>
+                </ul>
+
+                <div class="tp-cta-actions">
+                    <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--lg">Book Free Demo</a>
+                    <a href="tel:+8801755648295" class="btn tp-btn-cta-outline">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" style="margin-right:8px"><path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 4.18 2 2 0 0 1 4 2h3.09a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.09a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="tp-cta-visual" aria-hidden="true">
+                <div class="tp-cta-ring tp-cta-ring--outer"></div>
+                <div class="tp-cta-ring tp-cta-ring--inner"></div>
+                <div class="tp-cta-ring-center">
+                    <span class="tp-cta-emoji">✂️</span>
+                </div>
+                <div class="tp-cta-float tp-cta-float--1">🧵 Fabric</div>
+                <div class="tp-cta-float tp-cta-float--2">📏 Measure</div>
+                <div class="tp-cta-float tp-cta-float--3">📋 Orders</div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static 'Pages/js/tailor_software.js' %}"></script>
+{% endblock %}
