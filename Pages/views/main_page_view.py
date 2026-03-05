@@ -10,3 +10,10 @@ def fashion_shop_software(request):
 
 def erp_software(request):
     return render(request, 'Pages/erp-software.html')
+
+
+def about_us(request):
+    return render(request, 'Pages/about-us.html')
+
+def contact_us(request):
+    return render(request, 'Pages/contact-us.html')

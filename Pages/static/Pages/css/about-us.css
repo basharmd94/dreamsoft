@@ -1,0 +1,1300 @@
+/* ═══════════════════════════════════════════════════════
+   ABOUT US PAGE — DreamSoft
+   Theme-consistent stylesheet matching style.css & theme.css
+   ═══════════════════════════════════════════════════════ */
+
+/* ── Shared Utility ── */
+.au-kicker {
+    display: inline-block;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #7c3aed;
+    margin-bottom: 12px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 1 — HERO
+   ═══════════════════════════════════════════════════════ */
+.au-hero {
+    padding: 80px 0 100px;
+}
+
+.au-hero-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    color: #0f172a;
+}
+
+.au-hero-subtitle {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #7c3aed;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.au-hero-description {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 36px;
+    max-width: 90%;
+}
+
+.au-hero-img {
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(67, 56, 202, 0.15);
+}
+
+.btn-outline-light {
+    background: transparent !important;
+    border: 2px solid var(--primary-color) !important;
+    color: var(--primary-color) !important;
+    box-shadow: none !important;
+    animation: none !important;
+}
+
+.btn-outline-light:hover {
+    background: var(--gradient-btn) !important;
+    color: #fff !important;
+    border-color: transparent !important;
+    box-shadow: 0 10px 20px -5px rgba(67, 56, 202, 0.4) !important;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 2 — ABOUT DREAMSOFT
+   ═══════════════════════════════════════════════════════ */
+.au-about-section {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border-top: 1px solid #f1f5f9;
+}
+
+.au-about-blob {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.au-about-blob--left {
+    width: 500px;
+    height: 500px;
+    top: -120px;
+    left: -200px;
+    background: rgba(168, 85, 247, 0.14);
+}
+
+.au-about-blob--right {
+    width: 600px;
+    height: 600px;
+    bottom: -200px;
+    right: -220px;
+    background: rgba(59, 130, 246, 0.10);
+}
+
+.au-about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.au-about-image {
+    position: relative;
+}
+
+.au-about-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+    transition: transform 0.4s ease;
+}
+
+.au-about-img:hover {
+    transform: scale(1.02);
+}
+
+.au-about-content .section-heading {
+    margin-bottom: 24px;
+}
+
+.au-about-text {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+
+.au-about-text:last-of-type {
+    margin-bottom: 0;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 3 — OUR SOFTWARE SOLUTIONS
+   ═══════════════════════════════════════════════════════ */
+.au-solutions-section {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-light);
+}
+
+.au-solutions-blob {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.au-solutions-blob--left {
+    width: 500px;
+    height: 500px;
+    top: -150px;
+    left: -180px;
+    background: rgba(236, 72, 153, 0.10);
+}
+
+.au-solutions-blob--right {
+    width: 600px;
+    height: 600px;
+    bottom: -200px;
+    right: -200px;
+    background: rgba(168, 85, 247, 0.12);
+}
+
+.au-solutions-header {
+    max-width: 760px;
+    margin: 0 auto 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.au-solutions-header .section-heading {
+    margin-bottom: 16px;
+}
+
+.au-solutions-intro {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-top: 0;
+}
+
+.au-solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.au-solution-card {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    border-radius: 18px;
+    padding: 32px 28px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.au-solution-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(168, 85, 247, 0.35);
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.14);
+}
+
+.au-solution-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 12px 26px -18px rgba(124, 58, 237, 0.55);
+}
+
+.au-icon-erp {
+    color: #7c3aed;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.16), rgba(236, 72, 153, 0.12));
+}
+
+.au-icon-isp {
+    color: #0284c7;
+    background: linear-gradient(135deg, rgba(2, 132, 199, 0.16), rgba(34, 211, 238, 0.12));
+}
+
+.au-icon-pos {
+    color: #e11d48;
+    background: linear-gradient(135deg, rgba(225, 29, 72, 0.14), rgba(251, 146, 60, 0.12));
+}
+
+.au-icon-inventory {
+    color: #ea580c;
+    background: linear-gradient(135deg, rgba(234, 88, 12, 0.14), rgba(251, 191, 36, 0.12));
+}
+
+.au-icon-ecom {
+    color: #0d9488;
+    background: linear-gradient(135deg, rgba(13, 148, 136, 0.14), rgba(52, 211, 153, 0.12));
+}
+
+.au-icon-custom {
+    color: #9333ea;
+    background: linear-gradient(135deg, rgba(147, 51, 234, 0.14), rgba(59, 130, 246, 0.12));
+}
+
+.au-solution-title {
+    font-weight: 800;
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.au-solution-text {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 4 — POS SOFTWARE
+   ═══════════════════════════════════════════════════════ */
+.au-pos-section {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border-top: 1px solid #f1f5f9;
+}
+
+.au-pos-blob {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.au-pos-blob--left {
+    width: 500px;
+    height: 500px;
+    top: -140px;
+    left: -200px;
+    background: rgba(225, 29, 72, 0.10);
+}
+
+.au-pos-blob--right {
+    width: 600px;
+    height: 600px;
+    bottom: -200px;
+    right: -220px;
+    background: rgba(251, 146, 60, 0.10);
+}
+
+.au-pos-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.au-pos-image {
+    position: relative;
+}
+
+.au-pos-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+    transition: transform 0.4s ease;
+}
+
+.au-pos-img:hover {
+    transform: scale(1.02);
+}
+
+.au-pos-content .section-heading {
+    margin-bottom: 24px;
+}
+
+.au-pos-text {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+
+.au-pos-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.au-pos-feature-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 12px;
+    background: rgba(248, 250, 252, 0.9);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.au-pos-feature-item:hover {
+    transform: translateY(-3px);
+    border-color: rgba(168, 85, 247, 0.35);
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.10);
+}
+
+.au-pos-feature-icon {
+    font-size: 1.15rem;
+}
+
+.au-pos-feature-label {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--text-dark);
+}
+
+.au-pos-cta {
+    margin-top: 28px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 5 — ERP SOFTWARE
+   ═══════════════════════════════════════════════════════ */
+.au-erp-section {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border-top: 1px solid #f1f5f9;
+}
+
+.au-erp-section::before {
+    content: '';
+    position: absolute;
+    right: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.18) 0%, rgba(236, 72, 153, 0.05) 70%, transparent 100%);
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.au-erp-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.au-erp-content .section-heading {
+    margin-bottom: 24px;
+}
+
+.au-erp-text {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+
+.au-erp-cta {
+    margin-top: 28px;
+}
+
+.au-erp-image {
+    position: relative;
+}
+
+.au-erp-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+    transition: transform 0.4s ease;
+}
+
+.au-erp-img:hover {
+    transform: scale(1.02);
+}
+
+/* Float Badges (shared across sections) */
+.au-float-badge {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 12px 16px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 3;
+    animation: au-float-vertical 4s ease-in-out infinite;
+    border: 1px solid rgba(226, 232, 240, 0.5);
+}
+
+.au-float-badge--top {
+    top: -20px;
+    right: -15px;
+    animation-delay: 0.3s;
+}
+
+.au-float-badge--bottom {
+    bottom: 20px;
+    left: -20px;
+    animation-delay: 1s;
+}
+
+.au-float-badge--top-left {
+    top: -20px;
+    left: -15px;
+    animation-delay: 0.5s;
+}
+
+.au-float-badge--bottom-right {
+    bottom: 20px;
+    right: -20px;
+    animation-delay: 1.2s;
+}
+
+@keyframes au-float-vertical {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.au-float-badge-icon {
+    font-size: 1.3rem;
+}
+
+.au-float-badge-value {
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--text-dark);
+    display: block;
+    line-height: 1.2;
+}
+
+.au-float-badge-label {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    display: block;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 5 — ISP BILLING
+   ═══════════════════════════════════════════════════════ */
+.au-isp-section {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-light);
+}
+
+.au-isp-blob {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.au-isp-blob--left {
+    width: 500px;
+    height: 500px;
+    top: -150px;
+    left: -200px;
+    background: rgba(2, 132, 199, 0.12);
+}
+
+.au-isp-blob--right {
+    width: 600px;
+    height: 600px;
+    bottom: -180px;
+    right: -200px;
+    background: rgba(34, 211, 238, 0.10);
+}
+
+.au-isp-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.au-isp-image {
+    position: relative;
+}
+
+.au-isp-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+    transition: transform 0.4s ease;
+}
+
+.au-isp-img:hover {
+    transform: scale(1.02);
+}
+
+.au-isp-content .section-heading {
+    margin-bottom: 24px;
+}
+
+.au-isp-text {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+
+.au-isp-cta {
+    margin-top: 28px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 6 — INDUSTRIES WE SERVE
+   ═══════════════════════════════════════════════════════ */
+.au-industries-section {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border-top: 1px solid #f1f5f9;
+}
+
+.au-industries-header {
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.au-industries-header .section-heading {
+    margin-bottom: 16px;
+}
+
+.au-industries-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.au-industry-card {
+    background: var(--bg-light);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    border-radius: 18px;
+    padding: 30px 22px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.au-industry-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(168, 85, 247, 0.35);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.au-industry-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    color: #7c3aed;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.14), rgba(236, 72, 153, 0.10));
+    box-shadow: 0 10px 24px -16px rgba(124, 58, 237, 0.45);
+    transition: transform 0.3s ease;
+}
+
+.au-industry-card:hover .au-industry-icon {
+    transform: scale(1.1);
+}
+
+.au-industry-card h3 {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.au-industries-note {
+    margin-top: 40px;
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 7 — WHY CHOOSE DREAMSOFT
+   ═══════════════════════════════════════════════════════ */
+.au-why-section {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-light);
+}
+
+.au-why-section::before {
+    content: '';
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(34, 211, 238, 0.05) 70%, transparent 100%);
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.au-why-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Infographic Visual */
+.au-why-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.au-why-infographic {
+    position: relative;
+    width: 360px;
+    height: 360px;
+}
+
+.au-info-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px dashed rgba(168, 85, 247, 0.25);
+}
+
+.au-info-ring--outer {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: au-spin-slow 30s linear infinite;
+}
+
+.au-info-ring--inner {
+    width: 65%;
+    height: 65%;
+    top: 17.5%;
+    left: 17.5%;
+    border-color: rgba(236, 72, 153, 0.2);
+    animation: au-spin-slow 20s linear infinite reverse;
+}
+
+@keyframes au-spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.au-info-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4338ca, #8b5cf6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 40px rgba(67, 56, 202, 0.35);
+    z-index: 2;
+}
+
+.au-info-center-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.au-info-center-text {
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 0.08em;
+    margin-top: 4px;
+}
+
+.au-info-item {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    padding: 10px 16px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 3;
+    border: 1px solid rgba(226, 232, 240, 0.5);
+    animation: au-float-vertical 4s ease-in-out infinite;
+}
+
+.au-info-item--1 {
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 0s;
+}
+
+.au-info-item--2 {
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    animation-delay: 1s;
+}
+
+.au-info-item--3 {
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 2s;
+}
+
+.au-info-item--4 {
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    animation-delay: 3s;
+}
+
+.au-info-item-icon {
+    font-size: 1.2rem;
+}
+
+.au-info-item-label {
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: var(--text-dark);
+}
+
+/* Why Points */
+.au-why-content .section-heading {
+    margin-bottom: 28px;
+}
+
+.au-why-points {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.au-why-point {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.au-why-point-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #7c3aed;
+    background: rgba(124, 58, 237, 0.1);
+    box-shadow: 0 8px 18px -14px rgba(15, 23, 42, 0.4);
+    margin-top: 2px;
+}
+
+.au-why-point-text h3 {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-bottom: 2px;
+}
+
+.au-why-point-text p {
+    font-size: 0.92rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.au-why-summary {
+    margin-top: 28px;
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.7;
+    padding-top: 20px;
+    border-top: 1px solid #f1f5f9;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 8 — MISSION & VISION
+   ═══════════════════════════════════════════════════════ */
+.au-mv-section {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border-top: 1px solid #f1f5f9;
+}
+
+.au-mv-blob {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.au-mv-blob--left {
+    width: 500px;
+    height: 500px;
+    top: -150px;
+    left: -200px;
+    background: rgba(168, 85, 247, 0.12);
+}
+
+.au-mv-blob--right {
+    width: 600px;
+    height: 600px;
+    bottom: -200px;
+    right: -200px;
+    background: rgba(236, 72, 153, 0.10);
+}
+
+.au-mv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.au-mv-card {
+    background: rgba(248, 250, 252, 0.85);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    border-radius: 24px;
+    padding: 48px 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.au-mv-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4338ca, #8b5cf6, #ec4899);
+    border-radius: 24px 24px 0 0;
+}
+
+.au-mv-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(168, 85, 247, 0.35);
+    box-shadow: 0 22px 50px rgba(15, 23, 42, 0.14);
+}
+
+.au-mv-card-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    color: #7c3aed;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.14), rgba(236, 72, 153, 0.10));
+    box-shadow: 0 12px 30px -16px rgba(124, 58, 237, 0.5);
+}
+
+.au-mv-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.au-mv-text {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    max-width: 42ch;
+    margin: 0 auto;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 9 — CONTACT / CONSULTATION
+   ═══════════════════════════════════════════════════════ */
+.au-contact-section {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-light);
+}
+
+.au-contact-section::before {
+    content: '';
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.16) 0%, rgba(67, 56, 202, 0.05) 70%, transparent 100%);
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.au-contact-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.au-contact-image {
+    position: relative;
+}
+
+.au-contact-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+    transition: transform 0.4s ease;
+}
+
+.au-contact-img:hover {
+    transform: scale(1.02);
+}
+
+.au-contact-content .section-heading {
+    margin-bottom: 20px;
+}
+
+.au-contact-text {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 28px;
+}
+
+.au-contact-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.au-contact-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.au-contact-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 14px;
+    border-radius: 9999px;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #0f172a;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    backdrop-filter: blur(8px);
+}
+
+/* ═══════════════════════════════════════════════════════
+   SCROLL ANIMATIONS (Reveal on scroll)
+   ═══════════════════════════════════════════════════════ */
+.au-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.au-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.au-reveal-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.au-reveal-left.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.au-reveal-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.au-reveal-right.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Stagger delays for grid items */
+.au-stagger-1 {
+    transition-delay: 0.05s;
+}
+
+.au-stagger-2 {
+    transition-delay: 0.10s;
+}
+
+.au-stagger-3 {
+    transition-delay: 0.15s;
+}
+
+.au-stagger-4 {
+    transition-delay: 0.20s;
+}
+
+.au-stagger-5 {
+    transition-delay: 0.25s;
+}
+
+.au-stagger-6 {
+    transition-delay: 0.30s;
+}
+
+.au-stagger-7 {
+    transition-delay: 0.35s;
+}
+
+/* ═══════════════════════════════════════════════════════
+   RESPONSIVE DESIGN
+   ═══════════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+    .au-solutions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .au-industries-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .au-pos-grid,
+    .au-erp-grid,
+    .au-isp-grid,
+    .au-why-grid,
+    .au-contact-grid {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .au-hero-title {
+        font-size: 2.2rem;
+    }
+
+    .au-hero-description {
+        max-width: 100%;
+    }
+
+    .au-about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .au-about-image {
+        order: -1;
+    }
+
+    .au-pos-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .au-erp-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .au-erp-image {
+        order: -1;
+    }
+
+    .au-isp-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .au-why-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .au-why-visual {
+        order: -1;
+    }
+
+    .au-why-infographic {
+        width: 300px;
+        height: 300px;
+    }
+
+    .au-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .au-mv-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .section-heading {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .au-hero {
+        padding: 60px 0 70px;
+    }
+
+    .au-solutions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .au-industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .au-about-section,
+    .au-solutions-section,
+    .au-pos-section,
+    .au-erp-section,
+    .au-isp-section,
+    .au-industries-section,
+    .au-why-section,
+    .au-mv-section,
+    .au-contact-section {
+        padding: 70px 0;
+    }
+
+    .au-mv-card {
+        padding: 36px 28px;
+    }
+
+    .au-contact-actions {
+        flex-direction: column;
+    }
+
+    .au-contact-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .au-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .au-hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .au-industries-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .au-why-infographic {
+        width: 250px;
+        height: 250px;
+    }
+
+    .au-info-center {
+        width: 80px;
+        height: 80px;
+    }
+
+    .au-float-badge {
+        display: none;
+    }
+}

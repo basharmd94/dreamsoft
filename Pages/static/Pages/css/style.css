@@ -2100,3 +2100,14 @@
         gap: 44px;
     }
 }
+
+@media (max-width: 992px) {
+    .erp-core-modules-section .fs-stock-feature-item ul,
+    .erp-core-modules-section .fs-stock-feature-item li {
+        text-align: left;
+    }
+
+    .erp-core-modules-section .fs-stock-feature-item ul {
+        padding-left: 1.2rem;
+    }
+}

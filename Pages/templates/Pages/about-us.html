@@ -1,0 +1,696 @@
+{% extends 'Pages/base.html' %}
+{% load static %}
+
+{% block title %}About DreamSoft | Best Software Company in Bangladesh — ERP, ISP Billing & POS Solutions{% endblock %}
+{% block meta_description %}DreamSoft is a leading software company in Bangladesh specializing in ERP software, ISP billing systems, POS solutions, and custom business automation platforms for modern companies.{% endblock %}
+{% block meta_keywords %}software company in Bangladesh, ERP software in Bangladesh, ISP billing software, POS software in Bangladesh, business automation software, enterprise resource planning system, inventory management software{% endblock %}
+{% block og_title %}About DreamSoft | Best Software Company in Bangladesh{% endblock %}
+{% block og_description %}DreamSoft builds powerful ERP software, ISP billing systems, and POS solutions to help businesses in Bangladesh simplify operations and grow with confidence.{% endblock %}
+{% block twitter_title %}About DreamSoft | Best Software Company in Bangladesh{% endblock %}
+{% block twitter_description %}DreamSoft builds powerful ERP software, ISP billing systems, and POS solutions to help businesses in Bangladesh simplify operations and grow with confidence.{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'Pages/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'Pages/css/about-us.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- SECTION 1 — HERO SECTION -->
+<section class="hero-section au-hero" id="about-hero">
+    <div class="container hero-container">
+        <div class="hero-content">
+            <h1 class="hero-title au-hero-title">
+                Best <span class="text-gradient">Software Company</span> <br>
+                in Bangladesh
+            </h1>
+
+            <p class="au-hero-subtitle">
+                Smart ERP, ISP Billing, and Business Automation Solutions for Modern Companies
+            </p>
+
+            <p class="hero-description au-hero-description">
+                DreamSoft is a leading software company in Bangladesh specializing in
+                ERP software, ISP billing systems, POS solutions, and custom business
+                automation platforms. Our goal is to help businesses simplify operations,
+                improve efficiency, and gain better control over their data through
+                reliable and scalable technology.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#au-contact" class="btn btn-gradient btn-gradient--lg">Get Free Consultation</a>
+                <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--lg btn-outline-light">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+            <!-- Decorative background elements -->
+            <div class="hero-bg-shape shape-1"></div>
+            <div class="hero-bg-shape shape-2"></div>
+            <div class="hero-svg hero-svg--dots" aria-hidden="true"></div>
+            <div class="hero-svg hero-svg--wave" aria-hidden="true"></div>
+
+            <!-- Main Hero Image -->
+            <div class="hero-img-container floating-animation">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                     alt="DreamSoft developers working on ERP dashboards and network systems"
+                     class="hero-main-img au-hero-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 2 — ABOUT DREAMSOFT -->
+<section class="au-about-section" id="about-dreamsoft">
+    <div class="au-about-blob au-about-blob--left" aria-hidden="true"></div>
+    <div class="au-about-blob au-about-blob--right" aria-hidden="true"></div>
+
+    <div class="container">
+        <div class="au-about-grid">
+            <div class="au-about-image">
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                     alt="DreamSoft team collaborating around large screens displaying software dashboards"
+                     class="au-about-img">
+            </div>
+
+            <div class="au-about-content">
+                <span class="au-kicker">Who We Are</span>
+                <h2 class="section-heading">
+                    About <span class="text-gradient">DreamSoft</span>
+                </h2>
+
+                <p class="au-about-text">
+                    DreamSoft is a technology-driven software company in Bangladesh focused
+                    on developing powerful business management solutions. We build reliable
+                    software that helps organizations automate daily operations and improve
+                    productivity.
+                </p>
+
+                <p class="au-about-text">
+                    Our expertise includes ERP software, ISP billing platforms, POS systems,
+                    and customized enterprise applications designed for businesses of all
+                    sizes. Each solution is built to simplify complex processes and provide
+                    real-time insights into business performance.
+                </p>
+
+                <p class="au-about-text">
+                    By combining modern development practices with deep understanding of
+                    business operations, DreamSoft delivers software that is scalable,
+                    secure, and easy to use.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 3 — OUR SOFTWARE SOLUTIONS -->
+<section class="au-solutions-section" id="software-solutions">
+    <div class="au-solutions-blob au-solutions-blob--left" aria-hidden="true"></div>
+    <div class="au-solutions-blob au-solutions-blob--right" aria-hidden="true"></div>
+
+    <div class="container">
+        <div class="au-solutions-header text-center">
+            <span class="au-kicker">What We Build</span>
+            <h2 class="section-heading">
+                Our <span class="text-gradient">Software Solutions</span>
+            </h2>
+            <p class="au-solutions-intro">
+                DreamSoft develops enterprise software solutions that help businesses
+                operate more efficiently and grow with confidence.
+            </p>
+        </div>
+
+        <div class="au-solutions-grid">
+            <!-- ERP Software -->
+            <article class="au-solution-card">
+                <div class="au-solution-icon au-icon-erp">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M4 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M7 6V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M17 6V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="au-solution-title">ERP Software</h3>
+                <p class="au-solution-text">
+                    Comprehensive ERP software in Bangladesh designed to integrate
+                    accounting, inventory management, HR, sales, purchasing, and
+                    reporting into a single powerful platform.
+                </p>
+            </article>
+
+            <!-- ISP Billing Software -->
+            <article class="au-solution-card">
+                <div class="au-solution-icon au-icon-isp">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M2 12h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M12 2c2.5 2.5 4 6 4 10s-1.5 7.5-4 10" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 2c-2.5 2.5-4 6-4 10s1.5 7.5 4 10" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 class="au-solution-title">ISP Billing Software</h3>
+                <p class="au-solution-text">
+                    Advanced ISP billing software that automates customer management,
+                    billing cycles, payment tracking, and service monitoring for
+                    internet service providers.
+                </p>
+            </article>
+
+            <!-- POS Software -->
+            <article class="au-solution-card">
+                <div class="au-solution-icon au-icon-pos">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <line x1="2" y1="10" x2="22" y2="10" stroke="currentColor" stroke-width="2"/>
+                        <line x1="7" y1="15" x2="7.01" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="11" y1="15" x2="13" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="au-solution-title">POS Software</h3>
+                <p class="au-solution-text">
+                    Reliable POS software in Bangladesh designed for retail stores,
+                    restaurants, pharmacies, supermarkets, and other businesses
+                    requiring fast and accurate sales management.
+                </p>
+            </article>
+
+            <!-- Inventory Management -->
+            <article class="au-solution-card">
+                <div class="au-solution-icon au-icon-inventory">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="2"/>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="12" y1="22.08" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="au-solution-title">Inventory Management System</h3>
+                <p class="au-solution-text">
+                    Powerful inventory tracking tools that help businesses maintain
+                    accurate stock levels and monitor product movement across
+                    locations.
+                </p>
+            </article>
+
+            <!-- E-commerce Solutions -->
+            <article class="au-solution-card">
+                <div class="au-solution-icon au-icon-ecom">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3H5L5.4 5M5.4 5H21L17 13H7M5.4 5L7 13M7 13L4.707 15.293C4.077 15.923 4.523 17 5.414 17H17M17 17C15.895 17 15 17.895 15 19C15 20.105 15.895 21 17 21C18.105 21 19 20.105 19 19C19 17.895 18.105 17 17 17ZM9 19C9 20.105 8.105 21 7 21C5.895 21 5 20.105 5 19C5 17.895 5.895 17 7 17C8.105 17 9 17.895 9 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="au-solution-title">E-commerce Solutions</h3>
+                <p class="au-solution-text">
+                    Custom e-commerce platforms integrated with inventory, payments,
+                    and customer management systems for seamless online selling.
+                </p>
+            </article>
+
+            <!-- Custom Software Development -->
+            <article class="au-solution-card">
+                <div class="au-solution-icon au-icon-custom">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <polyline points="16 18 22 12 16 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <polyline points="8 6 2 12 8 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <line x1="14" y1="4" x2="10" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="au-solution-title">Custom Software Development</h3>
+                <p class="au-solution-text">
+                    Tailor-made business software built according to your
+                    organization's specific workflow and requirements.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 4 — POS SOFTWARE SOLUTIONS -->
+<section class="au-pos-section" id="pos-software">
+    <div class="au-pos-blob au-pos-blob--left" aria-hidden="true"></div>
+    <div class="au-pos-blob au-pos-blob--right" aria-hidden="true"></div>
+
+    <div class="container">
+        <div class="au-pos-grid">
+            <div class="au-pos-image">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                     alt="Modern POS system in a retail store showing fast checkout and sales management"
+                     class="au-pos-img">
+                <div class="au-float-badge au-float-badge--top-left">
+                    <span class="au-float-badge-icon">🛒</span>
+                    <div class="au-float-badge-info">
+                        <span class="au-float-badge-value">2,000+</span>
+                        <span class="au-float-badge-label">Active Retailers</span>
+                    </div>
+                </div>
+                <div class="au-float-badge au-float-badge--bottom-right">
+                    <span class="au-float-badge-icon">💳</span>
+                    <div class="au-float-badge-info">
+                        <span class="au-float-badge-value">Multi-Pay</span>
+                        <span class="au-float-badge-label">Cash, Card & Mobile</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="au-pos-content">
+                <span class="au-kicker">Retail POS System</span>
+                <h2 class="section-heading">
+                    Reliable <span class="text-gradient">POS Software</span><br>
+                    in Bangladesh
+                </h2>
+
+                <p class="au-pos-text">
+                    DreamSoft provides a powerful retail POS system designed to streamline
+                    sales, billing, and inventory management for businesses of all sizes.
+                    Our POS software in Bangladesh is trusted by over 2,000 retailers
+                    and wholesalers across the country.
+                </p>
+
+                <p class="au-pos-text">
+                    Whether you run a super shop, fashion boutique, restaurant, pharmacy,
+                    or electronics store, our point of sale solution simplifies daily
+                    operations and helps you serve customers faster with accurate
+                    billing and real-time stock tracking.
+                </p>
+
+                <p class="au-pos-text">
+                    With support for cash, card, and mobile payments like bKash and Nagad,
+                    DreamSoft POS software ensures flexible checkout and a seamless
+                    customer experience at every transaction.
+                </p>
+
+                <div class="au-pos-features">
+                    <div class="au-pos-feature-item">
+                        <span class="au-pos-feature-icon">⚡</span>
+                        <span class="au-pos-feature-label">Fast Checkout</span>
+                    </div>
+                    <div class="au-pos-feature-item">
+                        <span class="au-pos-feature-icon">💰</span>
+                        <span class="au-pos-feature-label">Multi-Payment</span>
+                    </div>
+                    <div class="au-pos-feature-item">
+                        <span class="au-pos-feature-icon">📦</span>
+                        <span class="au-pos-feature-label">Real-Time Inventory</span>
+                    </div>
+                    <div class="au-pos-feature-item">
+                        <span class="au-pos-feature-icon">🏪</span>
+                        <span class="au-pos-feature-label">Multi-Outlet</span>
+                    </div>
+                </div>
+
+                <div class="au-pos-cta">
+                    <a href="#au-contact" class="btn btn-gradient btn-gradient--lg">See POS Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 5 — ERP SOFTWARE SOLUTIONS -->
+<section class="au-erp-section" id="erp-software">
+    <div class="container">
+        <div class="au-erp-grid">
+            <div class="au-erp-content">
+                <span class="au-kicker">Enterprise Resource Planning</span>
+                <h2 class="section-heading">
+                    Powerful <span class="text-gradient">ERP Software</span> in Bangladesh
+                </h2>
+
+                <p class="au-erp-text">
+                    DreamSoft develops advanced ERP software designed to help businesses
+                    manage operations from a single centralized system. Our enterprise
+                    resource planning system integrates departments such as accounting,
+                    inventory, HR, purchasing, and sales.
+                </p>
+
+                <p class="au-erp-text">
+                    With real-time reporting and automation features, companies can
+                    reduce manual tasks, improve data accuracy, and make faster
+                    strategic decisions using our business automation platform.
+                </p>
+
+                <p class="au-erp-text">
+                    Our ERP system is scalable and suitable for growing businesses
+                    that require better visibility and control over their operations.
+                </p>
+
+                <div class="au-erp-cta">
+                    <a href="#au-contact" class="btn btn-gradient btn-gradient--lg">Request ERP Demo</a>
+                </div>
+            </div>
+
+            <div class="au-erp-image">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                     alt="ERP dashboard with charts, inventory data, and finance reports"
+                     class="au-erp-img">
+                <!-- Floating stat badges -->
+                <div class="au-float-badge au-float-badge--top">
+                    <span class="au-float-badge-icon">📊</span>
+                    <div class="au-float-badge-info">
+                        <span class="au-float-badge-value">Real-Time</span>
+                        <span class="au-float-badge-label">Analytics</span>
+                    </div>
+                </div>
+                <div class="au-float-badge au-float-badge--bottom">
+                    <span class="au-float-badge-icon">⚡</span>
+                    <div class="au-float-badge-info">
+                        <span class="au-float-badge-value">30%</span>
+                        <span class="au-float-badge-label">Faster Operations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 5 — ISP BILLING SOFTWARE -->
+<section class="au-isp-section" id="isp-billing">
+    <div class="au-isp-blob au-isp-blob--left" aria-hidden="true"></div>
+    <div class="au-isp-blob au-isp-blob--right" aria-hidden="true"></div>
+
+    <div class="container">
+        <div class="au-isp-grid">
+            <div class="au-isp-image">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                     alt="ISP network monitoring and billing interface dashboard"
+                     class="au-isp-img">
+                <div class="au-float-badge au-float-badge--top-left">
+                    <span class="au-float-badge-icon">🌐</span>
+                    <div class="au-float-badge-info">
+                        <span class="au-float-badge-value">Automated</span>
+                        <span class="au-float-badge-label">Billing Cycles</span>
+                    </div>
+                </div>
+                <div class="au-float-badge au-float-badge--bottom-right">
+                    <span class="au-float-badge-icon">📡</span>
+                    <div class="au-float-badge-info">
+                        <span class="au-float-badge-value">24/7</span>
+                        <span class="au-float-badge-label">Service Monitoring</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="au-isp-content">
+                <span class="au-kicker">ISP Management Software</span>
+                <h2 class="section-heading">
+                    Reliable <span class="text-gradient">ISP Billing Software</span><br>
+                    for Internet Service Providers
+                </h2>
+
+                <p class="au-isp-text">
+                    DreamSoft offers a powerful ISP billing software solution designed
+                    specifically for internet service providers. The system automates
+                    billing, customer management, service monitoring, and payment tracking.
+                </p>
+
+                <p class="au-isp-text">
+                    Our internet service provider billing system helps ISP companies
+                    reduce administrative workload while ensuring accurate billing
+                    and improved customer service.
+                </p>
+
+                <p class="au-isp-text">
+                    With features like automated invoices, payment tracking, bandwidth
+                    monitoring, and customer account management, DreamSoft ISP billing
+                    software enables providers to scale their operations efficiently.
+                </p>
+
+                <div class="au-isp-cta">
+                    <a href="#au-contact" class="btn btn-gradient btn-gradient--lg">Explore ISP Solutions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 6 — INDUSTRIES WE SERVE -->
+<section class="au-industries-section" id="industries">
+    <div class="container">
+        <div class="au-industries-header text-center">
+            <span class="au-kicker">Industries</span>
+            <h2 class="section-heading">
+                Industries <span class="text-gradient">We Serve</span>
+            </h2>
+        </div>
+
+        <div class="au-industries-grid">
+            <div class="au-industry-card">
+                <div class="au-industry-icon">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3H5L5.4 5M5.4 5H21L17 13H7M5.4 5L7 13M7 13L4.707 15.293C4.077 15.923 4.523 17 5.414 17H17M17 17C15.895 17 15 17.895 15 19C15 20.105 15.895 21 17 21C18.105 21 19 20.105 19 19C19 17.895 18.105 17 17 17ZM9 19C9 20.105 8.105 21 7 21C5.895 21 5 20.105 5 19C5 17.895 5.895 17 7 17C8.105 17 9 17.895 9 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3>Retail Businesses</h3>
+            </div>
+
+            <div class="au-industry-card">
+                <div class="au-industry-icon">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2M7 2v20M21 15V2v0a5 5 0 00-5 5v8h5zM16 22v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3>Restaurants & Cafes</h3>
+            </div>
+
+            <div class="au-industry-card">
+                <div class="au-industry-icon">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3>Pharmacies & Medical Stores</h3>
+            </div>
+
+            <div class="au-industry-card">
+                <div class="au-industry-icon">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 8L12 3L20 8V20H4V8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        <path d="M9 20V12H15V20" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3>Super Shops & Grocery Stores</h3>
+            </div>
+
+            <div class="au-industry-card">
+                <div class="au-industry-icon">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M2 12h20" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 2c2.5 2.5 4 6 4 10s-1.5 7.5-4 10" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3>Internet Service Providers</h3>
+            </div>
+
+            <div class="au-industry-card">
+                <div class="au-industry-icon">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="2"/>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="12" y1="22.08" x2="12" y2="12" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3>Wholesale & Distribution</h3>
+            </div>
+
+            <div class="au-industry-card">
+                <div class="au-industry-icon">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 18h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3>Electronics & Hardware Stores</h3>
+            </div>
+        </div>
+
+        <p class="au-industries-note text-center">
+            Our flexible business management software solutions are designed to adapt
+            to the unique operational requirements of different industries.
+        </p>
+    </div>
+</section>
+
+<!-- SECTION 7 — WHY CHOOSE DREAMSOFT -->
+<section class="au-why-section" id="why-dreamsoft">
+    <div class="container">
+        <div class="au-why-grid">
+            <div class="au-why-visual">
+                <div class="au-why-infographic">
+                    <div class="au-info-ring au-info-ring--outer" aria-hidden="true"></div>
+                    <div class="au-info-ring au-info-ring--inner" aria-hidden="true"></div>
+                    <div class="au-info-center">
+                        <span class="au-info-center-icon">🚀</span>
+                        <span class="au-info-center-text">DreamSoft</span>
+                    </div>
+                    <div class="au-info-item au-info-item--1">
+                        <span class="au-info-item-icon">⚡</span>
+                        <span class="au-info-item-label">Speed</span>
+                    </div>
+                    <div class="au-info-item au-info-item--2">
+                        <span class="au-info-item-icon">🔒</span>
+                        <span class="au-info-item-label">Security</span>
+                    </div>
+                    <div class="au-info-item au-info-item--3">
+                        <span class="au-info-item-icon">🤖</span>
+                        <span class="au-info-item-label">Automation</span>
+                    </div>
+                    <div class="au-info-item au-info-item--4">
+                        <span class="au-info-item-icon">📊</span>
+                        <span class="au-info-item-label">Analytics</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="au-why-content">
+                <span class="au-kicker">Why Us</span>
+                <h2 class="section-heading">
+                    Why Choose <span class="text-gradient">DreamSoft</span>
+                </h2>
+
+                <div class="au-why-points">
+                    <div class="au-why-point">
+                        <div class="au-why-point-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="au-why-point-text">
+                            <h3>Reliable & Scalable Software</h3>
+                            <p>Solutions built to grow with your business needs.</p>
+                        </div>
+                    </div>
+
+                    <div class="au-why-point">
+                        <div class="au-why-point-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="au-why-point-text">
+                            <h3>Modern & User-Friendly Interfaces</h3>
+                            <p>Intuitive designs that reduce training time.</p>
+                        </div>
+                    </div>
+
+                    <div class="au-why-point">
+                        <div class="au-why-point-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="au-why-point-text">
+                            <h3>Customizable for All Industries</h3>
+                            <p>Adaptable systems for different business workflows.</p>
+                        </div>
+                    </div>
+
+                    <div class="au-why-point">
+                        <div class="au-why-point-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="au-why-point-text">
+                            <h3>Dedicated Support & Consultation</h3>
+                            <p>Expert guidance from planning to deployment.</p>
+                        </div>
+                    </div>
+
+                    <div class="au-why-point">
+                        <div class="au-why-point-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="au-why-point-text">
+                            <h3>Secure & Performance Optimized</h3>
+                            <p>Enterprise-grade security with fast response times.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="au-why-summary">
+                    DreamSoft focuses on delivering practical technology solutions
+                    that help businesses improve efficiency, reduce operational
+                    complexity, and achieve sustainable growth.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 8 — OUR MISSION & VISION -->
+<section class="au-mv-section" id="mission-vision">
+    <div class="au-mv-blob au-mv-blob--left" aria-hidden="true"></div>
+    <div class="au-mv-blob au-mv-blob--right" aria-hidden="true"></div>
+
+    <div class="container">
+        <div class="au-mv-grid">
+            <div class="au-mv-card au-mv-card--mission">
+                <div class="au-mv-card-icon">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h2 class="au-mv-title">Our <span class="text-gradient">Mission</span></h2>
+                <p class="au-mv-text">
+                    To empower businesses with reliable software solutions that simplify
+                    operations, improve productivity, and enable digital transformation
+                    across Bangladesh and beyond.
+                </p>
+            </div>
+
+            <div class="au-mv-card au-mv-card--vision">
+                <div class="au-mv-card-icon">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h2 class="au-mv-title">Our <span class="text-gradient">Vision</span></h2>
+                <p class="au-mv-text">
+                    To become a leading software company in Bangladesh by developing
+                    innovative technology solutions that support businesses across
+                    industries and drive meaningful growth.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 9 — CONTACT / CONSULTATION -->
+<section class="au-contact-section" id="au-contact">
+    <div class="container">
+        <div class="au-contact-grid">
+            <div class="au-contact-image">
+                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                     alt="DreamSoft customer support specialist helping a client"
+                     class="au-contact-img">
+            </div>
+
+            <div class="au-contact-content">
+                <span class="au-kicker">Let's Talk</span>
+                <h2 class="section-heading">
+                    Get in Touch with <span class="text-gradient">DreamSoft</span>
+                </h2>
+
+                <p class="au-contact-text">
+                    Need help choosing the right software for your business? Our experts
+                    are ready to guide you through ERP systems, ISP billing platforms,
+                    POS software, and custom business automation solutions.
+                </p>
+
+                <div class="au-contact-actions">
+                    <a href="#au-contact" class="btn btn-gradient btn-gradient--lg">Get Free Consultation</a>
+                    <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--lg btn-outline-light">Contact Our Team</a>
+                </div>
+
+                <div class="au-contact-badges">
+                    <span class="au-contact-badge">Free Consultation</span>
+                    <span class="au-contact-badge">Expert Guidance</span>
+                    <span class="au-contact-badge">Fast Response</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static 'Pages/js/about_us.js' %}"></script>
+{% endblock %}
