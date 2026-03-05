@@ -10,25 +10,25 @@ def fashion_shop_software(request):
 
 
 def resturant_pos_software(request):
-    return render(request, 'Pages/resturant-pos-software.html')
+    return render(request, 'Pages/resturant-software.html')
 
 def supershop_pos_software(request):
-    return render(request, 'Pages/supershop-pos-software.html')
+    return render(request, 'Pages/supershop-software.html')
 
 def electronics_shop_pos_software(request):
-    return render(request, 'Pages/electronics-shop-pos-software.html')
+    return render(request, 'Pages/electronics-software.html')
 
 def wholesale_shop_pos_software(request):
-    return render(request, 'Pages/wholesale-shop-pos-software.html')
+    return render(request, 'Pages/wholesale-software.html')
 
 def hardware_shop_pos_software(request):
-    return render(request, 'Pages/hardware-shop-pos-software.html')
+    return render(request, 'Pages/hardware-software.html')
 
 def hotel_management_software(request):
-    return render(request, 'Pages/hotel-management-software.html')
+    return render(request, 'Pages/hotel-software.html')
 
 def tailor_software(request):
-    return render(request, 'Pages/tailor-shop-software.html')
+    return render(request, 'Pages/tailor-software.html')
 
 def accounting_software(request):
     return render(request, 'Pages/accounting-software.html')
