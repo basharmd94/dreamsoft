@@ -262,6 +262,50 @@ document.addEventListener('DOMContentLoaded', () => {
         delay: 0.15,
         ease: 'power3.out',
     });
+    // FAQ Section
+    gsap.from('.au-faq-header', {
+        scrollTrigger: { trigger: '.au-faq-section', start: 'top 75%' },
+        opacity: 0, y: 30, duration: 0.7, ease: 'power3.out',
+    });
+    gsap.from('.au-faq-item', {
+        scrollTrigger: { trigger: '.au-faq-list', start: 'top 80%' },
+        opacity: 0, y: 20, duration: 0.5, stagger: 0.08, ease: 'power3.out',
+    });
+
+    // Final Thoughts Section
+    gsap.from('.au-thoughts-content', {
+        scrollTrigger: { trigger: '.au-thoughts-section', start: 'top 75%' },
+        opacity: 0, x: -50, duration: 0.8, ease: 'power3.out',
+    });
+    gsap.from('.au-thoughts-visual', {
+        scrollTrigger: { trigger: '.au-thoughts-section', start: 'top 75%' },
+        opacity: 0, x: 50, duration: 0.8, delay: 0.15, ease: 'power3.out',
+    });
+
+    /* ─── FAQ Accordion ─── */
+    const faqItems = document.querySelectorAll('.au-faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.au-faq-question');
+
+        question.addEventListener('click', () => {
+            const isOpen = item.classList.contains('is-open');
+
+            // Close all other items
+            faqItems.forEach(other => {
+                if (other !== item) {
+                    other.classList.remove('is-open');
+                    if(other.querySelector('.au-faq-question')) {
+                       other.querySelector('.au-faq-question').setAttribute('aria-expanded', 'false');
+                    }
+                }
+            });
+
+            // Toggle current item
+            item.classList.toggle('is-open');
+            question.setAttribute('aria-expanded', !isOpen);
+        });
+    });
 
 
     /* ─── Counter Animation for Stats (if any numeric values) ─── */

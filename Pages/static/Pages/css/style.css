@@ -1453,11 +1453,11 @@
 .cta-img {
     position: relative;
     z-index: 2;
-    width: 85%; /* Slightly smaller to show circle border if needed */
-    height: auto;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
-    /* Rounded bottom to fit circle if image is square */
-    border-radius: 50%; 
+    border-radius: 50%;
+    border: 8px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Responsive adjustments */
@@ -1472,6 +1472,11 @@
         width: 350px;
         height: 350px;
     }
+
+    .cta-img {
+        width: 300px;
+        height: 300px;
+    }
     
     .cta-heading {
         font-size: 2rem;
@@ -1482,6 +1487,11 @@
     .cta-image-container {
         width: 280px;
         height: 280px;
+    }
+
+    .cta-img {
+        width: 240px;
+        height: 240px;
     }
     
     .cta-heading {
