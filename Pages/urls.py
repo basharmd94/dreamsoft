@@ -27,6 +27,7 @@ urlpatterns = [
     path('inventory-software/', main_page_view.inventory_software, name='inventory_software'),
     # pos post software
     path('pos-software/', main_page_view.pos_software, name='pos_software'),
+    # erp post software
     path('erp-software/', main_page_view.erp_software, name='erp_software'),
 
 
