@@ -30,7 +30,9 @@ urlpatterns = [
     # erp post software
     path('erp-software/', main_page_view.erp_software, name='erp_software'),
 
-
+    # service pages
+    # website development
+    path('website-development/', main_page_view.website_development, name='website_development'),
 
 
     path('about-us/', main_page_view.about_us, name='about_us'),

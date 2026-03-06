@@ -1,0 +1,436 @@
+{% extends 'Pages/base.html' %}
+{% load static %}
+
+{% block title %}Best Website Development Company in Bangladesh | DreamSoft{% endblock %}
+{% block meta_description %}DreamSoft provides professional website development services in Bangladesh for businesses, startups, and enterprises. Build secure, fast, SEO-friendly websites and custom web applications.{% endblock %}
+{% block meta_keywords %}website development company in Bangladesh, website development services Bangladesh, custom web application development Bangladesh, ecommerce website development Bangladesh, corporate website development, CMS website development, website redesign and optimization{% endblock %}
+{% block og_title %}Best Website Development Company in Bangladesh | DreamSoft{% endblock %}
+{% block og_description %}Professional website development services in Bangladesh by DreamSoft. We build modern, secure, scalable websites for businesses, startups, and enterprises.{% endblock %}
+{% block twitter_title %}Best Website Development Company in Bangladesh | DreamSoft{% endblock %}
+{% block twitter_description %}Professional website development services in Bangladesh with modern UI/UX, high performance, and SEO-friendly architecture.{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'Pages/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'Pages/css/website-development.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="hero-section wd-hero" id="wd-hero">
+    <div class="container hero-container">
+        <div class="hero-content">
+            <span class="wd-kicker">Website Development Services</span>
+            <h1 class="hero-title wd-hero-title">Best <span class="text-gradient">Website Development</span> Company in Bangladesh</h1>
+            <h2 class="wd-hero-subtitle">Professional Website Development Services for Businesses, Startups, and Enterprises in Bangladesh.</h2>
+            <p class="hero-description wd-hero-description">
+                DreamSoft provides professional website development services in Bangladesh. We design and develop modern, fast, and secure websites that help businesses establish a powerful online presence. Whether you need a corporate website, eCommerce platform, ERP-integrated portal, or custom web application, our expert developers deliver scalable and high-performance solutions tailored to your business goals.
+            </p>
+            <div class="hero-actions">
+                <a href="tel:+8801755648295" class="btn btn-gradient btn-gradient--sm">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="margin-right:6px"><path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 4.18 2 2 0 0 1 4 2h3.09a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.09a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Call Now
+                </a>
+                <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--sm">Get Free Consultation</a>
+            </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+            <div class="hero-bg-shape shape-1"></div>
+            <div class="hero-bg-shape shape-2"></div>
+            <div class="hero-img-container floating-animation">
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                     alt="Modern website development workspace with code editor, UI wireframe, and responsive device previews"
+                     class="hero-main-img wd-hero-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wd-what-section" id="wd-what">
+    <div class="wd-blob wd-blob--left" aria-hidden="true"></div>
+    <div class="wd-blob wd-blob--right" aria-hidden="true"></div>
+    <div class="container">
+        <div class="wd-what-grid">
+            <div class="wd-what-image">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                     alt="UI design layout and coding interface for website development"
+                     class="wd-what-img">
+            </div>
+            <div class="wd-what-content">
+                <h2 class="section-heading">What is <span class="text-gradient">Website Development?</span></h2>
+                <p class="wd-what-intro">
+                    Website development is the process of building and maintaining websites for businesses, organizations, and individuals. It includes website design, front-end development, back-end programming, database integration, and performance optimization to ensure the website works efficiently across all devices and browsers.
+                </p>
+                <p class="wd-what-intro">
+                    Professional web development services in Bangladesh help businesses build a strong digital presence. A well-developed website not only represents your brand but also works as a powerful marketing and sales platform. With responsive design, fast loading speed, and search engine optimization (SEO), businesses can attract more visitors, generate leads, and convert them into customers.
+                </p>
+                <p class="wd-what-intro wd-what-intro--last">
+                    At DreamSoft, we build modern, scalable, and SEO-friendly websites using the latest technologies such as HTML5, CSS3, JavaScript, React, Laravel, Node.js, and modern CMS platforms.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wd-services-section" id="wd-services">
+    <div class="container">
+        <div class="wd-services-header text-center">
+            <span class="wd-kicker">Our Services</span>
+            <h2 class="section-heading">Our Professional <span class="text-gradient">Website Development Services</span> in Bangladesh</h2>
+        </div>
+        <div class="wd-services-grid">
+            <div class="wd-service-card">
+                <div class="wd-service-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 20h8M12 18v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Corporate Website Development</h3>
+                <p>Professional business websites designed to represent your company and attract potential clients.</p>
+            </div>
+            <div class="wd-service-card">
+                <div class="wd-service-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 7h16v13H4z" stroke="currentColor" stroke-width="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="2"/><path d="M4 11h16" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3>Ecommerce Website Development</h3>
+                <p>Complete online store solutions with product management, payment gateway integration, and order management.</p>
+            </div>
+            <div class="wd-service-card">
+                <div class="wd-service-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 5h16v14H4z" stroke="currentColor" stroke-width="2"/><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <h3>Custom Web Application Development</h3>
+                <p>Tailor-made web applications designed specifically for your business workflows and operational needs.</p>
+            </div>
+            <div class="wd-service-card">
+                <div class="wd-service-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><rect x="3" y="3" width="8" height="8" stroke="currentColor" stroke-width="2"/><rect x="13" y="3" width="8" height="8" stroke="currentColor" stroke-width="2"/><rect x="3" y="13" width="8" height="8" stroke="currentColor" stroke-width="2"/><rect x="13" y="13" width="8" height="8" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3>ERP & Business Portal Development</h3>
+                <p>Enterprise portals integrated with ERP, CRM, and business management systems.</p>
+            </div>
+            <div class="wd-service-card">
+                <div class="wd-service-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="2"/><path d="M4 9h16M9 4v16" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3>CMS Website Development</h3>
+                <p>Build websites using powerful CMS platforms that allow easy content management without technical knowledge.</p>
+            </div>
+            <div class="wd-service-card">
+                <div class="wd-service-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 19V5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 19h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M7 14l4-4 3 3 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <h3>Website Redesign & Optimization</h3>
+                <p>Upgrade outdated websites with modern UI/UX, faster performance, and improved SEO.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wd-features-section" id="wd-features">
+    <div class="container">
+        <div class="wd-features-grid">
+            <div class="wd-features-content">
+                <span class="wd-kicker">Core Features</span>
+                <h2 class="section-heading">Key Features of Our <span class="text-gradient">Website Development Services</span></h2>
+                <p class="wd-features-intro">
+                    DreamSoft provides high-quality website development services in Bangladesh with modern features that ensure performance, security, and scalability.
+                </p>
+                <ul class="wd-feature-list">
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Responsive Design</h3><p>Our websites work perfectly on mobile, tablet, and desktop devices.</p></div></li>
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>SEO-Friendly Development</h3><p>Built using clean code and SEO best practices to improve Google ranking.</p></div></li>
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Fast Loading Speed</h3><p>Optimized code and modern technologies ensure fast website performance.</p></div></li>
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Secure Architecture</h3><p>Advanced security implementation protects your website from threats.</p></div></li>
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>User-Friendly Interface</h3><p>Modern UI/UX design improves visitor engagement and conversion.</p></div></li>
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Scalable Infrastructure</h3><p>Websites built to grow with your business.</p></div></li>
+                </ul>
+                <div class="wd-features-actions">
+                    <a href="tel:+8801755648295" class="btn btn-gradient btn-gradient--sm">Call Now</a>
+                    <a href="{% url 'contact_us' %}" class="btn wd-btn-outline">Get Free Consultation</a>
+                </div>
+            </div>
+            <div class="wd-features-image">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                     alt="Website analytics dashboard and coding interface for modern web development"
+                     class="wd-features-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wd-best-section" id="wd-best">
+    <div class="container">
+        <div class="wd-best-grid">
+            <div class="wd-best-image">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                     alt="Website development team collaborating on digital product solutions"
+                     class="wd-best-img">
+            </div>
+            <div class="wd-best-content">
+                <span class="wd-kicker">Trusted Expertise</span>
+                <h2 class="section-heading">Why Our <span class="text-gradient">Website Development Services</span> Are Best in Bangladesh</h2>
+                <p class="wd-best-text">
+                    DreamSoft has established itself as one of the trusted website development companies in Bangladesh by delivering reliable and scalable digital solutions. Our experienced development team focuses on creating websites that are not only visually appealing but also technically strong.
+                </p>
+                <p class="wd-best-text">
+                    We follow a modern development approach including responsive design, SEO optimization, and performance optimization to ensure your website performs efficiently in search engines and provides a seamless user experience.
+                </p>
+                <p class="wd-best-text wd-best-text--last">
+                    With years of experience in building corporate websites, ecommerce platforms, ERP dashboards, and business portals, we help companies transform their ideas into powerful digital platforms.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wd-choose-section" id="wd-choose">
+    <div class="container">
+        <div class="wd-choose-header text-center">
+            <span class="wd-kicker">Why Choose Us</span>
+            <h2 class="section-heading">Why Choose Our <span class="text-gradient">Website Development Company</span> in Bangladesh</h2>
+        </div>
+        <div class="wd-choose-grid">
+            <div class="wd-choose-card">
+                <div class="wd-choose-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z" stroke="currentColor" stroke-width="2"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <h3>Experienced Development Team</h3>
+                <p>Skilled developers with years of experience in modern web technologies.</p>
+            </div>
+            <div class="wd-choose-card">
+                <div class="wd-choose-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M4 5h16v14H4z" stroke="currentColor" stroke-width="2"/><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+                <h3>Custom Website Solutions</h3>
+                <p>Every website is designed according to your business requirements.</p>
+            </div>
+            <div class="wd-choose-card">
+                <div class="wd-choose-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M4 19V5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 19h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M7 14l4-4 3 3 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                <h3>SEO Optimized Websites</h3>
+                <p>We build websites optimized for Google ranking and organic traffic growth.</p>
+            </div>
+            <div class="wd-choose-card">
+                <div class="wd-choose-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M12 1v22" stroke="currentColor" stroke-width="2"/><path d="M17 5H9a4 4 0 0 0 0 8h6a4 4 0 0 1 0 8H7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+                <h3>Affordable Pricing</h3>
+                <p>Cost-effective web development packages suitable for businesses of all sizes.</p>
+            </div>
+            <div class="wd-choose-card">
+                <div class="wd-choose-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M12 8v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg></div>
+                <h3>Fast Project Delivery</h3>
+                <p>Efficient workflow ensures timely delivery of projects.</p>
+            </div>
+            <div class="wd-choose-card">
+                <div class="wd-choose-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M21 15a4 4 0 0 1-4 4H7l-4 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" stroke="currentColor" stroke-width="2"/></svg></div>
+                <h3>Local Support in Bangladesh</h3>
+                <p>Dedicated support team available for maintenance and updates.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wd-benefits-section" id="wd-benefits">
+    <div class="container">
+        <div class="wd-benefits-grid">
+            <div class="wd-benefits-content">
+                <span class="wd-kicker">Business Benefits</span>
+                <h2 class="section-heading">Benefits of Professional <span class="text-gradient">Website Development</span> for Businesses</h2>
+                <p class="wd-benefits-intro">
+                    A professionally developed website helps businesses build credibility and attract more customers online.
+                </p>
+                <ul class="wd-benefits-list">
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Strong online presence for your business</span></li>
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Increased customer trust and brand credibility</span></li>
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>More leads and sales opportunities</span></li>
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Better search engine visibility</span></li>
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Faster and mobile-friendly user experience</span></li>
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Central platform for digital marketing</span></li>
+                </ul>
+                <p class="wd-benefits-outro">
+                    With professional website development services in Bangladesh, your business can compete effectively in the digital marketplace.
+                </p>
+            </div>
+            <div class="wd-benefits-image">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                     alt="Website analytics dashboard showing performance and growth trends"
+                     class="wd-benefits-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wd-seo-section" id="wd-seo-company">
+    <div class="container">
+        <div class="wd-seo-content text-center">
+            <span class="wd-kicker">SEO Focus</span>
+            <h2 class="section-heading">Leading <span class="text-gradient">Website Development Company</span> in Bangladesh</h2>
+            <p class="wd-seo-text">
+                DreamSoft is a trusted website development company in Bangladesh providing innovative web solutions for startups, SMEs, and enterprise businesses. Our development team combines creative design, advanced programming, and SEO optimization to create websites that deliver measurable business results.
+            </p>
+            <p class="wd-seo-text wd-seo-text--last">
+                From corporate websites and ecommerce platforms to custom web applications, we provide complete web development services that help businesses succeed in the digital economy.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="wd-ecom-section" id="wd-seo-ecom">
+    <div class="container">
+        <div class="wd-ecom-grid">
+            <div class="wd-ecom-content">
+                <span class="wd-kicker">Ecommerce Growth</span>
+                <h2 class="section-heading"><span class="text-gradient">Ecommerce Website Development</span> Services in Bangladesh</h2>
+                <p class="wd-ecom-intro">
+                    With the rapid growth of online shopping in Bangladesh, businesses need powerful ecommerce platforms to manage their digital stores.
+                </p>
+                <p class="wd-ecom-intro wd-ecom-intro--small">Our ecommerce website development services include:</p>
+                <ul class="wd-ecom-list">
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Product management system</span></li>
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Shopping cart integration</span></li>
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Payment gateway integration</span></li>
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Inventory management</span></li>
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Order tracking system</span></li>
+                    <li><span class="wd-check-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Mobile responsive design</span></li>
+                </ul>
+                <p class="wd-ecom-intro wd-ecom-intro--last">
+                    We develop ecommerce websites that help businesses sell products online efficiently and scale their online sales operations.
+                </p>
+            </div>
+            <div class="wd-ecom-image">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                     alt="Ecommerce website analytics and product management dashboard"
+                     class="wd-ecom-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wd-seo-pillar-section" id="wd-seo-pillar">
+    <div class="container">
+        <div class="wd-seo-pillar">
+            <div class="wd-seo-pillar-content">
+                <span class="wd-kicker">SEO Growth Layer</span>
+                <h2 class="wd-seo-pillar-heading">SEO-Optimized Website Foundation for Businesses in Bangladesh</h2>
+                <p class="wd-seo-pillar-text">
+                    We build structured, high-performance websites with technical SEO, intent-driven content architecture, and conversion-focused UX so your business can rank, attract qualified traffic, and convert more leads.
+                </p>
+                <ul class="wd-seo-pillar-list">
+                    <li><span class="wd-seo-pillar-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>On-page SEO structure with semantic heading hierarchy and schema-ready markup</span></li>
+                    <li><span class="wd-seo-pillar-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Page speed optimization for Core Web Vitals and faster mobile experiences</span></li>
+                    <li><span class="wd-seo-pillar-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Keyword-focused service page planning to target local and commercial search intent</span></li>
+                </ul>
+                <div class="wd-seo-pillar-actions">
+                    <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--lg">Get Free SEO Consultation</a>
+                    <a href="tel:+8801755648295" class="btn wd-btn-cta-outline">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" style="margin-right:8px"><path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 4.18 2 2 0 0 1 4 2h3.09a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.09a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+            <div class="wd-seo-metrics" aria-hidden="true">
+                <article class="wd-seo-metric-card">
+                    <span class="wd-seo-metric-value">90+</span>
+                    <h3>Technical SEO Checkpoints</h3>
+                    <p>Structured implementation from crawlability and indexing to internal linking and metadata alignment.</p>
+                </article>
+                <article class="wd-seo-metric-card">
+                    <span class="wd-seo-metric-value">3X</span>
+                    <h3>Lead-Intent Content Planning</h3>
+                    <p>Conversion-focused page flow designed around what your potential customers search and expect.</p>
+                </article>
+                <article class="wd-seo-metric-card">
+                    <span class="wd-seo-metric-value">24/7</span>
+                    <h3>Performance Monitoring</h3>
+                    <p>Ongoing speed and stability optimization to maintain rankings and user experience over time.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wd-banner-section" id="wd-growth-cta">
+    <div class="container">
+        <div class="wd-gradient-banner">
+            <h2 class="wd-gradient-banner-heading">Scale Your Business with Result-Driven Website Development Services in Bangladesh</h2>
+            <p class="wd-gradient-banner-text">
+                Partner with DreamSoft to launch fast, secure, and conversion-focused websites that strengthen your digital presence and accelerate business growth in Bangladesh.
+            </p>
+            <div class="wd-gradient-banner-actions">
+                <a href="{% url 'contact_us' %}" class="btn wd-btn-banner-primary">Get Free Consultation</a>
+                <a href="tel:+8801755648295" class="btn wd-btn-banner-outline">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" style="margin-right:8px"><path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 4.18 2 2 0 0 1 4 2h3.09a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.09a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Call Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wd-faq-section" id="wd-faq">
+    <div class="container">
+        <div class="wd-faq-header text-center">
+            <span class="wd-kicker">FAQ</span>
+            <h2 class="section-heading">Frequently Asked <span class="text-gradient">Questions</span></h2>
+        </div>
+        <div class="wd-faq-list">
+            <div class="wd-faq-item">
+                <button class="wd-faq-question" aria-expanded="false"><span>Why choose DreamSoft as a website development company in Bangladesh?</span><svg class="wd-faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <div class="wd-faq-answer"><p>DreamSoft combines modern design, secure development, SEO best practices, and local support to deliver scalable websites tailored for businesses in Bangladesh.</p></div>
+            </div>
+            <div class="wd-faq-item">
+                <button class="wd-faq-question" aria-expanded="false"><span>Do you provide ecommerce website development services?</span><svg class="wd-faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <div class="wd-faq-answer"><p>Yes. We build full-featured ecommerce websites with product catalog management, secure checkout, payment gateway integration, and order tracking workflows.</p></div>
+            </div>
+            <div class="wd-faq-item">
+                <button class="wd-faq-question" aria-expanded="false"><span>Will my website be mobile responsive and SEO friendly?</span><svg class="wd-faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <div class="wd-faq-answer"><p>Absolutely. Every project is built with responsive layouts, clean code, optimized speed, and technical SEO fundamentals for better visibility on search engines.</p></div>
+            </div>
+            <div class="wd-faq-item">
+                <button class="wd-faq-question" aria-expanded="false"><span>Can you develop custom web applications for business processes?</span><svg class="wd-faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <div class="wd-faq-answer"><p>Yes. We design and build custom web applications, ERP-integrated portals, and business dashboards aligned with your workflow and operational goals.</p></div>
+            </div>
+            <div class="wd-faq-item">
+                <button class="wd-faq-question" aria-expanded="false"><span>Do you offer post-launch maintenance and support in Bangladesh?</span><svg class="wd-faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <div class="wd-faq-answer"><p>Yes. Our local support team provides ongoing maintenance, security updates, and performance improvements so your website remains stable and growth-ready.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wd-cta-section" id="wd-contact-cta">
+    <div class="container">
+        <div class="wd-cta-wrapper">
+            <div class="wd-cta-content">
+                <span class="wd-kicker">Final Thoughts</span>
+                <h2 class="wd-cta-heading">Launch a Powerful <span class="text-gradient">Business Website</span> with DreamSoft</h2>
+                <p class="wd-cta-text">
+                    DreamSoft delivers professional website development services in Bangladesh for startups, growing businesses, and enterprises. We build secure, high-performance, and SEO-optimized digital platforms that improve credibility, generate leads, and support long-term business growth.
+                </p>
+                <ul class="wd-cta-list">
+                    <li><span class="wd-cta-list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Website Development Company in Bangladesh</span></li>
+                    <li><span class="wd-cta-list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Web Development Services Bangladesh</span></li>
+                    <li><span class="wd-cta-list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Best Web Developer Bangladesh</span></li>
+                    <li><span class="wd-cta-list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Professional Website Development BD</span></li>
+                    <li><span class="wd-cta-list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Ecommerce Website Development Bangladesh</span></li>
+                    <li><span class="wd-cta-list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Custom Web Development Company BD</span></li>
+                </ul>
+                <div class="wd-cta-actions">
+                    <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--lg">Get Free Consultation</a>
+                    <a href="tel:+8801755648295" class="btn wd-btn-cta-outline">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" style="margin-right:8px"><path d="M22 16.92V20a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 4.18 2 2 0 0 1 4 2h3.09a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.09a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+            <div class="wd-cta-visual" aria-hidden="true">
+                <div class="wd-cta-ring wd-cta-ring--outer"></div>
+                <div class="wd-cta-ring wd-cta-ring--inner"></div>
+                <div class="wd-cta-center">
+                    <span class="wd-cta-emoji" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none"><path d="M4 4h16v10H4z" stroke="#ffffff" stroke-width="1.8"/><path d="M4 8h16M9 14v4h6v-4" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/><path d="M8 11h3M13 11h3" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    </span>
+                </div>
+                <div class="wd-cta-float wd-cta-float--1"><span class="wd-cta-float-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M3 5h18v14H3z" stroke="currentColor" stroke-width="2"/><path d="M7 9h10M7 13h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>UI/UX</div>
+                <div class="wd-cta-float wd-cta-float--2"><span class="wd-cta-float-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>SEO</div>
+                <div class="wd-cta-float wd-cta-float--3"><span class="wd-cta-float-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M5 19V9m7 10V5m7 14v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M3 19h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>Growth</div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static 'Pages/js/website_development.js' %}"></script>
+{% endblock %}

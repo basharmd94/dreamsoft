@@ -46,8 +46,14 @@ def erp_software(request):
     return render(request, 'Pages/erp-software.html')
 
 
+# service pages
+# website development
+def website_development(request):
+    return render(request, 'Pages/website-development.html')
+
 def about_us(request):
     return render(request, 'Pages/about-us.html')
 
 def contact_us(request):
     return render(request, 'Pages/contact-us.html')
+
