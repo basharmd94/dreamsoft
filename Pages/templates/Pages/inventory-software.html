@@ -1,0 +1,891 @@
+{% extends 'Pages/base.html' %}
+{% load static %}
+
+{% block title %}Inventory Management Software in Bangladesh — Real-Time Stock Tracking | DreamSoft{% endblock %}
+{% block meta_description %}DreamSoft provides powerful inventory management software in Bangladesh for retail,
+wholesale, and restaurants.{% endblock %}
+{% block meta_keywords %}inventory, software, bangladesh, POS{% endblock %}
+{% block og_title %}Inventory Management Software in Bangladesh | DreamSoft{% endblock %}
+{% block og_description %}Powerful inventory tracking software for businesses in Bangladesh.{% endblock %}
+{% block twitter_title %}Inventory Management Software in Bangladesh | DreamSoft{% endblock %}
+{% block twitter_description %}Real-time inventory tracking for businesses.{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'Pages/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'Pages/css/inventory-software.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- SECTION 1 — HERO -->
+<section class="hero-section inv-hero" id="inv-hero">
+    <div class="container hero-container">
+        <div class="hero-content">
+            <span class="inv-kicker">Inventory Management System</span>
+            <h1 class="hero-title inv-hero-title">
+                <span class="text-gradient">Inventory Management Software</span> in Bangladesh for Retail & Wholesale
+                Businesses
+            </h1>
+
+            <p class="hero-description inv-hero-description">
+                DreamSoft provides powerful inventory management software in Bangladesh designed for retail shops,
+                wholesalers, and restaurants. Manage stock, sales, purchases, POS operations, and reports from one
+                centralized platform with real-time inventory tracking.
+            </p>
+
+            <div class="hero-actions">
+                <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--sm">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:6px">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                    Get Free Demo
+                </a>
+                <a href="tel:+8801755648295" class="btn btn-gradient btn-gradient--sm btn-demo">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="margin-right:6px">
+                        <path
+                            d="M22 16.92V20a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 4.18 2 2 0 0 1 4 2h3.09a2 2 0 0 1 2 1.72c.12.86.3 1.7.54 2.5a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.58-1.09a2 2 0 0 1 2.11-.45c.8.24 1.64.42 2.5.54A2 2 0 0 1 22 16.92Z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Call Now
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+            <div class="hero-bg-shape shape-1"></div>
+            <div class="hero-bg-shape shape-2"></div>
+            <div class="hero-img-container floating-animation">
+                <img src="{% static 'Pages/images/inventory-hero.png' %}"
+                    alt="DreamSoft Inventory Management Software dashboard showing stock charts, product lists, and barcode scanning interface"
+                    class="hero-main-img inv-hero-img">
+            </div>
+            <div class="floating-badge badge-profit" style="animation-delay:0.5s">
+                <span class="badge-label">Stock Accuracy</span>
+                <span class="badge-value">99.8%</span>
+                <span class="positive">↑ Real-Time</span>
+            </div>
+            <div class="floating-badge badge-stock" style="animation-delay:1s">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"
+                        stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div>
+                    <span class="badge-label">Products</span>
+                    <span class="badge-value">12,450+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 2 — INTRODUCTION -->
+<section class="inv-intro-section" id="inv-introduction">
+    <div class="inv-blob inv-blob--left" aria-hidden="true"></div>
+    <div class="inv-blob inv-blob--right" aria-hidden="true"></div>
+
+    <div class="container">
+        <div class="inv-intro-header text-center">
+            <span class="inv-kicker">Smart Solution</span>
+            <h2 class="section-heading">
+                Smart <span class="text-gradient">Inventory Management Software</span> for Retail & Wholesale
+            </h2>
+        </div>
+
+        <div class="inv-intro-grid">
+            <div class="inv-intro-content">
+                <p class="inv-intro-text">
+                    DreamSoft Inventory Management Software helps businesses control their stock, manage sales, and
+                    track inventory movement with complete accuracy. Our system is designed specifically for businesses
+                    in Bangladesh, providing a reliable platform for retail stores, wholesale distributors, and
+                    restaurants.
+                </p>
+                <p class="inv-intro-text">
+                    With DreamSoft, businesses can monitor inventory levels in real time, automate stock updates through
+                    POS integration, and generate powerful business reports. Whether you operate a single shop or
+                    multiple branches, our software ensures smooth operations and better business decision making.
+                </p>
+                <div class="inv-intro-stats">
+                    <div class="inv-stat-item">
+                        <span class="inv-stat-number">500+</span>
+                        <span class="inv-stat-label">Businesses Served</span>
+                    </div>
+                    <div class="inv-stat-item">
+                        <span class="inv-stat-number">99.9%</span>
+                        <span class="inv-stat-label">Uptime Guarantee</span>
+                    </div>
+                    <div class="inv-stat-item">
+                        <span class="inv-stat-number">24/7</span>
+                        <span class="inv-stat-label">Customer Support</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inv-intro-image">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Modern retail warehouse with product shelves and stock management dashboard"
+                    class="inv-intro-img">
+                <div class="inv-float-badge inv-float-badge--top">
+                    <span class="inv-float-badge-icon">📊</span>
+                    <div class="inv-float-badge-info">
+                        <span class="inv-float-badge-value">Real-Time</span>
+                        <span class="inv-float-badge-label">Analytics</span>
+                    </div>
+                </div>
+                <div class="inv-float-badge inv-float-badge--bottom">
+                    <span class="inv-float-badge-icon">🔄</span>
+                    <div class="inv-float-badge-info">
+                        <span class="inv-float-badge-value">Auto</span>
+                        <span class="inv-float-badge-label">Stock Sync</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 3 — WHAT IS INVENTORY MANAGEMENT -->
+<section class="inv-what-section" id="inv-what">
+    <div class="container">
+        <div class="inv-what-grid">
+            <div class="inv-what-image">
+                <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Warehouse inventory system with workers scanning barcodes and digital stock tracking dashboard"
+                    class="inv-what-img">
+                <div class="inv-float-badge inv-float-badge--center">
+                    <span class="inv-float-badge-icon">📦</span>
+                    <div class="inv-float-badge-info">
+                        <span class="inv-float-badge-value">Smart</span>
+                        <span class="inv-float-badge-label">Tracking</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inv-what-content">
+                <span class="inv-kicker">Understanding Inventory</span>
+                <h2 class="section-heading">
+                    What is <span class="text-gradient">Inventory Management</span>?
+                </h2>
+                <p class="inv-what-text">
+                    Inventory management is the process of tracking, organizing, and controlling stock levels within a
+                    business. It includes monitoring raw materials, finished goods, and products stored in warehouses or
+                    retail locations.
+                </p>
+                <p class="inv-what-text">
+                    Effective inventory management ensures businesses always have the right products available at the
+                    right time. It prevents overstocking and stock shortages while improving cash flow and operational
+                    efficiency.
+                </p>
+                <p class="inv-what-text">
+                    Using modern inventory management software in Bangladesh allows businesses to automate stock
+                    tracking, manage product movement, and generate reports for better decision making.
+                </p>
+                <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--sm" style="margin-top:24px">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 4 — HOW INVENTORY MANAGEMENT SOFTWARE WORKS -->
+<section class="inv-process-section" id="inv-process">
+    <div class="inv-blob inv-blob--center-left" aria-hidden="true"></div>
+    <div class="inv-blob inv-blob--center-right" aria-hidden="true"></div>
+
+    <div class="container">
+        <div class="inv-process-header text-center">
+            <span class="inv-kicker">How It Works</span>
+            <h2 class="section-heading">
+                How <span class="text-gradient">Inventory Management Software</span> Works
+            </h2>
+            <p class="inv-process-intro">
+                Inventory software automates product tracking from purchase to sale. Every product is stored in the
+                system with details such as SKU, quantity, supplier, and storage location. When a sale occurs through
+                the POS system, inventory automatically updates in real time.
+            </p>
+        </div>
+
+        <div class="inv-process-steps">
+            <div class="inv-process-step">
+                <div class="inv-step-content">
+                    <div class="inv-step-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <line x1="12" y1="22.08" x2="12" y2="12" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Product Tracking</h3>
+                    <p>Every product is cataloged with SKU, quantity, supplier details, and storage location for
+                        complete visibility across your inventory.</p>
+                </div>
+            </div>
+            <div class="inv-process-step">
+                <div class="inv-step-content">
+                    <div class="inv-step-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Real Time Stock Update</h3>
+                    <p>Every sale, purchase, or transfer instantly updates your stock levels. No manual effort required
+                        — accuracy is guaranteed.</p>
+                </div>
+            </div>
+            <div class="inv-process-step">
+                <div class="inv-step-content">
+                    <div class="inv-step-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                            <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3>POS Integration</h3>
+                    <p>Seamlessly connects with DreamSoft POS so that each transaction at the counter automatically
+                        reflects in inventory data.</p>
+                </div>
+            </div>
+            <div class="inv-process-step">
+                <div class="inv-step-content">
+                    <div class="inv-step-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Automatic Stock Alerts</h3>
+                    <p>Get notified when stock runs low, products near expiry, or reorder points are reached. Never miss
+                        a critical stock update.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="inv-cta-center">
+            <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:6px">
+                    <path d="M8 5v14l11-7z" />
+                </svg>
+                View Software Demo
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 5 — KEY FEATURES -->
+<section class="inv-features-section" id="inv-features">
+    <div class="container">
+        <div class="inv-features-header text-center">
+            <span class="inv-kicker">Core Features</span>
+            <h2 class="section-heading">
+                Key Features of DreamSoft <span class="text-gradient">Inventory Management Software</span>
+            </h2>
+            <p class="inv-features-intro">
+                Packed with tools designed to give you complete control over your inventory, automate routine tasks, and
+                deliver actionable insights.
+            </p>
+        </div>
+
+        <div class="inv-features-grid">
+            <div class="inv-feature-card">
+                <div class="inv-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3>Real Time Inventory Tracking</h3>
+                <p>Monitor stock levels across all locations instantly. Every transaction updates your inventory in real
+                    time.</p>
+            </div>
+            <div class="inv-feature-card">
+                <div class="inv-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                        <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2" />
+                        <path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        <path d="M6 8h4M6 11h3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3>POS Integration</h3>
+                <p>Seamlessly connect your point-of-sale system with inventory for automatic stock deductions on every
+                    sale.</p>
+            </div>
+            <div class="inv-feature-card">
+                <div class="inv-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3>Multi Location Inventory</h3>
+                <p>Manage inventory across multiple warehouses and branches from one centralized dashboard.</p>
+            </div>
+            <div class="inv-feature-card">
+                <div class="inv-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                        <rect x="3" y="4" width="18" height="4" rx="1" stroke="currentColor" stroke-width="2" />
+                        <rect x="3" y="10" width="18" height="4" rx="1" stroke="currentColor" stroke-width="2" />
+                        <rect x="3" y="16" width="18" height="4" rx="1" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                </div>
+                <h3>Barcode Scanning</h3>
+                <p>Add, search, and sell products instantly using barcode scanners for fast and accurate transactions.
+                </p>
+            </div>
+            <div class="inv-feature-card">
+                <div class="inv-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        <path d="M15 2H9a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"
+                            stroke="currentColor" stroke-width="2" />
+                        <path d="M12 11v6M9 14h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3>Auto Reordering</h3>
+                <p>Set minimum stock thresholds and the system automatically generates purchase orders when items run
+                    low.</p>
+            </div>
+            <div class="inv-feature-card">
+                <div class="inv-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                        <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3>Batch & Expiry Tracking</h3>
+                <p>Track product batches and expiry dates to ensure quality control and reduce waste from expired goods.
+                </p>
+            </div>
+            <div class="inv-feature-card">
+                <div class="inv-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                        <path d="M18 20V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        <path d="M12 20V4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        <path d="M6 20v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3>Reports & Analytics</h3>
+                <p>Generate comprehensive reports on stock movement, sales trends, profit margins, and inventory
+                    valuation.</p>
+            </div>
+            <div class="inv-feature-card">
+                <div class="inv-feature-card-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3>Stock Alerts</h3>
+                <p>Receive instant notifications for low stock, overstock situations, and critical inventory thresholds.
+                </p>
+            </div>
+        </div>
+
+        <div class="inv-cta-center">
+            <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--sm">Explore All Features</a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 6 — BENEFITS -->
+<section class="inv-benefits-section" id="inv-benefits">
+    <div class="inv-blob inv-blob--left" aria-hidden="true"></div>
+    <div class="inv-blob inv-blob--right" aria-hidden="true"></div>
+
+    <div class="container">
+        <div class="inv-benefits-grid">
+            <div class="inv-benefits-content">
+                <span class="inv-kicker">Why It Matters</span>
+                <h2 class="section-heading">
+                    Benefits of Using <span class="text-gradient">Inventory Management Software</span>
+                </h2>
+
+                <ul class="inv-benefits-list">
+                    <li>
+                        <span class="inv-benefit-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Reduce Operational Costs</h3>
+                            <p>Eliminate manual stock counting and reduce human errors that lead to financial losses.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="inv-benefit-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Improve Cash Flow</h3>
+                            <p>Optimize stock levels to free up capital and prevent money tied in excess inventory.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="inv-benefit-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Prevent Stock Shortages</h3>
+                            <p>Auto reorder alerts ensure you always have the right products available for customers.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="inv-benefit-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Increase Business Efficiency</h3>
+                            <p>Automate repetitive tasks and streamline workflows across all departments.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="inv-benefit-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Improve Customer Satisfaction</h3>
+                            <p>Faster service, accurate stock availability, and reliable order fulfillment keep
+                                customers happy.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="inv-benefit-icon">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Make Data Driven Decisions</h3>
+                            <p>Powerful analytics and reports help you make informed business decisions based on real
+                                data.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="inv-benefits-visual" aria-hidden="true">
+                <div class="inv-benefits-ring inv-benefits-ring--outer"></div>
+                <div class="inv-benefits-ring inv-benefits-ring--inner"></div>
+                <div class="inv-benefits-ring-center">
+                    <span class="inv-benefits-emoji">📈</span>
+                </div>
+                <div class="inv-benefits-float inv-benefits-float--1">💰 Savings</div>
+                <div class="inv-benefits-float inv-benefits-float--2">📊 Growth</div>
+                <div class="inv-benefits-float inv-benefits-float--3">⚡ Speed</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 7 — INDUSTRIES -->
+<section class="inv-industries-section" id="inv-industries">
+    <div class="container">
+        <div class="inv-industries-header text-center">
+            <span class="inv-kicker">Industries We Serve</span>
+            <h2 class="section-heading">
+                Businesses That Use <span class="text-gradient">Inventory Management Software</span>
+            </h2>
+            <p class="inv-industries-intro">
+                DreamSoft inventory software is adaptable for any inventory-driven business across Bangladesh.
+            </p>
+        </div>
+
+        <div class="inv-industries-grid">
+            <div class="inv-industry-card">
+                <div class="inv-industry-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <polyline points="9 22 9 12 15 12 15 22" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3>Retail Stores</h3>
+                <p>Track retail stock, manage product variants, and connect POS for seamless customer transactions.</p>
+            </div>
+            <div class="inv-industry-card">
+                <div class="inv-industry-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <line x1="12" y1="22.08" x2="12" y2="12" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3>Wholesale Businesses</h3>
+                <p>Handle bulk inventory, manage distributor relationships, and process large-volume orders efficiently.
+                </p>
+            </div>
+            <div class="inv-industry-card">
+                <div class="inv-industry-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                        <circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2" />
+                        <circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2" />
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3>Super Shops</h3>
+                <p>Manage thousands of SKUs, barcode scanning, and automated stock replenishment for super shops.</p>
+            </div>
+            <div class="inv-industry-card">
+                <div class="inv-industry-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <line x1="6" y1="1" x2="6" y2="4" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="10" y1="1" x2="10" y2="4" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="14" y1="1" x2="14" y2="4" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3>Restaurants</h3>
+                <p>Track ingredients, manage recipe-based inventory deductions, and monitor food cost percentages.</p>
+            </div>
+            <div class="inv-industry-card">
+                <div class="inv-industry-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                        <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2" />
+                        <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3>Electronics Stores</h3>
+                <p>Manage serial numbers, warranties, and complex product specifications with detailed tracking.</p>
+            </div>
+            <div class="inv-industry-card">
+                <div class="inv-industry-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                        <path
+                            d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <line x1="12" y1="9" x2="12" y2="13" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3>Pharmacies</h3>
+                <p>Track medicine batches, expiry dates, and maintain compliance with pharmaceutical regulations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 8 — WHY CHOOSE DREAMSOFT -->
+<section class="inv-why-section" id="inv-why">
+    <div class="inv-blob inv-blob--left" aria-hidden="true"></div>
+    <div class="inv-blob inv-blob--right" aria-hidden="true"></div>
+
+    <div class="container">
+        <div class="inv-why-grid">
+            <div class="inv-why-image">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Professional SaaS software dashboard showing inventory analytics and product list"
+                    class="inv-why-img">
+                <div class="inv-float-badge inv-float-badge--top">
+                    <span class="inv-float-badge-icon">🇧🇩</span>
+                    <div class="inv-float-badge-info">
+                        <span class="inv-float-badge-value">Made for</span>
+                        <span class="inv-float-badge-label">Bangladesh</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inv-why-content">
+                <span class="inv-kicker">Why DreamSoft</span>
+                <h2 class="section-heading">
+                    Why Choose DreamSoft <span class="text-gradient">Inventory Management Software</span> in Bangladesh
+                </h2>
+                <p class="inv-why-intro"></p>
+                DreamSoft is built from the ground up for businesses operating in Bangladesh. Every feature is crafted
+                to address the real challenges faced by local retailers, wholesalers, and restaurants — from POS
+                integration to multi-branch management.
+                </p>
+
+                <ul class="inv-why-checklist">
+                    <li>
+                        <span class="inv-why-check-icon">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Designed for Bangladeshi Businesses</h3>
+                            <p>Built with local business workflows, tax rules, and operational needs in mind — not a
+                                generic foreign solution.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="inv-why-check-icon">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Complete POS and Inventory Integration</h3>
+                            <p>Every counter sale instantly syncs with your inventory — no manual entry, no
+                                discrepancies, no missed updates.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="inv-why-check-icon">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Real-Time Inventory Tracking</h3>
+                            <p>Monitor stock levels live across all your locations. Always know exactly what you have,
+                                where, and when to reorder.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="inv-why-check-icon">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Multi-Branch and Warehouse Management</h3>
+                            <p>Run a single shop or a nationwide chain — manage all branches and warehouses from one
+                                unified dashboard.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="inv-why-check-icon">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Powerful Reporting and Analytics</h3>
+                            <p>Access detailed stock movement reports, sales analytics, and profit insights to drive
+                                smarter business decisions.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="inv-why-check-icon">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Easy to Use Interface</h3>
+                            <p>Minimal training required. Our intuitive UI lets your team get productive from day one
+                                without technical expertise.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="inv-why-check-icon">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Secure Cloud Architecture</h3>
+                            <p>Your data is encrypted and backed up daily on secure cloud infrastructure — protected
+                                against loss or breaches.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="inv-why-check-icon">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Dedicated Customer Support</h3>
+                            <p>A Bangladesh-based support team is always ready to assist you with guaranteed response
+                                times and hands-on help.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="inv-why-actions">
+                    <a href="{% url 'contact_us' %}" class="btn btn-gradient btn-gradient--sm">Get Started Today</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 9 — FINAL CTA -->
+<section class="inv-cta-section" id="inv-contact-cta">
+    <div class="container">
+        <div class="inv-final-cta">
+            <span class="inv-kicker" style="color:#fff">Start Your Journey</span>
+            <h2 class="inv-final-cta-heading">
+                Get the Best <span
+                    style="background:linear-gradient(135deg,#e9d5ff,#fbcfe8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Inventory
+                    Management Software</span> in Bangladesh
+            </h2>
+            <p class="inv-final-cta-text">
+                Upgrade your business with DreamSoft Inventory Software. Manage stock, control inventory, and track
+                sales from one powerful platform.
+            </p>
+            <div class="inv-final-cta-actions">
+                <a href="{% url 'contact_us' %}" class="btn inv-btn-cta-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:6px">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                    Get Free Demo
+                </a>
+                <a href="{% url 'contact_us' %}" class="btn inv-btn-cta-outline">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" style="margin-right:8px">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 10 — FAQ -->
+<section class="inv-faq-section" id="inv-faq">
+    <div class="container">
+        <div class="inv-faq-header text-center">
+            <span class="inv-kicker">FAQ</span>
+            <h2 class="section-heading">
+                Inventory Management Software <span class="text-gradient">FAQ</span>
+            </h2>
+        </div>
+
+        <div class="inv-faq-list">
+            <div class="inv-faq-item">
+                <button class="inv-faq-question" aria-expanded="false">
+                    <span>What is inventory management software?</span>
+                    <svg class="inv-faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none">
+                        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="inv-faq-answer">
+                    <p>Inventory management software is a digital tool that helps businesses track, manage, and control
+                        their stock levels. It automates product tracking from purchase to sale, monitors quantities in
+                        real time, and generates reports to help make informed business decisions. DreamSoft inventory
+                        software is specifically designed for businesses in Bangladesh.</p>
+                </div>
+            </div>
+
+            <div class="inv-faq-item">
+                <button class="inv-faq-question" aria-expanded="false">
+                    <span>Why do retail businesses need inventory software?</span>
+                    <svg class="inv-faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none">
+                        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="inv-faq-answer">
+                    <p>Retail businesses handle hundreds or thousands of products daily. Without proper inventory
+                        software, tracking stock manually becomes error-prone and time-consuming. Inventory management
+                        software for retail helps prevent stock shortages, reduces overstocking, speeds up checkout with
+                        POS integration, and provides sales analytics for better business planning.</p>
+                </div>
+            </div>
+
+            <div class="inv-faq-item">
+                <button class="inv-faq-question" aria-expanded="false">
+                    <span>How does POS integration help inventory control?</span>
+                    <svg class="inv-faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none">
+                        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="inv-faq-answer">
+                    <p>POS integration connects your point-of-sale system directly with your inventory database. When a
+                        product is sold at the counter, the inventory automatically updates in real time. This
+                        eliminates manual stock counting, prevents selling products that are out of stock, and gives you
+                        accurate data for reordering — all from one unified system.</p>
+                </div>
+            </div>
+
+            <div class="inv-faq-item">
+                <button class="inv-faq-question" aria-expanded="false">
+                    <span>Can inventory software manage multiple warehouses?</span>
+                    <svg class="inv-faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none">
+                        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="inv-faq-answer">
+                    <p>Yes, DreamSoft inventory management software supports multi-location inventory management. You
+                        can track stock across multiple warehouses, branches, and retail outlets from a single
+                        centralized dashboard. Transfer products between locations, view location-specific reports, and
+                        maintain accurate stock data across your entire business network.</p>
+                </div>
+            </div>
+
+            <div class="inv-faq-item">
+                <button class="inv-faq-question" aria-expanded="false">
+                    <span>Is inventory management software suitable for restaurants?</span>
+                    <svg class="inv-faq-chevron" viewBox="0 0 24 24" width="20" height="20" fill="none">
+                        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="inv-faq-answer">
+                    <p>Absolutely. Restaurant inventory management is one of the key use cases for DreamSoft software.
+                        Track raw ingredients, manage recipe-based automatic stock deductions, monitor food cost
+                        percentages, track expiry dates to reduce waste, and generate reports on ingredient usage
+                        patterns — all designed to help restaurants control costs and maintain quality.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'Pages/js/inventory-software.js' %}"></script>
+{% endblock %}
