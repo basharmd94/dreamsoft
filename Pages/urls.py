@@ -33,6 +33,10 @@ urlpatterns = [
     # service pages
     # website development
     path('website-development/', main_page_view.website_development, name='website_development'),
+    
+    # Software Development
+    path('software-development/', main_page_view.software_development, name='software_development'),
+    
 
 
     path('about-us/', main_page_view.about_us, name='about_us'),

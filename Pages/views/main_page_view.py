@@ -51,6 +51,12 @@ def erp_software(request):
 def website_development(request):
     return render(request, 'Pages/website-development.html')
 
+# Software Development
+def software_development(request):
+    return render(request, 'Pages/software-development.html')
+
+
+
 def about_us(request):
     return render(request, 'Pages/about-us.html')
 
