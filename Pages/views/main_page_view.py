@@ -63,6 +63,10 @@ def mobile_app_development(request):
 def ecommerce_development(request):
     return render(request, 'Pages/ecommerce-development.html')
 
+# Landing page development
+
+def landing_page_development(request):
+    return render(request, 'Pages/landing-page-development.html')
 
 
 

@@ -41,6 +41,9 @@ urlpatterns = [
     path('mobile-app-development/', main_page_view.mobile_app_development, name='mobile_app_development'),
     # e-commerce development
     path('ecommerce-development/', main_page_view.ecommerce_development, name='ecommerce_development'),
+    
+    # landing page development
+    path('landing-page-development/', main_page_view.landing_page_development, name='landing_page_development'),
 
     path('about-us/', main_page_view.about_us, name='about_us'),
     path('contact-us/', main_page_view.contact_us, name='contact_us'),
