@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* ═══════════════════════════════════════════════════════
    RESTAURANT POS SOFTWARE PAGE — DreamSoft
    Theme-consistent with style.css, theme.css & about-us.css
@@ -1337,3 +1338,1055 @@
         font-size: 1.6rem;
     }
 }
+=======
+/* ═══════════════════════════════════════════════════════
+   RESTAURANT POS SOFTWARE PAGE — DreamSoft
+   Theme-consistent with style.css, theme.css & about-us.css
+   ═══════════════════════════════════════════════════════ */
+
+/* ── Kicker ── */
+.rp-kicker {
+    display: inline-block;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #7c3aed;
+    margin-bottom: 12px;
+}
+
+.rp-kicker--light {
+    color: rgba(196, 181, 253, 0.9);
+}
+
+/* ── Shared Blobs ── */
+.rp-blob {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.rp-blob--left {
+    width: 500px;
+    height: 500px;
+    top: -150px;
+    left: -200px;
+    background: rgba(168, 85, 247, 0.12);
+}
+
+.rp-blob--right {
+    width: 600px;
+    height: 600px;
+    bottom: -200px;
+    right: -220px;
+    background: rgba(236, 72, 153, 0.10);
+}
+
+.rp-blob--center-left {
+    width: 500px;
+    height: 500px;
+    top: 20%;
+    left: -200px;
+    background: rgba(225, 29, 72, 0.08);
+}
+
+.rp-blob--center-right {
+    width: 600px;
+    height: 600px;
+    bottom: 10%;
+    right: -200px;
+    background: rgba(251, 146, 60, 0.08);
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 1 — HERO
+   ═══════════════════════════════════════════════════════ */
+.rp-hero {
+    padding: 80px 0 100px;
+}
+
+.rp-hero-title {
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 18px;
+    color: #0f172a;
+}
+
+.rp-hero-description {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 32px;
+    max-width: 92%;
+}
+
+.rp-hero-img {
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(67, 56, 202, 0.15);
+}
+
+.rp-btn-outline {
+    background: transparent !important;
+    border: 2px solid var(--primary-color) !important;
+    color: var(--primary-color) !important;
+    box-shadow: none !important;
+    animation: none !important;
+}
+
+.rp-btn-outline:hover {
+    background: var(--gradient-btn) !important;
+    color: #fff !important;
+    border-color: transparent !important;
+    box-shadow: 0 10px 20px -5px rgba(67, 56, 202, 0.4) !important;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 2 — WHY CHOOSE
+   ═══════════════════════════════════════════════════════ */
+.rp-why-section {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-light);
+}
+
+.rp-why-section .section-heading {
+    margin-bottom: 50px;
+}
+
+.rp-why-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.rp-check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.rp-check-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.rp-check-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #7c3aed;
+    background: rgba(124, 58, 237, 0.1);
+    margin-top: 2px;
+}
+
+.rp-check-list h3 {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-bottom: 2px;
+}
+
+.rp-check-list p {
+    font-size: 0.92rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.rp-cta-inline {
+    margin-top: 32px;
+}
+
+.rp-why-image {
+    position: relative;
+}
+
+.rp-why-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+    transition: transform 0.4s ease;
+}
+
+.rp-why-img:hover {
+    transform: scale(1.02);
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 3 — IDEAL FOR
+   ═══════════════════════════════════════════════════════ */
+.rp-ideal-section {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border-top: 1px solid #f1f5f9;
+}
+
+.rp-ideal-header {
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.rp-ideal-header .section-heading {
+    margin-bottom: 0;
+}
+
+.rp-ideal-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.rp-ideal-card {
+    background: var(--bg-light);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    border-radius: 18px;
+    padding: 32px 16px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.rp-ideal-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(168, 85, 247, 0.35);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.rp-ideal-emoji {
+    font-size: 2.4rem;
+    display: block;
+    margin-bottom: 14px;
+    transition: transform 0.3s ease;
+}
+
+.rp-ideal-card:hover .rp-ideal-emoji {
+    transform: scale(1.2);
+}
+
+.rp-ideal-card h3 {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 4 — CORE FUNCTIONS
+   ═══════════════════════════════════════════════════════ */
+.rp-core-section {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-light);
+}
+
+.rp-core-section::before {
+    content: '';
+    position: absolute;
+    right: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.15) 0%, rgba(236, 72, 153, 0.04) 70%, transparent 100%);
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.rp-core-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.rp-core-content .section-heading {
+    margin-bottom: 12px;
+}
+
+.rp-core-intro {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+.rp-core-features {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.rp-core-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.rp-core-feature-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #7c3aed;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.14), rgba(236, 72, 153, 0.10));
+    box-shadow: 0 10px 22px -14px rgba(124, 58, 237, 0.5);
+}
+
+.rp-core-feature h3 {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.rp-core-feature p {
+    font-size: 0.92rem;
+    color: var(--text-light);
+    line-height: 1.65;
+}
+
+.rp-core-image {
+    position: relative;
+}
+
+.rp-core-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+    transition: transform 0.4s ease;
+}
+
+.rp-core-img:hover {
+    transform: scale(1.02);
+}
+
+/* Float Badges */
+.rp-float-badge {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 12px 16px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 3;
+    animation: rp-float 4s ease-in-out infinite;
+    border: 1px solid rgba(226, 232, 240, 0.5);
+}
+
+.rp-float-badge--top {
+    top: -20px;
+    right: -15px;
+    animation-delay: 0.3s;
+}
+
+.rp-float-badge--bottom {
+    bottom: 20px;
+    left: -20px;
+    animation-delay: 1s;
+}
+
+.rp-float-badge--top-left {
+    top: -20px;
+    left: -15px;
+    animation-delay: 0.5s;
+}
+
+@keyframes rp-float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.rp-float-badge-icon {
+    font-size: 1.3rem;
+}
+
+.rp-float-badge-value {
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--text-dark);
+    display: block;
+    line-height: 1.2;
+}
+
+.rp-float-badge-label {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    display: block;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 5 — KEY BENEFITS
+   ═══════════════════════════════════════════════════════ */
+.rp-benefits-section {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border-top: 1px solid #f1f5f9;
+}
+
+.rp-benefits-header {
+    max-width: 760px;
+    margin: 0 auto 50px;
+}
+
+.rp-benefits-header .section-heading {
+    margin-bottom: 0;
+}
+
+.rp-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.rp-benefit-card {
+    background: var(--bg-light);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    border-radius: 18px;
+    padding: 30px 22px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.rp-benefit-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(168, 85, 247, 0.35);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.rp-benefit-emoji {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 14px;
+    transition: transform 0.3s ease;
+}
+
+.rp-benefit-card:hover .rp-benefit-emoji {
+    transform: scale(1.15);
+}
+
+.rp-benefit-card h3 {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.rp-benefit-card p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 6 — GROWTH ADVANTAGES
+   ═══════════════════════════════════════════════════════ */
+.rp-growth-section {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-light);
+}
+
+.rp-growth-section::before {
+    content: '';
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, rgba(34, 211, 238, 0.04) 70%, transparent 100%);
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.rp-growth-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.rp-growth-content .section-heading {
+    margin-bottom: 28px;
+}
+
+.rp-growth-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rp-growth-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.rp-growth-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.rp-growth-list p {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+.rp-growth-image {
+    position: relative;
+}
+
+.rp-growth-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+    transition: transform 0.4s ease;
+}
+
+.rp-growth-img:hover {
+    transform: scale(1.02);
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 7 — ESSENTIAL FEATURES
+   ═══════════════════════════════════════════════════════ */
+.rp-features-section {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border-top: 1px solid #f1f5f9;
+}
+
+.rp-features-header {
+    max-width: 760px;
+    margin: 0 auto 50px;
+}
+
+.rp-features-header .section-heading {
+    margin-bottom: 0;
+}
+
+.rp-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.rp-feature-card {
+    background: var(--bg-light);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    border-radius: 18px;
+    padding: 30px 26px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.rp-feature-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(600px circle at 20% 0%, rgba(139, 92, 246, 0.12), transparent 50%),
+        radial-gradient(600px circle at 80% 100%, rgba(236, 72, 153, 0.08), transparent 50%);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    pointer-events: none;
+}
+
+.rp-feature-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(168, 85, 247, 0.35);
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.14);
+}
+
+.rp-feature-card:hover::before {
+    opacity: 1;
+}
+
+.rp-feature-card-number {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    background: var(--gradient-btn);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.rp-feature-card h3 {
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.rp-feature-card p {
+    color: var(--text-light);
+    font-size: 0.92rem;
+    line-height: 1.7;
+    position: relative;
+    z-index: 1;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 8 — LOCAL SOLUTIONS
+   ═══════════════════════════════════════════════════════ */
+.rp-local-section {
+    padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-light);
+}
+
+.rp-local-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.rp-local-image {
+    position: relative;
+}
+
+.rp-local-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+    transition: transform 0.4s ease;
+}
+
+.rp-local-img:hover {
+    transform: scale(1.02);
+}
+
+.rp-local-content .section-heading {
+    margin-bottom: 24px;
+}
+
+.rp-local-text {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 16px;
+}
+
+.rp-local-cta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SECTION 9 — CTA
+   ═══════════════════════════════════════════════════════ */
+.rp-cta-section {
+    background: #312e81;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.rp-cta-section::before {
+    content: '';
+    position: absolute;
+    right: -15%;
+    top: -30%;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(139, 92, 246, 0.2);
+    filter: blur(80px);
+    pointer-events: none;
+}
+
+.rp-cta-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.rp-cta-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.rp-cta-heading {
+    color: #ffffff;
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.rp-cta-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rp-cta-list li {
+    color: rgba(226, 232, 240, 0.95);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.rp-cta-text {
+    color: rgba(226, 232, 240, 0.85);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+.rp-cta-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.rp-btn-cta-outline {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.rp-btn-cta-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.8);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* CTA Visual Ring */
+.rp-cta-visual {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    flex-shrink: 0;
+}
+
+.rp-cta-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px dashed rgba(255, 255, 255, 0.15);
+}
+
+.rp-cta-ring--outer {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: rp-spin 30s linear infinite;
+}
+
+.rp-cta-ring--inner {
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+    border-color: rgba(236, 72, 153, 0.2);
+    animation: rp-spin 20s linear infinite reverse;
+}
+
+@keyframes rp-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rp-cta-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 40px rgba(139, 92, 246, 0.5);
+}
+
+.rp-cta-emoji {
+    font-size: 2rem;
+}
+
+.rp-cta-float {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    padding: 8px 16px;
+    border-radius: 12px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.82rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    animation: rp-float 4s ease-in-out infinite;
+}
+
+.rp-cta-float--1 {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 0s;
+}
+
+.rp-cta-float--2 {
+    bottom: 20px;
+    left: 10px;
+    animation-delay: 1.3s;
+}
+
+.rp-cta-float--3 {
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    animation-delay: 2.6s;
+}
+
+/* ═══════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+    .rp-ideal-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .rp-benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rp-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rp-why-grid,
+    .rp-core-grid,
+    .rp-growth-grid,
+    .rp-local-grid {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .rp-hero-title {
+        font-size: 2.2rem;
+    }
+
+    .rp-hero-description {
+        max-width: 100%;
+    }
+
+    .rp-why-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .rp-why-image {
+        order: -1;
+    }
+
+    .rp-core-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .rp-core-image {
+        order: -1;
+    }
+
+    .rp-growth-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .rp-growth-image {
+        order: -1;
+    }
+
+    .rp-local-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .rp-cta-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rp-cta-actions {
+        justify-content: center;
+    }
+
+    .rp-cta-list {
+        text-align: left;
+    }
+
+    .rp-cta-visual {
+        width: 220px;
+        height: 220px;
+    }
+
+    .rp-cta-heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .rp-hero {
+        padding: 60px 0 70px;
+    }
+
+    .rp-ideal-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rp-benefits-grid,
+    .rp-features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rp-why-section,
+    .rp-ideal-section,
+    .rp-core-section,
+    .rp-benefits-section,
+    .rp-growth-section,
+    .rp-features-section,
+    .rp-local-section {
+        padding: 70px 0;
+    }
+
+    .rp-cta-section {
+        padding: 60px 0;
+    }
+
+    .rp-local-cta {
+        flex-direction: column;
+    }
+
+    .rp-local-cta .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .rp-cta-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rp-cta-actions .btn,
+    .rp-cta-actions .rp-btn-cta-outline {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .rp-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .rp-ideal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rp-float-badge {
+        display: none;
+    }
+
+    .rp-cta-visual {
+        display: none;
+    }
+}
+>>>>>>> Stashed changes
