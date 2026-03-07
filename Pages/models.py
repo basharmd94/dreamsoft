@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.utils.text import slugify
 from django.urls import reverse
 from django.utils import timezone
+from django_ckeditor_5.fields import CKEditor5Field
 
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True)
@@ -50,7 +51,7 @@ class BlogPost(models.Model):
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, related_name='posts')
     tags = models.ManyToManyField(Tag, blank=True, related_name='posts')
     
-    content = models.TextField()
+    content = CKEditor5Field('Content', config_name='extends')
     excerpt = models.TextField(blank=True, help_text="Short summary for list views and SEO description")
     featured_image = models.ImageField(upload_to='blog_images/%Y/%m/', blank=True, null=True)
     
