@@ -1,0 +1,134 @@
+.ma-hero {
+    padding: 72px 0 86px;
+    background:
+        radial-gradient(circle at 15% 18%, rgba(99, 102, 241, 0.18), transparent 45%),
+        radial-gradient(circle at 88% 12%, rgba(236, 72, 153, 0.14), transparent 48%),
+        linear-gradient(180deg, #ffffff 0%, #f8faff 100%);
+}
+
+.ma-hero-description--last {
+    margin-bottom: 0;
+}
+
+.ma-tech-section {
+    background: var(--bg-light);
+}
+
+.ma-android-section {
+    background: #ffffff;
+}
+
+.ma-custom-section {
+    background: var(--bg-light);
+}
+
+.ma-tech-intro-last {
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+.ma-custom-intro-last {
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+.ma-tech-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ma-tech-logos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.ma-tech-logo-card {
+    border-radius: 16px;
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    background: #ffffff;
+    padding: 16px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-dark);
+    font-weight: 700;
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.07);
+}
+
+.ma-tech-logo-icon {
+    min-width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.18), rgba(236, 72, 153, 0.18));
+    color: #4f46e5;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.ec-hero {
+    padding: 72px 0 86px;
+    background:
+        radial-gradient(circle at 14% 20%, rgba(34, 197, 94, 0.14), transparent 44%),
+        radial-gradient(circle at 84% 14%, rgba(99, 102, 241, 0.16), transparent 48%),
+        linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%);
+}
+
+.ec-hero-description--last {
+    margin-bottom: 0;
+}
+
+.ec-marketplace-section {
+    background: var(--bg-light);
+}
+
+.ec-speed-section {
+    background: #ffffff;
+}
+
+.ec-features-section {
+    background: var(--bg-light);
+}
+
+.ec-intro-last {
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+    .ma-tech-logos {
+        max-width: 560px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .ma-hero {
+        padding: 72px 0;
+    }
+
+    .ec-hero {
+        padding: 72px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-actions {
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ma-tech-logos {
+        grid-template-columns: 1fr;
+    }
+}

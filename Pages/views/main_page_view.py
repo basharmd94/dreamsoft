@@ -55,6 +55,15 @@ def website_development(request):
 def software_development(request):
     return render(request, 'Pages/software-development.html')
 
+# mobile-app-development
+def mobile_app_development(request):
+    return render(request, 'Pages/app-development.html')
+
+# e-commerce development
+def ecommerce_development(request):
+    return render(request, 'Pages/ecommerce-development.html')
+
+
 
 
 def about_us(request):
