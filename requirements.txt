@@ -1,4 +1,5 @@
 Django>=4.2
 python-decouple
 whitenoise
-django-ckeditor-5
+django-ckeditor
+Pillow

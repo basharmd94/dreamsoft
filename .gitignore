@@ -24,6 +24,9 @@ build/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
+# db.sqlite3
+db.sqlite3
+
 # Environment variables and secrets
 .env
 .env.local
