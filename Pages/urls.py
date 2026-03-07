@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import main_page_view
+from .views import main_page_view, blog_view
 
 urlpatterns = [
     path('', main_page_view.home, name='home'),
@@ -47,4 +47,10 @@ urlpatterns = [
 
     path('about-us/', main_page_view.about_us, name='about_us'),
     path('contact-us/', main_page_view.contact_us, name='contact_us'),
+
+    # Blog System
+    path('blog/', blog_view.blog_list, name='blog_list'),
+    path('blog/category/<slug:slug>/', blog_view.blog_category, name='blog_category'),
+    path('blog/tag/<slug:slug>/', blog_view.blog_tag, name='blog_tag'),
+    path('blog/<slug:slug>/', blog_view.blog_detail, name='blog_detail'),
 ]

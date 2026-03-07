@@ -1,0 +1,59 @@
+<aside class="blog-sidebar">
+    <!-- Search Widget -->
+    <div class="sidebar-widget">
+        <h4 class="widget-title">Search</h4>
+        <form action="{% url 'blog_list' %}" method="get" class="search-form">
+            <input type="text" name="q" class="search-input" placeholder="Search articles..." value="{{ search_query|default:'' }}">
+            <button type="submit" class="search-btn" aria-label="Search">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            </button>
+        </form>
+    </div>
+
+    <!-- Categories Widget -->
+    <div class="sidebar-widget">
+        <h4 class="widget-title">Categories</h4>
+        <ul class="category-list">
+            {% for cat in categories %}
+            <li>
+                <a href="{% url 'blog_category' cat.slug %}">
+                    <span>{{ cat.name }}</span>
+                    <span class="category-count">{{ cat.post_count }}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Recent Posts Widget -->
+    <div class="sidebar-widget">
+        <h4 class="widget-title">Recent Posts</h4>
+        <div class="recent-posts-list">
+            {% for recent in recent_posts %}
+            <div class="recent-post-item">
+                <a href="{% url 'blog_detail' recent.slug %}" class="recent-post-link">
+                    {% if recent.featured_image %}
+                    <img src="{{ recent.featured_image.url }}" alt="{{ recent.title }}" class="recent-post-img">
+                    {% else %}
+                    <img src="https://via.placeholder.com/150?text=Post" alt="{{ recent.title }}" class="recent-post-img">
+                    {% endif %}
+                </a>
+                <div class="recent-post-info">
+                    <h4><a href="{% url 'blog_detail' recent.slug %}">{{ recent.title }}</a></h4>
+                    <span class="recent-post-date">{{ recent.published_at|date:"M d, Y" }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Tags Widget -->
+    <div class="sidebar-widget">
+        <h4 class="widget-title">Popular Tags</h4>
+        <div class="tag-cloud">
+            {% for tag in tags %}
+            <a href="{% url 'blog_tag' tag.slug %}" class="tag-link">#{{ tag.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</aside>

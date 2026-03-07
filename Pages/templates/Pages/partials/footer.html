@@ -11,7 +11,7 @@
             <div class="footer-grid">
                 <div class="footer-col footer-col--brand">
                     <div class="footer-brand">
-                        <div class="footer-brand-badge">as</div>
+                        <div class="footer-brand-badge">ds</div>
                         <div class="footer-brand-text">
                             <span class="footer-brand-name">Dreamsoft</span>
                             <span class="footer-brand-tagline">Complete Solution of your business</span>
@@ -50,7 +50,7 @@
                         </a>
                     </div>
 
-                    <a href="#" class="footer-map" aria-label="View larger map">
+                    <a href="{% url 'contact_us' %}" class="footer-map" aria-label="View larger map">
                         <img src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg" alt="Office Location" class="footer-map-img">
                         <span class="footer-map-pill">
                             <svg viewBox="0 0 24 24" width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -65,27 +65,29 @@
                 <div class="footer-col footer-col--links">
                     <h3 class="footer-heading">Pages</h3>
                     <ul class="footer-links">
-                        <li><a href="#" class="footer-link">Home</a></li>
-                        <li><a href="#" class="footer-link">About</a></li>
-                        <li><a href="#" class="footer-link">Contact Us</a></li>
-                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="{% url 'home' %}" class="footer-link">Home</a></li>
+                        <li><a href="{% url 'about_us' %}" class="footer-link">About</a></li>
+                        <li><a href="{% url 'contact_us' %}" class="footer-link">Contact Us</a></li>
+                        <li><a href="{% url 'blog_list' %}" class="footer-link">Blog</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col footer-col--links">
                     <h3 class="footer-heading">Our Software</h3>
                     <ul class="footer-links">
-                        <li><a href="#" class="footer-link">Fashion Shop Software</a></li>
-                        <li><a href="#" class="footer-link">Restaurant Software</a></li>
-                        <li><a href="#" class="footer-link">Supershop Software</a></li>
-                        <li><a href="#" class="footer-link">Electronics Shop Software</a></li>
-                        <li><a href="#" class="footer-link">Wholesale Shop Software</a></li>
-                        <li><a href="#" class="footer-link">Hardware Shop Software</a></li>
-                        <li><a href="#" class="footer-link">Tailor Software</a></li>
-                        <li><a href="#" class="footer-link">Accounting Software</a></li>
-                        <li><a href="#" class="footer-link">Inventory Software</a></li>
-                        <li><a href="#" class="footer-link">POS Software</a></li>
-                        <li><a href="#" class="footer-link">ERP Software</a></li>
+                        <li><a href="{% url 'isp_billing_software' %}" class="footer-link">ISP Billing Software</a></li>
+                        <li><a href="{% url 'fashion_shop_software' %}" class="footer-link">Fashion Shop Software</a></li>
+                        <li><a href="{% url 'resturant_pos_software' %}" class="footer-link">Restaurant Software</a></li>
+                        <li><a href="{% url 'supershop_pos_software' %}" class="footer-link">Supershop Software</a></li>
+                        <li><a href="{% url 'electronics_shop_pos_software' %}" class="footer-link">Electronics Shop Software</a></li>
+                        <li><a href="{% url 'wholesale_shop_pos_software' %}" class="footer-link">Wholesale Shop Software</a></li>
+                        <li><a href="{% url 'hardware_shop_pos_software' %}" class="footer-link">Hardware Shop Software</a></li>
+                        <li><a href="{% url 'hotel_management_software' %}" class="footer-link">Hotel Management Software</a></li>
+                        <li><a href="{% url 'tailor_shop_software' %}" class="footer-link">Tailor Software</a></li>
+                        <li><a href="{% url 'accounting_software' %}" class="footer-link">Accounting Software</a></li>
+                        <li><a href="{% url 'inventory_software' %}" class="footer-link">Inventory Software</a></li>
+                        <li><a href="{% url 'pos_software' %}" class="footer-link">POS Software</a></li>
+                        <li><a href="{% url 'erp_software' %}" class="footer-link">ERP Software</a></li>
                     </ul>
                 </div>
 
@@ -93,12 +95,11 @@
                     <div>
                         <h3 class="footer-heading">Services</h3>
                         <ul class="footer-links">
-                            <li><a href="#" class="footer-link">Website Development</a></li>
-                            <li><a href="#" class="footer-link">Software Development</a></li>
-                            <li><a href="#" class="footer-link">Apps Development</a></li>
-                            <li><a href="#" class="footer-link">Domain &amp; Hosting</a></li>
-                            <li><a href="#" class="footer-link">Digital Marketing Service</a></li>
-                            <li><a href="#" class="footer-link">Biometric Solution</a></li>
+                            <li><a href="{% url 'website_development' %}" class="footer-link">Website Development</a></li>
+                            <li><a href="{% url 'software_development' %}" class="footer-link">Software Development</a></li>
+                            <li><a href="{% url 'mobile_app_development' %}" class="footer-link">Apps Development</a></li>
+                            <li><a href="{% url 'landing_page_development' %}" class="footer-link">Landing Page Development</a></li>
+                            <li><a href="{% url 'ecommerce_development' %}" class="footer-link">Ecommerce Website Development</a></li>
                         </ul>
                     </div>
 
@@ -112,7 +113,7 @@
                                         <path d="M4 6L12 13L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </span>
-                                <a href="mailto:info@Dreamsoft.com" class="footer-contact-link">info@Dreamsoft.com</a>
+                                <a href="mailto:info@Dreamsoft.com" class="footer-contact-link">mat197194@gmail.com</a>
                             </li>
                             <li>
                                 <span class="footer-contact-icon" aria-hidden="true">
