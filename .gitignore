@@ -18,6 +18,7 @@ build/
 *.egg-info/
 *.egg
 
+staticfiles/
 # PyInstaller output
 dist/
 build/
