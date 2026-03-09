@@ -49,7 +49,7 @@ urlpatterns = [
     path('contact-us/', main_page_view.contact_us, name='contact_us'),
 
     # Blog System
-    path('ckeditor5/', include('django_ckeditor_5.urls')),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
     path('blog/', blog_view.blog_list, name='blog_list'),
     path('blog/category/<slug:slug>/', blog_view.blog_category, name='blog_category'),
     path('blog/tag/<slug:slug>/', blog_view.blog_tag, name='blog_tag'),
