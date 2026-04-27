@@ -51,23 +51,12 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <!-- Note: Removed unpkg.com (Lenis is small; self-host if needed later) -->
 
-    <!-- 🎨 Google Fonts - Non-blocking load -->
-    <link rel="preload" as="style" 
+    <!-- 🎨 Google Fonts - Blocking load to reduce CLS from late font swap -->
+    <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" 
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" 
-          media="print" 
-          onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap">
-    </noscript>
 
-    <!-- 🎨 Custom CSS - Non-blocking load pattern -->
-    <link rel="preload" as="style" href="{% static 'Pages/css/theme.css' %}">
-    <link rel="stylesheet" href="{% static 'Pages/css/theme.css' %}" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="{% static 'Pages/css/theme.css' %}">
-    </noscript>
+    <!-- 🎨 Core theme CSS - Blocking load to avoid first-paint layout shifts -->
+    <link rel="stylesheet" href="{% static 'Pages/css/theme.css' %}">
 
     {% block extra_css %}{% endblock %}
 
