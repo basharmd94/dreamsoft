@@ -13,14 +13,12 @@
     <!-- Canonical -->
     <link rel="canonical" href="{{ request.build_absolute_uri }}">
 
-        <!-- Open Graph -->
+    <!-- Open Graph -->
     <meta property="og:title" content="{% block og_title %}POS & ERP Software in Bangladesh | DreamSoft BD{% endblock %}">
     <meta property="og:description" content="{% block og_description %}DreamSoft BD provides business software and ERP Software solutions in Bangladesh.{% endblock %}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ request.build_absolute_uri }}">
     <meta property="og:image" content="{% static 'Pages/images/og-image.png' %}">
-
-
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -31,10 +29,9 @@
     <!-- Google -->
     <meta name="google" content="index, follow">
 
-
     {% block extra_meta %}{% endblock %}
 
-        <!-- Structured Data -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -46,53 +43,47 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{% static 'Pages/images/logo.png' %}">
-    
-    <!-- Google Fonts -->
 
+    <!-- 🔗 Preconnect to External Domains (reduce DNS lookup time) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://code.jquery.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
 
-    <!-- 2. Load the actual CSS with 'rel="stylesheet"' and add 'font-display: swap' -->
+    <!-- 🎨 Google Fonts - Non-blocking load -->
+    <link rel="preload" as="style" 
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" 
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" 
-        media="print" 
-        onload="this.media='all'">
-
-    <!-- 3. Fallback for browsers that don't support 'onload' on links -->
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" 
+          media="print" 
+          onload="this.media='all'">
     <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap">
     </noscript>
-    <!-- Google Tag Manager old -->
-    <!-- <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PCZ6H3FD');
-    </script> -->
-    <!-- End Google Tag Manager -->
-     <!-- Google tag (gtag.js) -->
-      <!--Google tag manager new-->
+
+    <!-- 🎨 Custom CSS - Non-blocking load pattern -->
+    <link rel="preload" as="style" href="{% static 'Pages/css/theme.css' %}">
+    <link rel="stylesheet" href="{% static 'Pages/css/theme.css' %}" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="{% static 'Pages/css/theme.css' %}">
+    </noscript>
+
+    {% block extra_css %}{% endblock %}
+
+    <!-- 🚀 Preload LCP Resource (customize this per page in child templates) -->
+    <!-- Example for image LCP: 
+    <link rel="preload" as="image" href="{% static 'Pages/images/hero.webp' %}" fetchpriority="high"> 
+    -->
+
+    <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRC4632FBQ"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-YRC4632FBQ');
     </script>
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'Pages/css/theme.css' %}">
-    
-    {% block extra_css %}{% endblock %}
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -100,30 +91,39 @@
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCZ6H3FD" height="0" width="0"
             style="display:none;visibility:hidden"></iframe>
     </noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     {% include 'Pages/partials/header.html' %}
 
     <main>
-        {% block content %}
-        {% endblock %}
+        {% block content %}{% endblock %}
     </main>
 
     {% include 'Pages/partials/footer.html' %}
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- 📦 Scripts - All deferred to avoid blocking parser -->
+    <!-- jQuery (required first for dependencies) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
     
-    <!-- GSAP & Lenis -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <!-- GSAP & ScrollTrigger (depend on jQuery if used) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     
-    <!-- Custom JS -->
-    <script src="{% static 'Pages/js/main.js' %}"></script>
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js" defer></script>
     
+    <!-- Custom Main JS -->
+    <script src="{% static 'Pages/js/main.js' %}" defer></script>
+    
+    <!-- Page-specific JS (use defer + check DOM ready if needed) -->
     {% block extra_js %}{% endblock %}
+
+    <!-- 💡 Optional: Initialize animations after DOM ready if using defer -->
+    <script>
+    // Ensure GSAP/ScrollTrigger init runs after deferred scripts load
+    document.addEventListener('DOMContentLoaded', function() {
+        // Your animation initialization code here
+        // Example: if (typeof ScrollTrigger !== 'undefined') { ScrollTrigger.refresh(); }
+    });
+    </script>
 </body>
 </html>
-
-
