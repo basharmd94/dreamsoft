@@ -52,8 +52,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Google Tag Manager -->
-    <script>
+    <!-- Google Tag Manager old -->
+    <!-- <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
@@ -67,8 +67,18 @@
             j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-PCZ6H3FD');
-    </script>
+    </script> -->
     <!-- End Google Tag Manager -->
+     <!-- Google tag (gtag.js) -->
+      <!--Google tag manager new-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRC4632FBQ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YRC4632FBQ');
+    </script>
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'Pages/css/theme.css' %}">
