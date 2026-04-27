@@ -44,12 +44,12 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{% static 'Pages/images/logo.png' %}">
 
-    <!-- 🔗 Preconnect to External Domains (reduce DNS lookup time) -->
+    <!-- 🔗 Preconnect: ONLY top 4 critical origins (Lighthouse limit) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://code.jquery.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://unpkg.com">
+    <!-- Note: Removed unpkg.com (Lenis is small; self-host if needed later) -->
 
     <!-- 🎨 Google Fonts - Non-blocking load -->
     <link rel="preload" as="style" 
@@ -71,10 +71,8 @@
 
     {% block extra_css %}{% endblock %}
 
-    <!-- 🚀 Preload LCP Resource (customize this per page in child templates) -->
-    <!-- Example for image LCP: 
-    <link rel="preload" as="image" href="{% static 'Pages/images/hero.webp' %}" fetchpriority="high"> 
-    -->
+    <!-- 🎯 LCP Preload Hook (add in child templates for page-specific LCP) -->
+    <!-- Example: <link rel="preload" as="image" href="{% static 'Pages/images/hero.webp' %}" fetchpriority="high"> -->
 
     <!-- Google Tag Manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YRC4632FBQ"></script>
@@ -100,29 +98,36 @@
 
     {% include 'Pages/partials/footer.html' %}
 
-    <!-- 📦 Scripts - All deferred to avoid blocking parser -->
-    <!-- jQuery (required first for dependencies) -->
+    <!-- 📦 Scripts: All deferred + strict dependency order -->
+    <!-- 1. jQuery (foundation) -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
     
-    <!-- GSAP & ScrollTrigger (depend on jQuery if used) -->
+    <!-- 2. GSAP Core -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    
+    <!-- 3. GSAP ScrollTrigger Plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     
-    <!-- Lenis Smooth Scroll -->
+    <!-- 4. Lenis Smooth Scroll (small, non-critical) -->
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js" defer></script>
     
-    <!-- Custom Main JS -->
-    <script src="{% static 'Pages/js/main.min.js' %}" defer></script>
+    <!-- 5. Main app JS (shared logic) -->
+    <script src="{% static 'Pages/js/main.js' %}" defer></script>
     
-    <!-- Page-specific JS (use defer + check DOM ready if needed) -->
+    <!-- 6. Page-specific JS (home.js, about.js, etc.) -->
     {% block extra_js %}{% endblock %}
 
-    <!-- 💡 Optional: Initialize animations after DOM ready if using defer -->
+    <!-- 💡 Safe initialization bridge for deferred scripts -->
     <script>
-    // Ensure GSAP/ScrollTrigger init runs after deferred scripts load
+    // Ensures any inline init code runs AFTER all deferred scripts have executed
     document.addEventListener('DOMContentLoaded', function() {
-        // Your animation initialization code here
-        // Example: if (typeof ScrollTrigger !== 'undefined') { ScrollTrigger.refresh(); }
+        // Optional: Initialize Lenis + ScrollTrigger integration if used globally
+        if (typeof window.Lenis !== 'undefined' && typeof window.ScrollTrigger !== 'undefined') {
+            const lenis = new window.Lenis();
+            lenis.on('scroll', window.ScrollTrigger.update);
+            // Keep ScrollTrigger in sync with Lenis
+            window.ScrollTrigger.defaults({ scroller: lenis });
+        }
     });
     </script>
 </body>

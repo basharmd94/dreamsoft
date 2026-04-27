@@ -1,11 +1,25 @@
 (function () {
+    'use strict';
+
+    // ✅ Guard: Wait for GSAP + ScrollTrigger to be fully loaded
+    function waitForGsap(callback) {
+        if (typeof window.gsap !== 'undefined' && typeof window.ScrollTrigger !== 'undefined') {
+            callback();
+        } else {
+            // Fallback: retry after short delay (handles edge cases with defer timing)
+            setTimeout(() => waitForGsap(callback), 50);
+        }
+    }
+
     function initSectionEntrances() {
+        // Safety check (redundant but safe)
         if (typeof window.gsap === 'undefined' || typeof window.ScrollTrigger === 'undefined') {
             return;
         }
 
         window.gsap.registerPlugin(window.ScrollTrigger);
 
+        // Respect user preference for reduced motion
         if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
             return;
         }
@@ -29,8 +43,11 @@
             );
         });
 
+        // Refresh ScrollTrigger after page load (images/fonts ready)
         window.addEventListener('load', () => {
-            window.ScrollTrigger.refresh();
+            if (window.ScrollTrigger) {
+                window.ScrollTrigger.refresh();
+            }
         });
     }
 
@@ -42,19 +59,13 @@
         const scrollers = document.querySelectorAll('.scroller');
         scrollers.forEach((scroller) => {
             const scrollerInner = scroller.querySelector('.scroller__inner');
-            if (!scrollerInner) {
-                return;
-            }
-
-            if (scrollerInner.dataset.cloned === 'true') {
-                return;
-            }
+            if (!scrollerInner) return;
+            if (scrollerInner.dataset.cloned === 'true') return;
 
             const items = Array.from(scrollerInner.children);
-            if (!items.length) {
-                return;
-            }
+            if (!items.length) return;
 
+            // Clone items for infinite scroll effect
             items.forEach((item) => {
                 const duplicatedItem = item.cloneNode(true);
                 if (duplicatedItem instanceof HTMLElement) {
@@ -68,9 +79,7 @@
             const speed = scroller.dataset.speed;
             const duration = speed === 'fast' ? 20 : speed === 'slow' ? 40 : 30;
             const totalWidth = scrollerInner.scrollWidth / 2;
-            if (!totalWidth) {
-                return;
-            }
+            if (!totalWidth) return;
 
             window.gsap.set(scrollerInner, { x: 0 });
             window.gsap.to(scrollerInner, {
@@ -87,67 +96,54 @@
 
     function initTestimonialsCarousel() {
         const carousel = document.querySelector('[data-testimonials-carousel]');
-        if (!carousel) {
-            return;
-        }
+        if (!carousel) return;
 
         const track = carousel.querySelector('[data-testimonials-track]');
         const root = carousel.closest('.testimonials-section') || carousel.parentElement || document;
         const dotsContainer = root.querySelector('[data-testimonials-dots]');
         const prevButton = root.querySelector('[data-testimonials-prev]');
         const nextButton = root.querySelector('[data-testimonials-next]');
-        const windowEl = carousel.querySelector('.testimonials-window') || carousel;
 
-        if (!track || !dotsContainer) {
-            return;
-        }
+        if (!track || !dotsContainer) return;
 
         const cards = Array.from(track.children).filter((el) => el instanceof HTMLElement);
-        if (!cards.length) {
-            return;
-        }
+        if (!cards.length) return;
 
         let currentIndex = 0;
         let dotButtons = [];
 
         function getTranslateXForIndex(index) {
             const card = cards[index];
-            if (!card) {
-                return 0;
-            }
-
+            if (!card) return 0;
             const trackStyle = window.getComputedStyle(track);
             const paddingLeft = parseFloat(trackStyle.paddingLeft || '0') || 0;
-            const x = -(card.offsetLeft - paddingLeft);
-            return x;
+            return -(card.offsetLeft - paddingLeft);
         }
 
         function renderDots() {
             dotsContainer.innerHTML = '';
             dotButtons = [];
 
-            const dotCount = cards.length;
-            for (let i = 0; i < dotCount; i += 1) {
+            cards.forEach((_, i) => {
                 const dot = document.createElement('button');
                 dot.type = 'button';
                 dot.className = 'testimonial-dot';
-                dot.addEventListener('click', () => {
-                    goTo(i);
-                });
+                dot.setAttribute('aria-label', `Go to testimonial ${i + 1}`);
+                dot.addEventListener('click', () => goTo(i));
                 dotsContainer.appendChild(dot);
                 dotButtons.push(dot);
-            }
+            });
         }
 
         function updateControls() {
             dotButtons.forEach((btn, i) => {
                 btn.classList.toggle('is-active', i === currentIndex);
+                btn.setAttribute('aria-current', i === currentIndex ? 'true' : 'false');
             });
 
             if (prevButton instanceof HTMLButtonElement) {
                 prevButton.disabled = currentIndex <= 0;
             }
-
             if (nextButton instanceof HTMLButtonElement) {
                 nextButton.disabled = currentIndex >= cards.length - 1;
             }
@@ -163,7 +159,6 @@
             } else {
                 track.style.transform = `translateX(${x}px)`;
             }
-
             updateControls();
         }
 
@@ -172,28 +167,38 @@
             goTo(currentIndex, false);
         }
 
-        rebuild();
+        // Initialize
+        renderDots();
+        goTo(0, false);
 
+        // Event listeners
         if (prevButton) {
-            prevButton.addEventListener('click', () => {
-                goTo(currentIndex - 1);
-            });
+            prevButton.addEventListener('click', () => goTo(currentIndex - 1));
         }
-
         if (nextButton) {
-            nextButton.addEventListener('click', () => {
-                goTo(currentIndex + 1);
-            });
+            nextButton.addEventListener('click', () => goTo(currentIndex + 1));
         }
-
         window.addEventListener('resize', () => {
-            rebuild();
+            // Debounce resize for performance
+            clearTimeout(window.__testimonialsResizeTimeout);
+            window.__testimonialsResizeTimeout = setTimeout(rebuild, 150);
         });
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
+    // ✅ Main init: Run after DOM is ready AND GSAP is loaded
+    function initHome() {
         initSectionEntrances();
         initLogoScroller();
         initTestimonialsCarousel();
+    }
+
+    // Primary: DOMContentLoaded (fires after deferred scripts execute)
+    document.addEventListener('DOMContentLoaded', function() {
+        waitForGsap(initHome);
     });
+
+    // Fallback: If DOMContentLoaded already fired (edge case), run immediately
+    if (document.readyState === 'interactive' || document.readyState === 'complete') {
+        waitForGsap(initHome);
+    }
 })();
