@@ -22,6 +22,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     # Use a non-default admin route for reduced automated scanning.
     path('admin-login-panel/', admin.site.urls),
+    # Register CKEditor uploader routes so admin widgets can resolve upload/browse URLs.
+    path('ckeditor/', include('ckeditor_uploader.urls')),
     path('', include('Pages.urls')),
 ]
 
