@@ -51,17 +51,9 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <!-- Note: Removed unpkg.com (Lenis is small; self-host if needed later) -->
 
-    <!-- 🎨 Google Fonts - Non-blocking to reduce render-blocking delay -->
-    <link rel="preload" as="style"
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=optional">
+    <!-- 🎨 Google Fonts - Blocking load to reduce CLS from late font swap -->
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=optional"
-          media="print"
-          onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet"
-              href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=optional">
-    </noscript>
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap">
 
     <!-- 🎨 Core theme CSS - Blocking load to avoid first-paint layout shifts -->
     <link rel="stylesheet" href="{% static 'Pages/css/theme.css' %}">
