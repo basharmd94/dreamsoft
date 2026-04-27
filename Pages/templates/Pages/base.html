@@ -48,10 +48,19 @@
     <link rel="icon" type="image/png" href="{% static 'Pages/images/logo.png' %}">
     
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- 2. Load the actual CSS with 'rel="stylesheet"' and add 'font-display: swap' -->
+    <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" 
+        media="print" 
+        onload="this.media='all'">
+
+    <!-- 3. Fallback for browsers that don't support 'onload' on links -->
+    <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap">
+    </noscript>
     <!-- Google Tag Manager old -->
     <!-- <script>
         (function(w, d, s, l, i) {
@@ -116,3 +125,5 @@
     {% block extra_js %}{% endblock %}
 </body>
 </html>
+
+
