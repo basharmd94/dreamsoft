@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
@@ -75,4 +76,15 @@ def about_us(request):
 
 def contact_us(request):
     return render(request, 'Pages/contact-us.html')
+
+
+def robots_txt(request):
+    # Serve robots directives directly so this endpoint does not depend on template file placement.
+    content = (
+        "User-agent: *\n"
+        "Allow: /\n\n"
+        "Sitemap: https://dreamsoft.bd/sitemap.xml\n"
+    )
+    # Return plain text content so crawlers parse robots rules correctly.
+    return HttpResponse(content, content_type="text/plain")
 

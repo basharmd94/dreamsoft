@@ -1,6 +1,8 @@
 from django.urls import path, include
+from django.contrib.sitemaps.views import sitemap
 from django.views.generic import RedirectView
 from .views import main_page_view, blog_view
+from .sitemap import sitemaps
 
 urlpatterns = [
 
@@ -13,6 +15,7 @@ urlpatterns = [
     # =========================
     # SOFTWARE (ALL PAGES)
     # =========================
+    
 
     path('software/pos-software-bangladesh/', main_page_view.pos_software, name='pos_software'),
     path('software/erp-software-bangladesh/', main_page_view.erp_software, name='erp_software'),
@@ -21,7 +24,7 @@ urlpatterns = [
     path('software/isp-billing-software-bangladesh/', main_page_view.isp_billing_software, name='isp_billing_software'),
 
     path('software/fashion-shop-software-bangladesh/', main_page_view.fashion_shop_software, name='fashion_shop_software'),
-    path('software/resturant-pos-software-bangladesh/', main_page_view.resturant_pos_software, name='resturant_pos_software'),
+    path('software/restaurant-pos-software-bangladesh/', main_page_view.resturant_pos_software, name='resturant_pos_software'),
     path('software/supershop-pos-software-bangladesh/', main_page_view.supershop_pos_software, name='supershop_pos_software'),
     path('software/electronics-shop-pos-software-bangladesh/', main_page_view.electronics_shop_pos_software, name='electronics_shop_pos_software'),
     path('software/wholesale-shop-pos-software-bangladesh/', main_page_view.wholesale_shop_pos_software, name='wholesale_shop_pos_software'),
@@ -57,6 +60,10 @@ urlpatterns = [
     path('blog/category/<slug:slug>/', blog_view.blog_category, name='blog_category'),
     path('blog/tag/<slug:slug>/', blog_view.blog_tag, name='blog_tag'),
     path('blog/<slug:slug>/', blog_view.blog_detail, name='blog_detail'),
+    # XML sitemap endpoint for search engines.
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+    # Plain-text robots endpoint with absolute sitemap URL for production crawlers.
+    path('robots.txt', main_page_view.robots_txt, name='robots_txt'),
 
 
     # =========================
@@ -73,7 +80,7 @@ urlpatterns = [
 
     # INDUSTRY SOFTWARE
     path('fashion-shop-software/', RedirectView.as_view(url='/software/fashion-shop-software-bangladesh/', permanent=True)),
-    path('resturant-pos-software/', RedirectView.as_view(url='/software/resturant-pos-software-bangladesh/', permanent=True)),
+    path('restaurant-pos-software/', RedirectView.as_view(url='/software/restaurant-pos-software-bangladesh/', permanent=True)),
     path('supershop-pos-software/', RedirectView.as_view(url='/software/supershop-pos-software-bangladesh/', permanent=True)),
     path('electronics-shop-pos-software/', RedirectView.as_view(url='/software/electronics-shop-pos-software-bangladesh/', permanent=True)),
     path('wholesale-shop-pos-software/', RedirectView.as_view(url='/software/wholesale-shop-pos-software-bangladesh/', permanent=True)),

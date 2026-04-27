@@ -20,7 +20,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('secure-panel/', admin.site.urls),
+    # Use a non-default admin route for reduced automated scanning.
+    path('admin-login-panel/', admin.site.urls),
     path('', include('Pages.urls')),
 ]
 
