@@ -249,6 +249,11 @@
     position: relative;
 }
 
+/* Make homepage hero image larger without affecting other pages. */
+.home-hero-main-img {
+    max-width: 620px;
+}
+
 /* Left-Right Animation */
 .floating-animation {
     animation: float-horizontal 6s ease-in-out infinite;
@@ -277,7 +282,7 @@
 
 .badge-profit {
     top: 40px;
-    right: 0;
+    left: 0;
     flex-direction: column;
     align-items: flex-start;
     animation-delay: 0.5s;
