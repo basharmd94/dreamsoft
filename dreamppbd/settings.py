@@ -163,6 +163,13 @@ STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+
+# WhiteNoise: Enable compression
+WHITENOISE_ENABLE_COMPRESSION = True
+
+# Add custom cache headers
+WHITENOISE_ADD_HEADERS_FUNCTION = 'dreamppbd.headers.add_cache_headers'
+
 # Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
