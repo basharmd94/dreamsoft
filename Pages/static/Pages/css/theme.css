@@ -14,7 +14,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    /* Keep Inter for Latin text and use Hind Siliguri for Bengali glyph fallback. */
+    font-family: 'Inter', 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
 }
 
 body {

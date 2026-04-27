@@ -48,6 +48,8 @@ CKEDITOR_UPLOAD_PATH = 'uploads/'
 CKEDITOR_CONFIGS = {
     'default': {
         'skin': 'moono',
+        # Apply readable Bengali-friendly typography inside the editor writing area.
+        'contentsCss': ['/static/Pages/css/ckeditor-content.css'],
         'toolbar': 'Custom',
         'toolbar_Custom': [
             {'name': 'document', 'items': ['Source', '-', 'Preview', 'Maximize']},
