@@ -1,57 +1,91 @@
 from django.urls import path, include
+from django.views.generic import RedirectView
 from .views import main_page_view, blog_view
 
 urlpatterns = [
-    path('', main_page_view.home, name='home'),
-    # isp billing software
-    path('isp-billing-software/', main_page_view.isp_billing_software, name='isp_billing_software'),
-    # fashion shop post software
-    path('fashion-shop-software/', main_page_view.fashion_shop_software, name='fashion_shop_software'),
-    # resturant post software
-    path('resturant-pos-software/', main_page_view.resturant_pos_software, name='resturant_pos_software'),
-    # supershop post software
-    path('supershop-pos-software/', main_page_view.supershop_pos_software, name='supershop_pos_software'),
-    # electronics shop post software
-    path('electronics-shop-pos-software/', main_page_view.electronics_shop_pos_software, name='electronics_shop_pos_software'),
-    # wholesale shop post software
-    path('wholesale-shop-pos-software/', main_page_view.wholesale_shop_pos_software, name='wholesale_shop_pos_software'),
-    # hardware shop post software
-    path('hardware-shop-pos-software/', main_page_view.hardware_shop_pos_software, name='hardware_shop_pos_software'),
-    # hotel management post software
-    path('hotel-management-software/', main_page_view.hotel_management_software, name='hotel_management_software'),
-    # tailor post software
-    path('tailor-shop-software/', main_page_view.tailor_shop_software, name='tailor_shop_software'),
-    # accounting post software
-    path('accounting-software/', main_page_view.accounting_software, name='accounting_software'),
-    # inventory post software
-    path('inventory-software/', main_page_view.inventory_software, name='inventory_software'),
-    # pos post software
-    path('pos-software/', main_page_view.pos_software, name='pos_software'),
-    # erp post software
-    path('erp-software/', main_page_view.erp_software, name='erp_software'),
 
-    # service pages
-    # website development
-    path('website-development/', main_page_view.website_development, name='website_development'),
-    
-    # Software Development
-    path('software-development/', main_page_view.software_development, name='software_development'),
-    
-    # mobile-app-development
-    path('mobile-app-development/', main_page_view.mobile_app_development, name='mobile_app_development'),
-    # e-commerce development
-    path('ecommerce-development/', main_page_view.ecommerce_development, name='ecommerce_development'),
-    
-    # landing page development
-    path('landing-page-development/', main_page_view.landing_page_development, name='landing_page_development'),
+    # =========================
+    # HOME
+    # =========================
+    path('', main_page_view.home, name='home'),
+
+
+    # =========================
+    # SOFTWARE (ALL PAGES)
+    # =========================
+
+    path('software/pos-software-bangladesh/', main_page_view.pos_software, name='pos_software'),
+    path('software/erp-software-bangladesh/', main_page_view.erp_software, name='erp_software'),
+    path('software/inventory-management-software-bangladesh/', main_page_view.inventory_software, name='inventory_software'),
+    path('software/accounting-software-bangladesh/', main_page_view.accounting_software, name='accounting_software'),
+    path('software/isp-billing-software-bangladesh/', main_page_view.isp_billing_software, name='isp_billing_software'),
+
+    path('software/fashion-shop-software-bangladesh/', main_page_view.fashion_shop_software, name='fashion_shop_software'),
+    path('software/resturant-pos-software-bangladesh/', main_page_view.resturant_pos_software, name='resturant_pos_software'),
+    path('software/supershop-pos-software-bangladesh/', main_page_view.supershop_pos_software, name='supershop_pos_software'),
+    path('software/electronics-shop-pos-software-bangladesh/', main_page_view.electronics_shop_pos_software, name='electronics_shop_pos_software'),
+    path('software/wholesale-shop-pos-software-bangladesh/', main_page_view.wholesale_shop_pos_software, name='wholesale_shop_pos_software'),
+    path('software/hardware-shop-pos-software-bangladesh/', main_page_view.hardware_shop_pos_software, name='hardware_shop_pos_software'),
+    path('software/hotel-management-software-bangladesh/', main_page_view.hotel_management_software, name='hotel_management_software'),
+    path('software/tailor-shop-software-bangladesh/', main_page_view.tailor_shop_software, name='tailor_shop_software'),
+
+
+    # =========================
+    # SERVICES
+    # =========================
+
+    path('services/website-development-bangladesh/', main_page_view.website_development, name='website_development'),
+    path('services/software-development-bangladesh/', main_page_view.software_development, name='software_development'),
+    path('services/mobile-app-development-bangladesh/', main_page_view.mobile_app_development, name='mobile_app_development'),
+    path('services/ecommerce-development-bangladesh/', main_page_view.ecommerce_development, name='ecommerce_development'),
+    path('services/landing-page-development-bangladesh/', main_page_view.landing_page_development, name='landing_page_development'),
+
+
+    # =========================
+    # COMPANY
+    # =========================
 
     path('about-us/', main_page_view.about_us, name='about_us'),
     path('contact-us/', main_page_view.contact_us, name='contact_us'),
 
-    # Blog System
-    path('ckeditor/', include('ckeditor_uploader.urls')),
+
+    # =========================
+    # BLOG
+    # =========================
+
     path('blog/', blog_view.blog_list, name='blog_list'),
     path('blog/category/<slug:slug>/', blog_view.blog_category, name='blog_category'),
     path('blog/tag/<slug:slug>/', blog_view.blog_tag, name='blog_tag'),
     path('blog/<slug:slug>/', blog_view.blog_detail, name='blog_detail'),
+
+
+    # =========================
+    # FULL 301 REDIRECTS (COMPLETE OLD → NEW MAP)
+    # =========================
+
+    # CORE SOFTWARE
+    path('pos-software/', RedirectView.as_view(url='/software/pos-software-bangladesh/', permanent=True)),
+    path('erp-software/', RedirectView.as_view(url='/software/erp-software-bangladesh/', permanent=True)),
+    path('inventory-software/', RedirectView.as_view(url='/software/inventory-management-software-bangladesh/', permanent=True)),
+    path('accounting-software/', RedirectView.as_view(url='/software/accounting-software-bangladesh/', permanent=True)),
+    path('isp-billing-software/', RedirectView.as_view(url='/software/isp-billing-software-bangladesh/', permanent=True)),
+
+
+    # INDUSTRY SOFTWARE
+    path('fashion-shop-software/', RedirectView.as_view(url='/software/fashion-shop-software-bangladesh/', permanent=True)),
+    path('resturant-pos-software/', RedirectView.as_view(url='/software/resturant-pos-software-bangladesh/', permanent=True)),
+    path('supershop-pos-software/', RedirectView.as_view(url='/software/supershop-pos-software-bangladesh/', permanent=True)),
+    path('electronics-shop-pos-software/', RedirectView.as_view(url='/software/electronics-shop-pos-software-bangladesh/', permanent=True)),
+    path('wholesale-shop-pos-software/', RedirectView.as_view(url='/software/wholesale-shop-pos-software-bangladesh/', permanent=True)),
+    path('hardware-shop-pos-software/', RedirectView.as_view(url='/software/hardware-shop-pos-software-bangladesh/', permanent=True)),
+    path('hotel-management-software/', RedirectView.as_view(url='/software/hotel-management-software-bangladesh/', permanent=True)),
+    path('tailor-shop-software/', RedirectView.as_view(url='/software/tailor-shop-software-bangladesh/', permanent=True)),
+
+
+    # SERVICES (OLD → NEW CLEAN STRUCTURE)
+    path('website-development/', RedirectView.as_view(url='/services/website-development-bangladesh/', permanent=True)),
+    path('software-development/', RedirectView.as_view(url='/services/software-development-bangladesh/', permanent=True)),
+    path('mobile-app-development/', RedirectView.as_view(url='/services/mobile-app-development-bangladesh/', permanent=True)),
+    path('ecommerce-development/', RedirectView.as_view(url='/services/ecommerce-development-bangladesh/', permanent=True)),
+    path('landing-page-development/', RedirectView.as_view(url='/services/landing-page-development-bangladesh/', permanent=True)),
 ]

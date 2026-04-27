@@ -4,21 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Dreamsoft - Largest ERP, POS Software Company in Bangladesh{% endblock %}</title>
+    <title>{% block title %}POS & ERP Software in Bangladesh | DreamSoft BD{% endblock %}</title>
 
-    <meta name="description" content="{% block meta_description %}Dreamsoft builds modern software to manage and grow your business.{% endblock %}">
+    <meta name="description" content="{% block meta_description %}Dreamsoft builds modern ERP & POS software to manage and grow your business.{% endblock %}">
     <meta name="keywords" content="{% block meta_keywords %}software company, Website Development, ERP, POS, CRM, Bangladesh{% endblock %}">
     <meta name="robots" content="{% block meta_robots %}index, follow{% endblock %}">
 
-    <meta property="og:title" content="{% block og_title %}Dreamsoft - Largest ERP, POS Software Company in Bangladesh{% endblock %}">
-    <meta property="og:description" content="{% block og_description %}Dreamsoft builds modern software to manage and grow your business.{% endblock %}">
-    <meta property="og:type" content="{% block og_type %}website{% endblock %}">
+    <!-- Canonical -->
+    <link rel="canonical" href="{{ request.build_absolute_uri }}">
 
-    <meta name="twitter:card" content="{% block twitter_card %}summary_large_image{% endblock %}">
-    <meta name="twitter:title" content="{% block twitter_title %}Dreamsoft - Largest ERP, POS Software Company in Bangladesh{% endblock %}">
-    <meta name="twitter:description" content="{% block twitter_description %}Dreamsoft builds modern software to manage and grow your business.{% endblock %}">
+        <!-- Open Graph -->
+    <meta property="og:title" content="{% block og_title %}POS & ERP Software in Bangladesh | DreamSoft BD{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}DreamSoft BD provides business software and ERP Software solutions in Bangladesh.{% endblock %}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    <meta property="og:image" content="{% static 'Pages/images/og-image.png' %}">
+
+
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% block twitter_title %}DreamSoft BD{% endblock %}">
+    <meta name="twitter:description" content="{% block twitter_description %}DreamSoft BD provides business software and ERP Software solutions in Bangladesh.{% endblock %}">
+    <meta name="twitter:image" content="{% static 'Pages/images/og-image.png' %}">
+
 
     {% block extra_meta %}{% endblock %}
+
+        <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "DreamSoft BD",
+      "url": "https://dreamsoft.bd"
+    }
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{% static 'Pages/images/logo.png' %}">
