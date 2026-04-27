@@ -84,6 +84,8 @@ def robots_txt(request):
         "User-agent: *\n"
         # Block tag archive URLs so crawlers do not follow or crawl tag listing pages.
         "Disallow: /blog/tag/\n"
+        # Block category archive URLs so crawlers do not follow or crawl category listing pages.
+        "Disallow: /blog/category/\n"
         "Allow: /\n\n"
         "Sitemap: https://dreamsoft.bd/sitemap.xml\n"
     )
