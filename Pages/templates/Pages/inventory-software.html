@@ -20,7 +20,13 @@ wholesale, and restaurants.{% endblock %}
 <section class="hero-section inv-hero" id="inv-hero">
     <div class="container hero-container">
         <div class="hero-content">
-            <span class="inv-kicker">Inventory Management System</span>
+            <nav class="hero-breadcrumb" aria-label="Breadcrumb">
+                <a href="{% url 'home' %}">Home</a>
+                <span class="hero-breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="hero-breadcrumb-parent">Software</span>
+                <span class="hero-breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="hero-breadcrumb-current">Inventory Management Software</span>
+            </nav>
             <h1 class="hero-title inv-hero-title">
                 <span class="text-gradient">Inventory Management Software</span> in Bangladesh for Retail & Wholesale
                 Businesses

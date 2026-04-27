@@ -20,7 +20,13 @@
 <section class="hero-section wd-hero lp-hero" id="lp-hero">
     <div class="container hero-container">
         <div class="hero-content">
-            <span class="wd-kicker">Landing Page Development Services</span>
+            <nav class="hero-breadcrumb" aria-label="Breadcrumb">
+                <a href="{% url 'home' %}">Home</a>
+                <span class="hero-breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="hero-breadcrumb-parent">Services</span>
+                <span class="hero-breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="hero-breadcrumb-current">Landing Page Development</span>
+            </nav>
             <h1 class="hero-title wd-hero-title">Best <span class="text-gradient">Landing Page Development</span> Company in Bangladesh</h1>
             <h2 class="wd-hero-subtitle">Build High-Converting Landing Pages to Increase Leads, Sales, and Campaign ROI</h2>
             <p class="hero-description wd-hero-description">

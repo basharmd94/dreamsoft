@@ -22,7 +22,13 @@
 
     <div class="container hero-container">
         <div class="hero-content">
-            <span class="pos-kicker">POS Software</span>
+            <nav class="hero-breadcrumb" aria-label="Breadcrumb">
+                <a href="{% url 'home' %}">Home</a>
+                <span class="hero-breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="hero-breadcrumb-parent">Software</span>
+                <span class="hero-breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="hero-breadcrumb-current">POS Software</span>
+            </nav>
             <h1 class="hero-title pos-hero-title">
                 Best <span class="text-gradient">POS Software</span> in Bangladesh – POS, Accounting, Inventory & Sales
                 Management

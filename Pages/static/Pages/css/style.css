@@ -16,6 +16,41 @@
     color: rgba(255, 255, 255, 0.9);
 }
 
+/* Shared hero breadcrumb used on software and services pages */
+.hero-breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 14px;
+}
+
+.hero-breadcrumb a {
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.hero-breadcrumb a:hover {
+    color: #7c3aed;
+}
+
+.hero-breadcrumb-sep {
+    color: rgba(148, 163, 184, 0.7);
+    font-size: 1.05rem;
+}
+
+.hero-breadcrumb-parent {
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.hero-breadcrumb-current {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
 /* Hero Section Styles */
 .hero-section {
     padding: 60px 0 100px;

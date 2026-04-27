@@ -19,7 +19,13 @@
 <section class="hero-section ap-hero" id="ap-hero">
     <div class="container hero-container">
         <div class="hero-content">
-            <span class="ap-kicker">Financial Management</span>
+            <nav class="hero-breadcrumb" aria-label="Breadcrumb">
+                <a href="{% url 'home' %}">Home</a>
+                <span class="hero-breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="hero-breadcrumb-parent">Software</span>
+                <span class="hero-breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="hero-breadcrumb-current">Accounting Software</span>
+            </nav>
             <h1 class="hero-title ap-hero-title">
                 Best <span class="text-gradient">Accounting Software</span><br>
                 in Bangladesh

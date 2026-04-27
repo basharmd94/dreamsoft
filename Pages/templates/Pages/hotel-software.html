@@ -19,7 +19,13 @@
 <section class="hero-section ht-hero" id="ht-hero">
     <div class="container hero-container">
         <div class="hero-content">
-            <span class="ht-kicker">Hotel Management System</span>
+            <nav class="hero-breadcrumb" aria-label="Breadcrumb">
+                <a href="{% url 'home' %}">Home</a>
+                <span class="hero-breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="hero-breadcrumb-parent">Software</span>
+                <span class="hero-breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="hero-breadcrumb-current">Hotel Management Software</span>
+            </nav>
             <h1 class="hero-title ht-hero-title">
                 Complete <span class="text-gradient">Hotel Management</span><br>
                 Software in Bangladesh

@@ -18,7 +18,13 @@
 <section class="hero-section wd-hero" id="wd-hero">
     <div class="container hero-container">
         <div class="hero-content">
-            <span class="wd-kicker">Website Development Services</span>
+            <nav class="hero-breadcrumb" aria-label="Breadcrumb">
+                <a href="{% url 'home' %}">Home</a>
+                <span class="hero-breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="hero-breadcrumb-parent">Services</span>
+                <span class="hero-breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="hero-breadcrumb-current">Website Development</span>
+            </nav>
             <h1 class="hero-title wd-hero-title">Best <span class="text-gradient">Website Development</span> Company in Bangladesh</h1>
             <h2 class="wd-hero-subtitle">Professional Website Development Services for Businesses, Startups, and Enterprises in Bangladesh.</h2>
             <p class="hero-description wd-hero-description">

@@ -19,7 +19,13 @@
 <section class="hero-section wd-hero sd-hero" id="sd-hero">
     <div class="container hero-container">
         <div class="hero-content">
-            <span class="wd-kicker">Software Development Services</span>
+            <nav class="hero-breadcrumb" aria-label="Breadcrumb">
+                <a href="{% url 'home' %}">Home</a>
+                <span class="hero-breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="hero-breadcrumb-parent">Services</span>
+                <span class="hero-breadcrumb-sep" aria-hidden="true">›</span>
+                <span class="hero-breadcrumb-current">Software Development</span>
+            </nav>
             <h1 class="hero-title wd-hero-title">Best <span class="text-gradient">Software Development</span> Company in Bangladesh</h1>
             <p class="hero-description wd-hero-description">
                 DreamSoft is a leading provider of custom software development services in Bangladesh, helping businesses build powerful digital systems to automate operations, manage data efficiently, and scale faster in the modern digital economy.
