@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 from decouple import config, Csv
-
+from dreamappbd.headers import add_cache_headers
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -168,7 +168,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 WHITENOISE_ENABLE_COMPRESSION = True
 
 # Add custom cache headers
-WHITENOISE_ADD_HEADERS_FUNCTION = 'dreamppbd.headers.add_cache_headers'
+WHITENOISE_ADD_HEADERS_FUNCTION = add_cache_headers
 
 # Media files
 MEDIA_URL = '/media/'
