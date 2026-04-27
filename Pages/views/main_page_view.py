@@ -82,6 +82,8 @@ def robots_txt(request):
     # Serve robots directives directly so this endpoint does not depend on template file placement.
     content = (
         "User-agent: *\n"
+        # Block tag archive URLs so crawlers do not follow or crawl tag listing pages.
+        "Disallow: /blog/tag/\n"
         "Allow: /\n\n"
         "Sitemap: https://dreamsoft.bd/sitemap.xml\n"
     )
