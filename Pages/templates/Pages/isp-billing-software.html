@@ -50,7 +50,20 @@
             <div class="hero-bg-shape shape-1"></div>
             <div class="hero-bg-shape shape-2"></div>
             <div class="hero-img-container floating-animation">
-                <img src="{% static 'Pages/images/best_isp_management_software_in_bd__hero.webp' %}" alt="Best ISP management software in Bangladesh dashboard" class="hero-main-img hero-main-img--lg ibp-hero-img">
+                <!-- Use Cloudinary responsive variants to reduce LCP image payload across devices. -->
+                <img
+                    src="https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_600,c_limit/v1777359075/best_isp_management_software_in_bd__hero_tgi57g.webp"
+                    srcset="
+                        https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_420,c_limit/v1777359075/best_isp_management_software_in_bd__hero_tgi57g.webp 420w,
+                        https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_600,c_limit/v1777359075/best_isp_management_software_in_bd__hero_tgi57g.webp 600w,
+                        https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_860,c_limit/v1777359075/best_isp_management_software_in_bd__hero_tgi57g.webp 860w
+                    "
+                    sizes="(max-width: 768px) 90vw, 600px"
+                    alt="Best ISP management software in Bangladesh dashboard"
+                    class="hero-main-img hero-main-img--lg ibp-hero-img"
+                    loading="eager"
+                    fetchpriority="high"
+                    decoding="async">
             </div>
         </div>
     </div>
@@ -92,7 +105,19 @@
                 </ul>
             </div>
             <div class="ibp-info-image">
-                <img src="{% static 'Pages/images/isp_management_software_btrc_approved.webp' %}" alt="BTRC approved ISP management software overview" class="ibp-info-img">
+                <!-- Serve right-sized responsive image for BTRC section on mobile and desktop. -->
+                <img
+                    src="https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_531,c_limit/v1777359075/isp_management_software_btrc_approved_is9iqu.webp"
+                    srcset="
+                        https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_320,c_limit/v1777359075/isp_management_software_btrc_approved_is9iqu.webp 320w,
+                        https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_531,c_limit/v1777359075/isp_management_software_btrc_approved_is9iqu.webp 531w,
+                        https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_760,c_limit/v1777359075/isp_management_software_btrc_approved_is9iqu.webp 760w
+                    "
+                    sizes="(max-width: 768px) 92vw, 531px"
+                    alt="BTRC approved ISP management software overview"
+                    class="ibp-info-img"
+                    loading="lazy"
+                    decoding="async">
                 <div class="ibp-float-badge ibp-float-badge--top">
                     <span class="ibp-float-badge-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.5" fill="currentColor"/></svg></span>
                     <div class="ibp-float-badge-info">
@@ -236,7 +261,19 @@
             </div>
             
             <div class="ibp-system-image">
-                <img src="{% static 'Pages/images/why_need_isp_management_software.webp' %}" alt="Why you need ISP management software in Bangladesh" class="ibp-system-img">
+                <!-- Optimize the section image with responsive Cloudinary derivatives. -->
+                <img
+                    src="https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_531,c_limit/v1777359075/why_need_isp_management_software_kergrd.webp"
+                    srcset="
+                        https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_320,c_limit/v1777359075/why_need_isp_management_software_kergrd.webp 320w,
+                        https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_531,c_limit/v1777359075/why_need_isp_management_software_kergrd.webp 531w,
+                        https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_760,c_limit/v1777359075/why_need_isp_management_software_kergrd.webp 760w
+                    "
+                    sizes="(max-width: 768px) 92vw, 531px"
+                    alt="Why you need ISP management software in Bangladesh"
+                    class="ibp-system-img"
+                    loading="lazy"
+                    decoding="async">
                 <div class="ibp-float-badge ibp-float-badge--bottom" style="left: -20px; bottom: 20px;">
                     <span class="ibp-float-badge-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
                     <div class="ibp-float-badge-info">
