@@ -249,8 +249,8 @@
     position: relative;
 }
 
-/* Make homepage hero image larger without affecting other pages. */
-.home-hero-main-img {
+/* Shared utility class for larger hero images across pages. */
+.hero-main-img--lg {
     max-width: 620px;
 }
 
