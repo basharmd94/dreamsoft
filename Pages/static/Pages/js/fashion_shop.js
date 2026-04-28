@@ -80,9 +80,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Retail ERP Section
-    gsap.from('.fs-erp-section .fs-erp-content', {
+    gsap.from('.fs-erp-section .fs-content-col', {
         scrollTrigger: { trigger: '.fs-erp-section', start: 'top 75%' },
-        opacity: 0, y: 40, duration: 0.8, ease: 'power3.out',
+        opacity: 0, x: -50, duration: 0.8, ease: 'power3.out',
+    });
+    gsap.from('.fs-erp-section .fs-image-col', {
+        scrollTrigger: { trigger: '.fs-erp-section', start: 'top 75%' },
+        opacity: 0, x: 50, duration: 0.8, delay: 0.15, ease: 'power3.out',
     });
     gsap.from('.fs-erp-section .fs-check-list li', {
         scrollTrigger: { trigger: '.fs-erp-section .fs-check-list', start: 'top 85%' },
