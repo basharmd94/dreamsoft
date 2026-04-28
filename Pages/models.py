@@ -60,8 +60,8 @@ class BlogPost(models.Model):
     
     # SEO Fields
     meta_title = models.CharField(max_length=255, blank=True, help_text="SEO Title (defaults to post title)")
-    meta_description = models.CharField(max_length=160, blank=True, help_text="SEO Description (defaults to excerpt)")
-    meta_keywords = models.CharField(max_length=255, blank=True, help_text="Comma-separated SEO keywords")
+    meta_description = models.TextField(blank=True, help_text="SEO Description (defaults to excerpt)")
+    meta_keywords = models.TextField(blank=True, help_text="Comma-separated SEO keywords")
     
     views_count = models.PositiveIntegerField(default=0)
     reading_time = models.PositiveIntegerField(default=0, help_text="Estimated reading time in minutes")

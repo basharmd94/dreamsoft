@@ -10,7 +10,6 @@ env/
 .venv/
 .env/
 virtualenv/
-migrations/
 
 # Distribution / packaging
 dist/
@@ -90,6 +89,7 @@ $RECYCLE.BIN/
 *.log
 local_settings.py
 staticfiles/
+**/migrations/
 
 # Flask-specific
 instance/
