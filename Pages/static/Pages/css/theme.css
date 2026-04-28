@@ -1,3 +1,75 @@
+/* Self-host Inter regular for core body and UI text. */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter-v20-latin-400.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+/* Self-host Inter medium for labels and navigation emphasis. */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter-v20-latin-500.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+/* Self-host Inter semibold for headings and CTA text. */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter-v20-latin-600.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+/* Self-host Inter bold for strong visual hierarchy. */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter-v20-latin-700.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+/* Self-host Hind Siliguri regular for Bengali rendering quality. */
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('../fonts/hind-siliguri-v14-bengali-400.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+/* Self-host Hind Siliguri medium for Bengali UI readability. */
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('../fonts/hind-siliguri-v14-bengali-500.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+/* Self-host Hind Siliguri semibold for section titles and chips. */
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('../fonts/hind-siliguri-v14-bengali-600.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+/* Self-host Hind Siliguri bold for high-emphasis Bengali text. */
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('../fonts/hind-siliguri-v14-bengali-700.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
 :root {
     --primary-color: #4338ca;
     --secondary-color: #8b5cf6;

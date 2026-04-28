@@ -10,8 +10,15 @@
 {% block twitter_description %}DreamSoft provides the best ISP Billing Software in Bangladesh with Mikrotik integration, automated billing, SMS alerts, and BTRC compliance.{% endblock %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'Pages/css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'Pages/css/isp-billing-software.css' %}">
+    <!-- Defer non-critical page CSS to reduce render-blocking while keeping no-JS fallback. -->
+    <link rel="preload" as="style" href="{% static 'Pages/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'Pages/css/style.css' %}" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="{% static 'Pages/css/style.css' %}"></noscript>
+
+    <!-- Load ISP-specific visual styles asynchronously after first paint. -->
+    <link rel="preload" as="style" href="{% static 'Pages/css/isp-billing-software.css' %}">
+    <link rel="stylesheet" href="{% static 'Pages/css/isp-billing-software.css' %}" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="{% static 'Pages/css/isp-billing-software.css' %}"></noscript>
 {% endblock %}
 
 {% block content %}
