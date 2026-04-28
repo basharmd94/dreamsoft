@@ -44,14 +44,12 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{% static 'Pages/images/logo.png' %}">
 
-    <!-- 🔗 Preconnect: ONLY top 4 critical origins (Lighthouse limit) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Note: Removed unpkg.com (Lenis is small; self-host if needed later) -->
+    <!-- Preload core self-hosted fonts used above the fold to reduce text render delay. -->
+    <link rel="preload" href="{% static 'Pages/fonts/inter-v20-latin-400.woff2' %}" as="font" type="font/woff2">
+    <link rel="preload" href="{% static 'Pages/fonts/hind-siliguri-v14-bengali-400.woff2' %}" as="font" type="font/woff2">
 
-    <!-- 🎨 Google Fonts - Blocking load to reduce CLS from late font swap -->
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap">
+    <!-- Load shared self-hosted font-face declarations before theme styles. -->
+    <link rel="stylesheet" href="{% static 'Pages/css/fonts.css' %}">
 
     <!-- 🎨 Core theme CSS - Blocking load to avoid first-paint layout shifts -->
     <link rel="stylesheet" href="{% static 'Pages/css/theme.css' %}">

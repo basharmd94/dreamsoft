@@ -1,5 +1,5 @@
-/* Load Bengali-friendly web font for CKEditor content area. */
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+/* Load shared self-hosted font-face declarations for editor content rendering. */
+@import url('/static/Pages/css/fonts.css');
 
 /* Improve readability for Bengali and mixed Bengali-English content while writing posts. */
 body {

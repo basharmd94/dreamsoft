@@ -1,0 +1,71 @@
+/* Self-hosted Inter font family for Latin text rendering. */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter-v20-latin-400.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+/* Keep medium weight available for navigation and UI labels. */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter-v20-latin-500.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+/* Provide semibold weight used by section headings and CTAs. */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter-v20-latin-600.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+/* Provide bold weight for high-emphasis text. */
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter-v20-latin-700.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+/* Self-hosted Hind Siliguri family for Bengali typography support. */
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('../fonts/hind-siliguri-v14-bengali-400.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+/* Keep medium Bengali weight for UI readability. */
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('../fonts/hind-siliguri-v14-bengali-500.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+/* Keep semibold Bengali weight for section titles and labels. */
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('../fonts/hind-siliguri-v14-bengali-600.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+/* Keep bold Bengali weight for strong emphasis content. */
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('../fonts/hind-siliguri-v14-bengali-700.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
