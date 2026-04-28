@@ -51,6 +51,25 @@
     font-weight: 600;
 }
 
+/* Global inline content link style for pages rendered inside <main>. */
+main :is(p, li) a:not(.btn) {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* Keep link affordance visible without underline by using color change and focus ring. */
+main :is(p, li) a:not(.btn):hover,
+main :is(p, li) a:not(.btn):focus-visible {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+main :is(p, li) a:not(.btn):focus-visible {
+    outline: 2px solid rgba(37, 99, 235, 0.35);
+    outline-offset: 2px;
+}
+
 /* Hero Section Styles */
 .hero-section {
     padding: 60px 0 100px;
