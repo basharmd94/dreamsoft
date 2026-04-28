@@ -205,12 +205,21 @@ ul {
 }
 
 .logo-icon {
-    background-color: #1e1b4b;
-    color: white;
+    /* Use a transparent container so uploaded logo images do not get boxed background. */
+    background-color: transparent;
+    color: inherit;
     font-weight: 800;
-    padding: 5px 10px;
-    border-radius: 8px;
+    padding: 0;
+    border-radius: 0;
     font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Keep logo image rendering crisp and prevent inline baseline gap artifacts. */
+.logo-icon img {
+    display: block;
 }
 
 .logo-text {

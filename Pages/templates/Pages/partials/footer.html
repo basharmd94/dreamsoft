@@ -51,7 +51,19 @@
                     </div>
 
                     <a href="{% url 'contact_us' %}" class="footer-map" aria-label="View larger map">
-                        <img src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg" alt="Office Location" class="footer-map-img">
+                        <!-- Serve responsive map preview widths from Cloudinary for mobile and desktop. -->
+                        <img
+                            src="https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_360,c_limit/v1777365122/GoogleMapTA_tci7bv.webp"
+                            srcset="
+                                https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_320,c_limit/v1777365122/GoogleMapTA_tci7bv.webp 320w,
+                                https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_480,c_limit/v1777365122/GoogleMapTA_tci7bv.webp 480w,
+                                https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_720,c_limit/v1777365122/GoogleMapTA_tci7bv.webp 720w
+                            "
+                            sizes="(max-width: 768px) 92vw, 360px"
+                            alt="Office Location"
+                            class="footer-map-img"
+                            loading="lazy"
+                            decoding="async">
                         <span class="footer-map-pill">
                             <svg viewBox="0 0 24 24" width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <path d="M12 22S19 16.5 19 10A7 7 0 0 0 5 10C5 16.5 12 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

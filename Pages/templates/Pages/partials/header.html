@@ -5,7 +5,21 @@
         <nav class="navbar">
             <div class="logo">
                 <a href="{% url 'home' %}">
-                    <span class="logo-icon"><img src="{% static 'Pages/images/logo.png' %}" alt="Dreamsoft" height="25" width="25"></span>
+                    <span class="logo-icon">
+                        <!-- Use responsive Cloudinary logo variants to avoid downloading oversized source files. -->
+                        <img
+                            src="https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_40,c_limit/v1777364939/best_pos_software_company_in_bd_logo_hgveux.webp"
+                            srcset="
+                                https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_40,c_limit/v1777364939/best_pos_software_company_in_bd_logo_hgveux.webp 40w,
+                                https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_80,c_limit/v1777364939/best_pos_software_company_in_bd_logo_hgveux.webp 80w,
+                                https://res.cloudinary.com/dpcnbzbqj/image/upload/f_auto,q_auto,w_120,c_limit/v1777364939/best_pos_software_company_in_bd_logo_hgveux.webp 120w
+                            "
+                            sizes="40px"
+                            alt="Dreamsoft | Best Erp & Pos Software company in Bangladesh"
+                            width="40"
+                            height="40"
+                            decoding="async">
+                    </span>
                     <div class="logo-text">
                         <span class="brand-name">Dreamsoft</span>
                         <span class="tagline">A Total Solution of Your Business</span>
