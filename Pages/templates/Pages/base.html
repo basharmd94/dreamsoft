@@ -10,7 +10,7 @@
     <meta name="keywords" content="{% block meta_keywords %}software company, Website Development, ERP, POS, CRM, Bangladesh{% endblock %}">
     <meta name="robots" content="{% block meta_robots %}index, follow{% endblock %}">
 
-    <!-- Canonical — each page template must define {% block canonical_url %} -->
+    <!-- Canonical — override {% block canonical_url %} in child templates with the preferred URL -->
     <link rel="canonical" href="{% block canonical_url %}{{ request.build_absolute_uri }}{% endblock %}">
 
     <!-- Open Graph -->
