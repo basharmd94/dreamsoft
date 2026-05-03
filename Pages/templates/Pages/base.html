@@ -10,8 +10,8 @@
     <meta name="keywords" content="{% block meta_keywords %}software company, Website Development, ERP, POS, CRM, Bangladesh{% endblock %}">
     <meta name="robots" content="{% block meta_robots %}index, follow{% endblock %}">
 
-    <!-- Canonical -->
-    <link rel="canonical" href="{{ request.build_absolute_uri }}">
+    <!-- Canonical — each page template must define {% block canonical_url %} -->
+    <link rel="canonical" href="{% block canonical_url %}{{ request.build_absolute_uri }}{% endblock %}">
 
     <!-- Open Graph -->
     <meta property="og:title" content="{% block og_title %}POS & ERP Software in Bangladesh | DreamSoft BD{% endblock %}">
