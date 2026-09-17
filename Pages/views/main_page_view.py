@@ -79,16 +79,10 @@ def contact_us(request):
 
 
 def robots_txt(request):
-    # Serve robots directives directly so this endpoint does not depend on template file placement.
+    # Crawlers have full access to discover and crawl all pages
     content = (
         "User-agent: *\n"
-        # Block tag archive URLs so crawlers do not follow or crawl tag listing pages.
-        "Disallow: /blog/tag/\n"
-        # Block category archive URLs so crawlers do not follow or crawl category listing pages.
-        "Disallow: /blog/category/\n"
-        "Allow: /\n\n"
+        "Disallow:\n\n"
         "Sitemap: https://dreamsoft.bd/sitemap.xml\n"
     )
-    # Return plain text content so crawlers parse robots rules correctly.
     return HttpResponse(content, content_type="text/plain")
-
