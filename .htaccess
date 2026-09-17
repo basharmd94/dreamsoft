@@ -1,12 +1,28 @@
-# Custom rules for serving static files
-RewriteEngine On
-RewriteRule ^static/(.*)$ /home/azmedian/dreamsoft.bd/staticfiles/$1 [L]
 # DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
 PassengerAppRoot "/home/azmedian/dreamsoft.bd"
 PassengerBaseURI "/"
 PassengerPython "/home/azmedian/virtualenv/dreamsoft.bd/3.12/bin/python"
-PassengerAppLogFile "/home/azmedian/dreamsoft/logs/passenger.log"
 # DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+
+RewriteEngine On
+
+# ==========================================
+# 1. FORCE HTTPS
+# ==========================================
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ==========================================
+# 2. FORCE NON-WWW (www -> non-www 301 Redirect)
+# ==========================================
+RewriteCond %{HTTP_HOST} ^www\.dreamsoft\.bd$ [NC]
+RewriteRule ^(.*)$ https://dreamsoft.bd/$1 [L,R=301]
+
+# ==========================================
+# 3. Custom rules for serving static files
+# ==========================================
+RewriteRule ^static/(.*)$ /home/azmedian/dreamsoft.bd/staticfiles/$1 [L]
+
 # DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
 <IfModule Litespeed>
 </IfModule>
