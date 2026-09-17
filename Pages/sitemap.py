@@ -1,12 +1,11 @@
 from django.contrib.sitemaps import Sitemap
-from django.db.models import Count, Q
 from django.urls import reverse
-from .models import BlogPost, Category
+from .models import BlogPost
 
 
 class StaticPageSitemap(Sitemap):
     changefreq = "weekly"
-    priority = 0.9  
+    priority = 0.9
 
     def items(self):
         return [
@@ -49,21 +48,8 @@ class BlogPostSitemap(Sitemap):
         return obj.updated_at
 
 
-class BlogCategorySitemap(Sitemap):
-    changefreq = "monthly"
-    priority = 0.5
-
-    def items(self):
-        return Category.objects.annotate(
-            published_count=Count("posts", filter=Q(posts__status="published"))
-        ).filter(published_count__gt=0)
-
-    def location(self, obj):
-        return reverse("blog_category", kwargs={"slug": obj.slug})
-
 
 sitemaps = {
     "pages": StaticPageSitemap,
     "blog-posts": BlogPostSitemap,
-    "blog-categories": BlogCategorySitemap,
 }
